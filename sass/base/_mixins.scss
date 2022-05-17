@@ -1,0 +1,23 @@
+
+
+
+
+
+@mixin for-phone {
+  @media (max-width: 575px) { @content; }
+}
+@mixin for-phone-portrait {
+  @media (max-width: 767px) { @content; }
+}
+@mixin for-tablet-portrait {
+  @media (max-width: 991px) { @content; }
+}
+@mixin for-mobile-landscape {
+  @media (max-width: 991px) and (orientation: landscape) { @content; }
+}
+@mixin for-tablet-landscape {
+  @media (max-width: 1200px) { @content; }
+}
+@mixin for-desk {
+  @media (max-width: 1400px) { @content; }
+}
