@@ -357,6 +357,102 @@ template {
   font-style: normal;
 }
 
+.video__wrapper {
+  padding: 80px 0;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .video__wrapper {
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .video__wrapper {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .video__wrapper {
+    padding: 30px 0;
+  }
+}
+
+.video__title {
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  .video__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .video__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  .video__text {
+    width: 100%;
+  }
+}
+
+.video__content {
+  max-width: 1027px;
+  width: 100%;
+  height: 522px;
+  margin: 60px auto 0 auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+@media (max-width: 599px) {
+  .video__content {
+    margin: 30px auto 0 auto;
+    height: 280px;
+  }
+}
+
+.video__background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.video__background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.video__youtube {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 /*
 
 Neue Machina: 400, 500, 700
@@ -394,7 +490,7 @@ section, header, footer {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1480px;
   width: 100%;
   margin: 0 auto;
   position: relative;

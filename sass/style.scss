@@ -12,6 +12,19 @@
 
 
 
+@import 'base/header';
+@import 'base/breadcrumb';
+@import 'base/application';
+@import 'base/footer';
+
+@import 'base/promo';
+
+@import 'base/video';
+@import 'base/plans';
+@import 'base/stages';
+@import 'base/cases';
+@import 'base/order';
+
 
 /*
 
@@ -52,7 +65,7 @@ section, header, footer {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1480px;
   width: 100%;
   margin: 0 auto;
   position: relative;
