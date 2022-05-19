@@ -1,49 +1,110 @@
 .cases {
 
     &__wrapper {
+        margin-top: 71px;
+        margin-bottom: 80px;
     }
 
     &__title {
     }
 
     &__outer {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 20px;
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+
+    &__info-main, &__info-total {
+        padding: 28px 31px 40px 31px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px;
     }
 
     &__info-main {
+        
     }
 
     &__info-subtitle {
+        font-size: 26px;
+        line-height: 29px;
     }
 
     &__info-text {
+        margin-top: 24px;
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
     }
 
     &__info-total {
+        
     }
 
     &__info-list {
+        margin-top: 30px;
+        display: flex;
+        gap: 60px;
+        list-style-type: none;
     }
 
     &__info-listitem {
     }
 
     &__info-listtitle {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
 
     &__info-listtext {
+        margin-top: 4px;
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
     }
 
     &__controls {
+        margin-top: 33px;
     }
 
     &__controls-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
     }
 
     &__controls-arrow {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+        border-radius: 100%;
+        cursor: pointer;
         &_left {
         }
 
@@ -55,5 +116,12 @@
     }
 
     &__image {
+        position: relative;
+        min-height: 688px;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
     }
 }

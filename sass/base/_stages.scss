@@ -1,20 +1,51 @@
 .stages {
 
     &__wrapper {
+        margin-bottom: 57px;
     }
 
     &__title {
+        max-width: 691px;
+        width: 100%;
     }
 
     &__list {
+        margin-top: 46px;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 20px;
+        list-style-type: none;
     }
 
     &__item {
+        padding: 30px 30px 43px 29px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px;
     }
 
     &__name {
-
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 29px;
+        color: #000000;
         &_number {
+            margin-right: 22px;
+            font-family: $neuemachina;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 73px;
+            background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
         }
     }
 
@@ -22,5 +53,14 @@
     }
 
     &__step {
+        margin-bottom: 4px;
+        p {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+        }
     }
 }

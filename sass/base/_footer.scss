@@ -1,9 +1,15 @@
 .footer {
-
+    background: #000000;
     &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 0 60px 0;
     }
 
     &__main {
+        display: flex;
+        align-items: center;
+        gap: 65px;
     }
 
     &__logo {
@@ -16,27 +22,56 @@
     }
 
     &__menu-list {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
     }
 
     &__menu-item {
     }
 
     &__menu-link {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
     }
 
     &__contacts {
     }
 
     &__contacts-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     &__contacts-mail {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
     }
 
     &__contacts-tel {
+        margin-top: 10px;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
     }
 
     &__contacts-social {
+        margin-top: 12px;
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
     }
 
     &__contacts-social-item {

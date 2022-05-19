@@ -4,14 +4,46 @@
     }
 
     &__outer {
+        padding: 50px 100px;
+        max-width: 1124px;
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
+        border-radius: 30px;
     }
 
     &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__title {
+        max-width: 492px;
+        width: 100%;
+        font-size: 32px;
+        line-height: 36px;
+        color: #FFFFFF;
     }
 
     &__btn {
+        padding: 12px 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border-radius: 30px;
+    }
+    &__btn-text {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        background: linear-gradient(90deg, #65F0F4 -27.45%, #3957ED 118.63%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
 }

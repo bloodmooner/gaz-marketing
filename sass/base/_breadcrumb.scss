@@ -1,11 +1,26 @@
 .breadcrumb {
 
     &__list {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        display: flex;
+        gap: 22px;
     }
 
     &__item {
     }
 
     &__link {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        background: linear-gradient(90.09deg, #65F0F4 -83.65%, #3957ED 78.13%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
 }

@@ -1,9 +1,12 @@
 .header {
-
+    
     &__wrapper {
+        margin-top: 40px;
     }
 
     &__logo {
+        display: flex;
+        justify-content: center;
     }
 
     &__logo-link {
@@ -13,30 +16,75 @@
     }
 
     &__bottom {
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__menu {
     }
 
     &__menu-list {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
     }
 
     &__menu-item {
 
         &_active {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+            }
         }
     }
 
     &__menu-link {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
     }
 
     &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 87px;
     }
 
     &__tel {
+        text-decoration: underline;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
     }
 
     &__btn {
+        padding: 13px 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000000;
+        border-radius: 30px;
+        font-family: 'Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
     }
 }
 

@@ -1,24 +1,55 @@
 .promo {
 
     &__wrapper {
+        margin-top: 82px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__caption {
     }
 
     &__title {
+        max-width: 759px;
+        width: 100%;
+        span {
+            background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+        }
     }
 
     &__subtitle {
+        margin-top: 41px;
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        color: #000000;
     }
 
     &__btn {
+        margin-top: 43px;
+        padding: 23px 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #65F0F4 0%, #3957ED 78%);
+        border-radius: 30px;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        color: #FFFFFF;
     }
 
     &__additional {
     }
 
     &__image {
+        max-width: 406px;
+        width: 100%;
+        margin-right: 121px;
     }
 }
 
