@@ -1,0 +1,69 @@
+.our-cases {
+    padding: 40px 0;
+    background: #FAF8F8;
+}
+.our-casses__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-casses__list li {
+    list-style-type: none;
+    width: 480px;
+    height: 480px;
+    background: #E6DEDE;
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 24px 0 0 16px;
+}
+.our-casses__list li:nth-child(3n) {
+    margin-right: 0;
+}
+.our-casses__list li:last-child {
+    padding: 307px 0 0 45px;
+    background: #000000;
+}
+.our-casses__list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    text-decoration: none;
+}
+.our-casses__list li h3 {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 134.4%;
+    color: #FFFFFF;
+}
+.our-casses__list li h2 {
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 113.4%;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+.our-casses__list li h4 a {
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    position: relative;
+    max-width: 340px;
+}
+.our-casses__list li h4 a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+}

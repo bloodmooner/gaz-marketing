@@ -1,0 +1,89 @@
+.promo-home {
+    padding: 40px 0;
+    background: #FAF8F8;
+}
+.promo-home__wrapper {
+    display: flex;
+}
+.promo-home__caption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 134.4%;
+    color: #000000;
+
+}
+.promo-home__title {
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 113.4%;
+    color: #000000;
+    max-width: 670px;
+}
+.promo-home__title span {
+    font-family: $neuemachina;
+    display: inline-block;
+    width: 552px;
+    background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+}
+.promo-home__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 134.4%;
+    color: #000000;
+    max-width: 680px;
+    margin-top: 40px;
+
+}
+.promo-home__btn_wrapper {
+    display: flex;
+}
+.promo__btn {
+    position: relative;
+    width: 300px;
+    height: 66px;
+    background: linear-gradient(90deg, #65F0F4 0%, #3957ED 78%);
+    border-radius: 30px;
+    border: none;
+    margin-top: 60px;
+
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.promo-home__additional {
+    padding: 187px 0 0 340px;
+}
+.promo-home__list {
+    list-style-type: none;
+}
+.promo-home__list li a {
+    font-family: $neuemachina;
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 49px;
+    color: #000000;
+    margin-top: 30px;
+}
+.promo-home__list li a:hover {
+    text-decoration: none;
+}
+.promo-home__list li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}

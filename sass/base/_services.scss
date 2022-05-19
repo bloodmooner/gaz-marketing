@@ -1,0 +1,38 @@
+.services {
+    padding: 40px 0;
+    background: #FAF8F8;
+}
+.services__title {
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 113.4%;
+    color: #000000;
+    max-width: 750px;
+}
+.services__list {
+    width: 1240px;
+    margin: 60px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services__list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 33px 60px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 130px;
+    background: #FFFFFF;
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+    border-radius: 30px;
+}
+.services__list li img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
