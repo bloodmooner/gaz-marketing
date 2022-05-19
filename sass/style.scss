@@ -25,6 +25,10 @@
 @import 'base/cases';
 @import 'base/order';
 
+@import 'base/promo-home';
+@import 'base/our-cases';
+@import 'base/services';
+
 
 /*
 
@@ -42,7 +46,7 @@ Montserrat: 300, 400, 700
 * {
   margin: 0;
   padding: 0;
-  font-family: 'FuturaDemiC', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul, ol {
