@@ -31,6 +31,12 @@
 @import 'base/promo-home';
 @import 'base/our-cases';
 @import 'base/services';
+@import 'base/portfolio';
+@import 'base/item';
+@import 'base/item-content';
+@import 'base/thanks-or-error';
+@import 'base/footer-custome';
+@import 'base/politica';
 
 
 /*
@@ -104,6 +110,6 @@ button::-moz-focus-inner {
 }
 
 body {
-  background-color: #FFFFFF;
+  background: #FAF8F8;
 }
 
