@@ -1,0 +1,86 @@
+.thanks-or-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    min-height: calc(100vh - 116px );
+}
+.thanks-or-error__logo_link {
+    display: block;
+    width: 116px;
+    margin: 0 auto 80px;
+}
+.thanks-or-error__wrapper {
+    display: flex;
+    gap: 20px;
+}
+.thanks-or-error__item {
+    width: 50%;
+}
+.thanks-or-error__item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.thanks-or-error__item ul li {
+    padding: 47px 72px 47px 31px;
+    list-style-type: none;
+    background: #FFFFFF;
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+    border-radius: 30px;
+}
+.thanks-or-error__item ul li a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 49px;
+    color: #000000;
+}
+.thanks-or-error__item_thanks {
+    padding: 40px 109px 54px 31px;
+    background: #FFFFFF;
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+    border-radius: 30px;
+}
+.thanks-or-error__item_thanks h1 {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 113.4%;
+    background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.thanks-or-error__item_thanks p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 134.4%;
+    color: #000000;
+    max-width: 395px;
+    margin-top: 20px;
+}
+.thanks-or-error__item_return {
+    padding: 82px 94px 82px;
+    background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.thanks-or-error__item_return a {
+    font-family: $neuemachina;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 49px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}

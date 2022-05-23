@@ -1,0 +1,44 @@
+.item-content {
+    &__wrapper {
+        max-width: 1211px;
+    }
+    h3 {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 113.4%;
+        color: #000000;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    p {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 134.4%;
+        color: #000000;
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        span.link {
+            background: linear-gradient(90deg, #3957ED 0%, #65F0F4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        span.bold {
+            font-weight: 700;
+        }
+    }
+    img {
+        margin: 35px 0 0;
+        width: 100%;
+        height: 497px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
