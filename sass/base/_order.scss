@@ -33,6 +33,15 @@
         justify-content: center;
         background: #FFFFFF;
         border-radius: 30px;
+        &:hover {
+            .order__btn-text {
+                background: linear-gradient(90deg, #000000 -27.45%, #000000 118.63%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
     }
     &__btn-text {
         font-family: $neuemachina;

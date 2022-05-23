@@ -1,5 +1,43 @@
 .promo {
 
+    &_context {
+        .promo__subtitle {
+            margin-top: 57px;
+            max-width: 679px;
+            width: 100%;
+            font-family: $neuemachina;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 41px;
+            color: #000000;
+        }
+        .promo__image {
+            max-width: 529px;
+            margin-right: 60px;
+        }
+        .promo__text {
+            margin-top: 18px;
+        }
+    }
+
+    &_seo {
+        .promo__btn {
+            margin-top: 0;
+            width: 393px;
+            padding: 23px 34px;
+        }
+        .promo__text {
+            margin-top: 55px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .promo__image {
+            max-width: 561px;
+            margin-right: 58px;
+        }
+    }
+
     &__wrapper {
         margin-top: 82px;
         display: flex;
@@ -13,6 +51,7 @@
         max-width: 759px;
         width: 100%;
         span {
+            font-family: $neuemachina;
             background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
         }
     }
@@ -24,6 +63,17 @@
         font-weight: 400;
         font-size: 28px;
         line-height: 38px;
+        color: #000000;
+    }
+    
+    &__text {
+        margin-top: 20px;
+        max-width: 679px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
         color: #000000;
     }
 
@@ -43,6 +93,11 @@
         color: #FFFFFF;
     }
 
+    &__plan {
+        height: 66px;
+        padding: 15px 25px;
+    }
+
     &__additional {
     }
 
@@ -50,6 +105,13 @@
         max-width: 406px;
         width: 100%;
         margin-right: 121px;
+    }
+
+    &__btns {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        gap: 34px;
     }
 }
 

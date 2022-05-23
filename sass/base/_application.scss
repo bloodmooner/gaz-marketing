@@ -1,5 +1,14 @@
 .application {
 
+    &_seo {
+        .application__inner {
+            padding: 46px 100px;
+        }
+        .application__btn {
+            margin-top: 13px;
+        }
+    }
+
     &__wrapper {
         max-width: 1240px;
         width: 100%;

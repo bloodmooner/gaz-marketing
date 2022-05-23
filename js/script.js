@@ -1,5 +1,52 @@
 $(document).ready(function(){
 
+  $('.cases__slider-items').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: true,
+    swipe: false,
+    nextArrow: $(document).find('.cases__controls-arrow_left'),
+    prevArrow: $(document).find('.cases__controls-arrow_right'),
+    asNavFor: '.cases__info-items'
+   });
+
+
+   $('.cases__info-items').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: false,
+    swipe: false,
+    asNavFor: '.cases__slider-items'
+   });
+
+
+
+   $('.success__about-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: true,
+    /* swipe: false, */
+    nextArrow: $(document).find('.success__about-arrow_right'),
+    prevArrow: $(document).find('.success__about-arrow_left'),
+    asNavFor: '.success__info-slider'
+   });
+
+   $('.success__info-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: false,
+    /* swipe: false, */
+    asNavFor: '.success__about-slider'
+   });
+
 });
 
 
@@ -37,5 +84,8 @@ $(function() {
   });
   
   
+
+  
+
   
     });

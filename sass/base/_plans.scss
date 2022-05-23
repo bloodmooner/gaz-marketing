@@ -1,5 +1,48 @@
 .plans {
 
+    &_seo {
+        .plans__name {
+            max-width: 294px;
+            width: 100%;
+        }
+        .plans__title {
+            max-width: 884px;
+        }
+        .plans__list {
+            margin-top: 50px;
+        }
+        .plans__name {
+            margin-bottom: 20px;
+        }
+        .plans__bottom {
+            margin-top: 29px;
+        }
+        .plans__btn {
+            padding: 19px 58px;
+        }
+        .plans__item {
+            padding: 28px 41px 40px 31px;
+        }
+    }
+
+    &_context {
+        .plans__list {
+            margin-top: 50px;
+        }
+        .plans__name {
+            margin-bottom: 20px;
+        }
+        .plans__bottom {
+            margin-top: 37px;
+        }
+        .plans__btn {
+            padding: 19px 70px;
+        }
+        .plans__item {
+            padding: 28px 41px 40px 31px;
+        }
+    }
+
     &__wrapper {
     }
 
@@ -15,6 +58,9 @@
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 28px 41px 53px 31px;
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -25,6 +71,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        &_black {
+            background: #000000;
+            .plans__name {
+                color: #FFFFFF;
+            }
+            .plans__service {
+                p {
+                    color: #FFFFFF;
+                }
+            }
+            .plans__number {
+                color: #FFFFFF;
+            }
+            .plans__btn {
+                border: none;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+                span {
+                    background: linear-gradient(90deg, #65F0F4 -17.82%, #3957ED 98.46%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
         }
     }
 
@@ -37,7 +109,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 20px;
+        line-height: 29px;
         color: #000000;
     }
 
@@ -66,12 +138,14 @@
 
     &__btn {
         padding: 18px 25px;
-        font-family: $neuemachina;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 19px;
-        color: #000000;
+        span {
+            font-family: $neuemachina;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 19px;
+            color: #000000;
+        }
     }
 
     &__price {

@@ -5,4 +5,10 @@
         border: 3px dashed #000000;
         border-radius: 36px;
     }
+    &_blue {
+        transition: $animate-fast;
+        &:hover {
+            color: #000000;
+        }
+    }
 }

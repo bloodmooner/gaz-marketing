@@ -1,5 +1,29 @@
 .cases {
 
+    &_context {
+        .cases__outer {
+            margin-top: 20px;
+        }
+        .cases__image {
+            img {
+                max-height: 645px;
+            }
+        }
+    }
+
+    &_seo {
+        .cases__info-subtitle {
+            max-width: 329px;
+            width: 100%;
+        }
+        .cases__image {
+            padding: 28px 47px 28px 30px;
+            background: #FFFFFF;
+            box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+            border-radius: 30px;
+        }
+    }
+
     &__wrapper {
         margin-top: 71px;
         margin-bottom: 80px;
@@ -11,14 +35,16 @@
     &__outer {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(2 ,1fr);
-        gap: 20px;
+        grid-template-columns: repeat(2 , 730px);
+        /* gap: 20px; */
     }
 
     &__info {
         display: flex;
         flex-direction: column;
         gap: 27px;
+        position: relative;
+        left: -40px;
     }
 
 
@@ -124,4 +150,246 @@
             height: 100%;
         }
     }
+
+    &__top {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__top-about {
+        padding: 17px 31px 28px 31px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px;
+    }
+
+    &__top-header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__top-icon {
+        max-width: 66px;
+        width: 100%;
+        margin-right: 64px;
+    }
+
+    &__top-title {
+        max-width: 373px;
+        width: 100%;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__top-text {
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    &__top-instruments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    &__top-instrument {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px;
+    }
+
+    &__top-image {
+        width: 45%;
+    }
+
+    &__info-caption {
+        margin-top: 24px;
+        p {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__info-example {
+        margin-top: 40px;
+        padding: 20px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        span {
+            font-family: $neuemachina;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+            background: linear-gradient(90deg, #65F0F4 -17.82%, #3957ED 98.46%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+
+    &__info-item {
+        display: flex!important;
+        flex-direction: column;
+        gap: 20px;
+        /* padding: 17px 31px 28px 31px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px; */
+    }
+
+    &__info-issue {
+        padding: 17px 31px 28px 31px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 30px;
+    }
+
+    &__info-header {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    &__info-svg {
+        max-width: 66px;
+        width: 100%;
+    }
+
+
+    &__info-description {
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    &__image-subtitle {
+        max-width: 473px;
+        width: 100%;
+        margin-bottom: 24px;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__image-text {
+        p {
+            margin-bottom: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__image-comparison {
+    }
+
+    &__image-controls {
+        margin-top: 40px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__image-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+    }
+
+    &__image-arrow-left {
+        
+    }
+
+    &__image-icon {
+        max-width: 21px;
+        width: 100%;
+    }
+
+    &__image-arrow-right {
+    }
+
+
+    &__slider {
+        max-width: 740px;
+        padding-left: 10px;
+        position: relative;
+        .slick-slide img {
+            /* max-width: 730px; */
+            width: 100%;
+        }
+        
+    }
+
+    &__slider-content {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__slider-items {
+        
+    }
+
+    &__slider-item {
+        width: fit-content!important;
+    }
+
+    &__info-slider {
+        max-width: 740px;
+        .slick-initialized .slick-slide {
+            margin: 0 40px 40px 40px;
+        }
+        /* .slick-list {
+            margin: 0 -10px -40px 0;
+        } */
+    }
+
+    &__info-items {
+    }
+
+    &__info-item {
+    }
 }
+
+
+
