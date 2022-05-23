@@ -54,12 +54,19 @@
         font-size: 16px;
         line-height: 20px;
         color: #000000;
+        @include for-tablet-landscape {
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
 
     &__contacts {
         display: flex;
         align-items: center;
         gap: 87px;
+        @include for-tablet-landscape {
+            gap: 30px;
+        }
     }
 
     &__tel {
@@ -96,6 +103,10 @@
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
             }
         }
+        @include for-tablet-landscape {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__btn {
@@ -105,12 +116,15 @@
         justify-content: center;
         background: #000000;
         border-radius: 30px;
-        font-family: 'Neue Machina';
+        font-family: $neuemachina;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 14px;
         color: #FFFFFF;
+        @include for-tablet-landscape {
+            padding: 11px 26px;
+        }
     }
 }
 

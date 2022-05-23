@@ -12,6 +12,9 @@
         list-style-type: none;
         display: flex;
         gap: 22px;
+        @include for-tablet-landscape {
+            margin-top: 0;
+        }
     }
 
     &__item {

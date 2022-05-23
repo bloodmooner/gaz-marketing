@@ -10,6 +10,12 @@
         margin: 0 auto;
         background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
         border-radius: 30px;
+        @include for-desk {
+            max-width: 100%;
+        }
+        @include for-tablet-landscape {
+            padding: 40px 70px;
+        }
     }
 
     &__inner {
@@ -54,5 +60,9 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        @include for-tablet-landscape {
+            font-size: 17px;
+            line-height: 17px;
+        }
     }
 }

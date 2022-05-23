@@ -12,6 +12,9 @@
     }
 
     &_seo {
+        @include for-desk {
+            display: none;
+        }
         .cases__info-subtitle {
             max-width: 329px;
             width: 100%;
@@ -44,7 +47,7 @@
         flex-direction: column;
         gap: 27px;
         position: relative;
-        left: -40px;
+        /* left: -40px; */
     }
 
 

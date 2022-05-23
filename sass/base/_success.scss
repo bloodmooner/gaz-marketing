@@ -1,5 +1,7 @@
 .success {
-
+    @include for-desk {
+        display: none;
+    }
     &__about-icon {
         cursor: pointer;
     }
