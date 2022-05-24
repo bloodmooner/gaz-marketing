@@ -16,6 +16,9 @@
             @include for-tablet-portrait {
                 padding: 45px 0px;
             }
+            @include for-phone-portrait {
+                padding: 40px 0;
+            }
         }
         .application__btn {
             margin-top: 13px;
@@ -60,6 +63,9 @@
             border-radius: 0;
             justify-content: initial;
         }
+        @include for-phone-portrait {
+            padding-top: 40px;
+        }
     }
 
     &__title {
@@ -73,6 +79,8 @@
         }
         @include for-tablet-portrait {
             width: initial;
+            font-size: 38px;
+            line-height: 45px;
         }
     }
 
@@ -86,6 +94,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 22px;
+        @include for-phone-portrait {
+            gap: 20px;
+        }
     }
 
     &__input {
@@ -105,6 +116,9 @@
             font-size: 16px;
             line-height: 22px;
             color: #FFFFFF;
+        }
+        @include for-phone-portrait {
+            padding: 23px 21px;
         }
         &:nth-child(1) {
             grid-row: 1/2;
@@ -135,12 +149,22 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 15px;
+        @include for-phone-portrait {
+            grid-column: 1/3;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 13px;
+        }
     }
 
     &__polytics {
         margin-top: 26px;
         max-width: 374px;
         width: 100%;
+        @include for-phone-portrait {
+            margin-top: 15px;
+            max-width: 100%;
+        }
     }
 
     &__polytics-text {
@@ -150,6 +174,10 @@
         font-size: 16px;
         line-height: 22px;
         color: #FFFFFF;
+        @include for-phone-portrait {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
     &__link {

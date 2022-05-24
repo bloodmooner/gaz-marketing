@@ -35,6 +35,18 @@
                 padding: 10px 10px;
                 font-size: 17px;
             }
+            @include for-tablet-portrait {
+                width: 250px;
+                padding: 9px 9px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            @include for-phone-portrait {
+                width: 266px;
+                padding: 19px;
+                font-size: 14px;
+                line-height: 14px;
+            }
         }
         .promo__text {
             margin-top: 55px;
@@ -47,6 +59,15 @@
                 margin-top: 40px;
                 font-size: 24px;
                 line-height: 32px;
+            }
+            @include for-tablet-portrait {
+                font-size: 20px;
+                line-height: 27px;
+            }
+            @include for-phone-portrait {
+                margin-top: 30px;
+                font-size: 16px;
+                line-height: 22px;
             }
         }
         .promo__image {
@@ -65,9 +86,26 @@
         @include for-desk {
             gap: 20px;
         }
+        @include for-tablet-portrait {
+            margin-top: 60px;
+        }
+        @include for-phone-portrait {
+            flex-direction: column;
+        }
+        @include for-phone-portrait {
+            gap: 30px;
+            margin-top: 30px;
+        }
     }
 
     &__caption {
+        @include for-tablet-portrait {
+            max-width: 395px;
+            width: 100%;
+        }
+        @include for-phone-portrait {
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -123,6 +161,12 @@
             height: 58px;
             padding: 10px 10px;
         }
+        @include for-tablet-portrait {
+            padding: 6px 10px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 16px;
+        }
     }
 
     &__additional {
@@ -141,6 +185,9 @@
         gap: 34px;
         @include for-desk {
             gap: 20px;
+        }
+        @include for-phone-portrait {
+            margin-top: 40px;
         }
     }
 }

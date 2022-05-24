@@ -25,9 +25,18 @@
             @include for-desk {
                 padding: 15px 25px;
             }
+            @include for-tablet-portrait {
+                padding: 10px 15px;
+            }
         }
         .plans__item {
             padding: 28px 41px 40px 31px;
+            @include for-tablet-portrait {
+                padding: 20px;
+            }
+            @include for-phone-portrait {
+                padding: 28px 19px 40px 19px;
+            }
         }
     }
 
@@ -61,6 +70,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        @include for-phone-portrait {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {
@@ -104,6 +116,7 @@
                 }
             }
         }
+        
     }
 
     &__inner {
@@ -117,6 +130,14 @@
         font-size: 26px;
         line-height: 29px;
         color: #000000;
+        @include for-tablet-portrait {
+            font-size: 22px;
+            line-height: 25px;
+        }
+        @include for-phone-portrait {
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 
     &__services {
@@ -133,6 +154,14 @@
             font-size: 16px;
             line-height: 22px;
             color: #000000;
+            @include for-tablet-portrait {
+                font-size: 13px;
+                line-height: 19px;
+            }
+            @include for-phone-portrait {
+                font-size: 14px;
+                line-height: 19px;
+            }
         }
     }
 
@@ -142,6 +171,12 @@
         justify-content: space-between;
         @include for-tablet-landscape {
             align-items: center;
+        }
+        @include for-phone-portrait {
+            margin-top: 20px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 30px;
         }
     }
 
@@ -157,6 +192,10 @@
             @include for-tablet-landscape {
                 font-size: 16px;
                 line-height: 16px;
+            }
+            @include for-tablet-portrait {
+                font-size: 14px;
+                line-height: 14px;
             }
         }
     }
@@ -186,10 +225,26 @@
                 font-size: 25px;
                 line-height: 36px;
             }
+            @include for-tablet-portrait {
+                font-size: 17px;
+                line-height: 19px;
+            }
+            @include for-phone-portrait {
+                font-size: 32px;
+                line-height: 43px;
+            }
         }
         @include for-tablet-landscape {
             font-size: 15px;
             line-height: 19px;
+        }
+        @include for-tablet-portrait {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        @include for-phone-portrait {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 

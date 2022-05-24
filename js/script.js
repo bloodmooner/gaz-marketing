@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+
+
+  $('.stages__item').click(function(){
+    $(this).find('.stages__text').toggle(1000);
+  });
+
+
+
+
   $('.cases__slider-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -85,7 +94,9 @@ $(function() {
   
   
 
+
+
   
 
   
-    });
+});

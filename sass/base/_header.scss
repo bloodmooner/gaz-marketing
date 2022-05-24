@@ -2,6 +2,12 @@
     
     &__wrapper {
         margin-top: 33px;
+        @include for-phone-portrait {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
     }
 
     &__logo {
@@ -20,9 +26,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include for-phone-portrait {
+            margin-top: 0;
+        }
     }
 
     &__menu {
+        @include for-tablet-portrait {
+            margin-top: 4px;
+        }
+        @include for-phone-portrait {
+            display: none;
+        }
     }
 
     &__menu-list {
@@ -70,6 +85,9 @@
         @include for-tablet-landscape {
             gap: 30px;
         }
+        @include for-phone-portrait {
+            display: none;
+        }
     }
 
     &__tel {
@@ -110,6 +128,10 @@
             font-size: 18px;
             line-height: 21px;
         }
+        @include for-tablet-portrait {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     &__btn {
@@ -129,5 +151,17 @@
             padding: 11px 26px;
         }
     }
+
+    &__burger {
+        display: none;
+        @include for-phone-portrait {
+            display: block;
+        }
+    }
+
+    &__burger-icon {
+    }
 }
+
+
 

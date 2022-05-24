@@ -15,6 +15,9 @@
         @include for-tablet-landscape {
             margin-top: 0;
         }
+        @include for-phone-portrait {
+            gap: 12px;
+        }
     }
 
     &__item {
@@ -31,5 +34,9 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        @include for-phone-portrait {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 }

@@ -8,6 +8,13 @@
             flex-direction: column;
             gap: 30px;
         }
+        @include for-phone-portrait {
+            align-items: center;
+        }
+        @include for-phone-portrait {
+            padding: 20px 0 40px 0;
+            gap: 40px;
+        }
     }
 
     &__main {
@@ -26,6 +33,9 @@
     }
 
     &__menu {
+        @include for-phone-portrait {
+            display: none;
+        }
     }
 
     &__menu-list {
@@ -63,19 +73,32 @@
         @include for-tablet-portrait {
             align-items: flex-start;
         }
+        @include for-phone-portrait {
+            align-items: center;
+            gap: 30px;
+        }
     }
 
     &__contacts-mail {
-        font-family: $montserrat;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
-        color: #FFFFFF;
-        @include for-tablet-landscape {
-            font-size: 18px;
-            line-height: 20px;
-        }
+        span {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+            @include for-tablet-landscape {
+                font-size: 18px;
+                line-height: 20px;
+            }
+            @include for-phone-portrait {
+                background: linear-gradient(86.48deg, #65F0F4 2.45%, #3957ED 153.46%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        } 
     }
 
     &__contacts-tel {
@@ -89,6 +112,12 @@
         @include for-tablet-landscape {
             font-size: 18px;
             line-height: 22px;
+        }
+        @include for-phone-portrait {
+            margin-top: 0;
+            font-size: 20px;
+            line-height: 25px;
+            text-decoration: underline;
         }
     }
 
