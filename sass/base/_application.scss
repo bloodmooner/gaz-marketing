@@ -3,6 +3,8 @@
 
     @include for-tablet-portrait {
         background: #000000;
+        position: relative;
+        top: 1px;
     }
 
     &_seo {

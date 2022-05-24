@@ -29,6 +29,9 @@
         list-style-type: none;
         display: flex;
         gap: 50px;
+        @include for-tablet-portrait {
+            gap: 30px;
+        }
     }
 
     &__menu-item {

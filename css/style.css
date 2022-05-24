@@ -425,6 +425,12 @@ template {
   gap: 50px;
 }
 
+@media (max-width: 991px) {
+  .header__menu-list {
+    gap: 30px;
+  }
+}
+
 .header__menu-item_active {
   position: relative;
 }
@@ -586,6 +592,8 @@ template {
 @media (max-width: 991px) {
   .application {
     background: #000000;
+    position: relative;
+    top: 1px;
   }
 }
 
