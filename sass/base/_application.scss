@@ -2,6 +2,8 @@
 
 
     @include for-tablet-portrait {
+        order: 1;
+        
         background: #000000;
         position: relative;
         top: 1px;
@@ -101,7 +103,7 @@
         line-height: 64px;
         color: #FFFFFF;
         width: min-content;
-        @include for-tablet-landscape {
+        @include for-desk {
             font-size: 50px;
             line-height: 55px;
         }

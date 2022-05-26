@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+  //Cases hover and add Class
+  $(function () {
+    $(".our-casses__list a, .portfolio__list a").hover(onIn, onOut);
+  });
+  
+  function onIn() {
+    $(this).find('.our-cases__block').addClass("visible");
+  }
+  
+  function onOut() {
+    $(this).find(".our-cases__block").removeClass("visible");
+  }
+
+
+  //Tabs Cases
+  $('ul.portfolio__tabs_caption').on('click', 'li:not(.active)', function() {
+		$(this).addClass('active').siblings().removeClass('active').closest('.tabs').find('div.portfolio__tabs_content').removeClass('active').eq($(this).index()).addClass('active');
+  });
 
 
   $('.stages__item').click(function(){
