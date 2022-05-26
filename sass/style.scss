@@ -112,4 +112,16 @@ button::-moz-focus-inner {
 body {
   background: #FAF8F8;
 }
+.desc {
+  display: block;
 
+  @include for-tablet-portrait {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @include for-tablet-portrait {
+    display: block;
+  }
+}

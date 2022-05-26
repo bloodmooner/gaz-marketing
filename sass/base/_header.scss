@@ -1,12 +1,11 @@
 .header {
     
     &__wrapper {
-        margin-top: 33px;
+        margin-top: 30px;
         @include for-phone-portrait {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 40px;
         }
     }
 

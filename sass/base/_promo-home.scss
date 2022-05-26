@@ -1,16 +1,26 @@
+main.main {
+    display: flex;
+    flex-wrap: wrap;
+}
 .promo-home {
     padding: 40px 0;
+    @include for-phone-portrait {
+        padding: 50px 0 30px;
+    }
+    @include for-phone {
+        padding: 42px 0 25px;
+    }
 }
 .promo-home__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 .promo-home__caption {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 134.4%;
-    color: #000000;
+    width: 56%;
 
+    @include for-phone-portrait {
+        width: 100%;
+    }
 }
 .promo-home__title {
     font-family: $neuemachina;
@@ -20,11 +30,23 @@
     line-height: 113.4%;
     color: #000000;
     max-width: 670px;
+    @include for-desk {
+        font-size: 50px;
+        max-width: 554px;
+    }
+    @include for-tablet-portrait {
+        font-size: 38px;
+        max-width: 440px;
+    }
+    @include for-phone {
+        font-size: 7vw;
+        padding-right: 7%;       
+    }
 }
 .promo-home__title span {
     font-family: $neuemachina;
     display: inline-block;
-    width: 552px;
+    padding: 0 2px 2px;
     background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
 .promo-home__subtitle {
@@ -35,7 +57,18 @@
     color: #000000;
     max-width: 680px;
     margin-top: 40px;
-
+    @include for-desk {
+        font-size: 25px;
+    }
+    @include for-tablet-landscape {
+        font-size: 21px;
+    }
+    @include for-phone-portrait {
+        font-size: 19px;
+    }
+    @include for-phone {
+        display: none;
+    }
 }
 .promo-home__btn_wrapper {
     display: flex;
@@ -55,13 +88,36 @@
     font-size: 20px;
     line-height: 19px;
     color: #FFFFFF;
+
+    @include for-tablet-landscape {
+        width: 260px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 100%;
+    }
+    @include for-phone {
+        width: 221px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
 }
 
 .promo-home__additional {
-    padding: 187px 0 0 340px;
+   width: 44%; 
+   display: flex;
+   align-items: flex-end;
+
+    @include for-phone-portrait {
+       width: 100%;
+    }
 }
 .promo-home__list {
     list-style-type: none;
+    margin-left: 31%;
+    @include for-phone-portrait {
+        margin-left: 0;
+    }
 }
 .promo-home__list li a {
     font-family: $neuemachina;
@@ -73,6 +129,19 @@
     line-height: 49px;
     color: #000000;
     margin-top: 30px;
+
+    @include for-tablet-landscape {
+        font-size: 50px;
+        line-height: 100%;
+    }
+    @include for-tablet-portrait {
+        font-size: 38px;
+        margin-top: 25px;
+    }
+    @include for-phone {
+        font-size: 36px;
+        margin-top: 25px;
+    }
 }
 .promo-home__list li a:hover {
     text-decoration: none;
