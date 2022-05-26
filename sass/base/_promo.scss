@@ -15,6 +15,9 @@
         .promo__image {
             max-width: 529px;
             margin-right: 60px;
+            @include for-desk {
+                margin-right: 30px;
+            }
         }
         .promo__text {
             margin-top: 18px;
@@ -75,6 +78,9 @@
             margin-right: 58px;
             @include for-desk {
                 margin-right: 0;
+            }
+            @include for-tablet-portrait {
+                max-width: 100%;
             }
         }
     }
@@ -188,6 +194,7 @@
         }
         @include for-phone-portrait {
             margin-top: 40px;
+            flex-wrap: wrap;
         }
     }
 }

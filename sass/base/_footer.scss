@@ -99,6 +99,9 @@
                 text-fill-color: transparent;
             }
         } 
+        @include for-phone-portrait {
+            text-align: center;
+        }
     }
 
     &__contacts-tel {

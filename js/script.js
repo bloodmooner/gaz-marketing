@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 
-  $('.cases__slider-items').slick({
+  $('.cases__outer-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinity: true,
@@ -18,11 +18,11 @@ $(document).ready(function(){
     swipe: false,
     nextArrow: $(document).find('.cases__controls-arrow_left'),
     prevArrow: $(document).find('.cases__controls-arrow_right'),
-    asNavFor: '.cases__info-items'
+    /* asNavFor: '.cases__info-items' */
    });
 
 
-   $('.cases__info-items').slick({
+   /* $('.cases__info-items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinity: true,
@@ -30,7 +30,7 @@ $(document).ready(function(){
     arrows: false,
     swipe: false,
     asNavFor: '.cases__slider-items'
-   });
+   }); */
 
 
 

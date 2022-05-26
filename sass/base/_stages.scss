@@ -27,7 +27,7 @@
     }
 
     &__wrapper {
-        margin-bottom: 57px;
+        margin-bottom: 60px;
     }
 
     &__title {
@@ -90,6 +90,9 @@
                 font-size: 48px;
                 line-height: 54px;
                 margin-right: 52px;
+            }
+            @include for-phone-small {
+                margin-right: 18px;
             }
         }
         @include for-desk {

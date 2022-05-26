@@ -2,6 +2,9 @@
 
     &__wrapper {
         margin-top: 71px;
+        @include for-desk {
+            margin-top: 60px;
+        }
     }
 
     &__title {
@@ -12,6 +15,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        @include for-desk {
+            margin-top: 30px;
+        }
+        @include for-tablet-landscape {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__trust {
@@ -19,6 +28,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 160px;
         gap: 10px;
+        @include for-tablet-landscape {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include for-tablet-portrait {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__trust-item {
@@ -72,6 +87,12 @@
         grid-template-columns: repeat(3, 140px);
         column-gap: 92px;
         row-gap: 32px;
+        @include for-tablet-landscape {
+            grid-template-columns: repeat(4, 140px);
+        }
+        @include for-tablet-portrait {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__member {

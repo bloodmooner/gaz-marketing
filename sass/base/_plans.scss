@@ -43,6 +43,9 @@
     &_context {
         .plans__list {
             margin-top: 50px;
+            @include for-desk {
+                margin-top: 30px;
+            }
         }
         .plans__name {
             margin-bottom: 20px;
@@ -52,9 +55,21 @@
         }
         .plans__btn {
             padding: 19px 70px;
+            @include for-desk {
+                padding: 15px 25px;
+            }
+            @include for-tablet-portrait {
+                padding: 10px 15px;
+            }
         }
         .plans__item {
             padding: 28px 41px 40px 31px;
+            @include for-tablet-portrait {
+                padding: 20px;
+            }
+            @include for-phone-portrait {
+                padding: 28px 19px 40px 19px;
+            }
         }
     }
 

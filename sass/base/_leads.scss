@@ -5,8 +5,11 @@
         .leads__wrapper {
             margin-top: 73px;
             margin-bottom: 151px;
+            @include for-desk {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
         }
-        
     }
 
     &__wrapper {
@@ -22,6 +25,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        @include for-desk {
+            margin-top: 30px;
+        }
+        @include for-tablet-landscape {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__info {
@@ -41,6 +50,9 @@
         display: flex;
         gap: 64px;
         align-items: center;
+        @include for-tablet-landscape {
+            gap: 30px;
+        }
     }
 
     &__info-title {
@@ -52,6 +64,10 @@
         font-size: 26px;
         line-height: 29px;
         color: #000000;
+        @include for-tablet-landscape {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__info-text {
