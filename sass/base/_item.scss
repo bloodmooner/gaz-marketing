@@ -4,9 +4,18 @@
     margin-top: 57px;
     display: flex;
     justify-content: space-between;
+
+    @include for-tablet-landscape {
+        margin-top: 40px;
+    }
 }
 .promo-item__caption {
-
+    @include for-desk {
+        width: 50%;
+    }
+    @include for-tablet-portrait {
+        width: 100%;
+    }
 }
 .promo-item__title {
     font-family: $neuemachina;
@@ -16,11 +25,26 @@
     line-height: 111.4%;
     color: #000000;
     max-width: 732px;
+    @include for-desk {
+        font-size: 50px;
+    }
+    @include for-tablet-landscape {
+        font-size: 44px;
+    }
+    @include for-tablet-portrait {
+        font-size: 38px;
+        line-height: 130%;
+    }
+    @include for-phone {
+        font-size: 7vw;
+        padding-right: 7%; 
+        line-height: 115%;      
+    }
 }
 .promo-item__title span {
     display: inline-block;
     font-family: $neuemachina;
-    width: 579px;
+    padding: 0 2px 2px;
     background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
 
@@ -40,12 +64,32 @@
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
+
+    @include for-tablet-portrait {
+        margin-top: 50px;
+    }
 }
 .promo-item__btn:hover {
     text-decoration: none;
     color: #ffffff;
 }
 .promo-item__additional {
+    @include for-desk {
+        width: 50%;
+        padding: 0 0 0 30px;
+    }
+    @include for-tablet-portrait {
+        display: none;
+    }
+}
+.promo-item__additional-mobile {
+    display: none;
+
+    @include for-tablet-portrait {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .promo-item__image {
@@ -55,6 +99,25 @@
     object-fit: cover;
     margin-top: 25px;
     border-radius: 30px;
+    @include for-tablet-landscape {
+        height: 351px;
+    }
+}
+.promo-item__additional-mobile .promo-item__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 497px;
+    object-fit: cover;
+    border-radius: 30px;
+
+    @include for-tablet-portrait {
+        margin: 40px 0 0;
+    }
+    @include for-phone {
+        margin: 0;
+    }
 }
 
 .promo-item__title_result {
@@ -65,12 +128,46 @@
     line-height: 113.4%;
     color: #000000;
     margin-top: 40px;
+
+    @include for-tablet-landscape {
+        font-size: 32px;
+    }
+    @include for-tablet-portrait {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: 18px;
+        padding-right: 17.5%;     
+    }
 }
 .promo-item__info-list {
     display: flex;
     gap: 60px;
     list-style-type: none;
     margin-top: 40px;
+
+    @include for-tablet-landscape {
+        margin-top: 35px;
+    }
+    @include for-phone-portrait {
+        gap: 44px;
+    }
+    @include for-phone {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 0 20px;
+    }
+}
+.promo-item__info-listitem {
+    @include for-phone {
+        width: calc(50% - 10px);
+    }
+    &:nth-child(2) {
+        @include for-phone {
+            order:1;
+        }
+    }
 }
 .promo-item__info-listtitle {
     font-family: $neuemachina;
@@ -84,6 +181,17 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @include for-tablet-landscape {
+        font-size: 32px;
+    }
+    @include for-tablet-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 7vw, 26px);  
+    }
+    
 }
 .promo-item__info-listitem_wrapper span {
     display: inline-block;
@@ -94,6 +202,13 @@
     line-height: 134.4%;
     color: #000000;
     margin-left: 5px;
+
+    @include for-tablet-landscape {
+        font-size: 20px;
+    }
+    @include for-tablet-portrait {
+        font-size: 17px;
+    }
 }
 .promo-item__info-listtext {
     font-family: $montserrat;
@@ -103,4 +218,15 @@
     line-height: 134.4%;
     color: #000000;
     max-width: 178px;
+
+    @include for-tablet-landscape {
+        font-size: 18px;
+    }
+    @include for-tablet-portrait {
+        font-size: 17px;
+    }
+    @include for-phone {
+        font-size: clamp(12px, 4vw, 17px);
+        max-width: 100%;  
+      }
 }

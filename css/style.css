@@ -5526,6 +5526,24 @@ main.main {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .promo-item__wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .promo-item__caption {
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__caption {
+    width: 100%;
+  }
+}
+
 .promo-item__title {
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
@@ -5536,10 +5554,37 @@ main.main {
   max-width: 732px;
 }
 
+@media (max-width: 1550px) {
+  .promo-item__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .promo-item__title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__title {
+    font-size: 38px;
+    line-height: 130%;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__title {
+    font-size: 7vw;
+    padding-right: 7%;
+    line-height: 115%;
+  }
+}
+
 .promo-item__title span {
   display: inline-block;
   font-family: "Neue Machina", sans-serif;
-  width: 579px;
+  padding: 0 2px 2px;
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -5568,9 +5613,40 @@ main.main {
   color: #FFFFFF;
 }
 
+@media (max-width: 991px) {
+  .promo-item__btn {
+    margin-top: 50px;
+  }
+}
+
 .promo-item__btn:hover {
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (max-width: 1550px) {
+  .promo-item__additional {
+    width: 50%;
+    padding: 0 0 0 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__additional {
+    display: none;
+  }
+}
+
+.promo-item__additional-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .promo-item__additional-mobile {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .promo-item__image {
@@ -5583,6 +5659,35 @@ main.main {
   border-radius: 30px;
 }
 
+@media (max-width: 1200px) {
+  .promo-item__image {
+    height: 351px;
+  }
+}
+
+.promo-item__additional-mobile .promo-item__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 497px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+
+@media (max-width: 991px) {
+  .promo-item__additional-mobile .promo-item__image {
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__additional-mobile .promo-item__image {
+    margin: 0;
+  }
+}
+
 .promo-item__title_result {
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
@@ -5593,6 +5698,26 @@ main.main {
   margin-top: 40px;
 }
 
+@media (max-width: 1200px) {
+  .promo-item__title_result {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__title_result {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__title_result {
+    font-size: 18px;
+    padding-right: 17.5%;
+  }
+}
+
 .promo-item__info-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5600,6 +5725,41 @@ main.main {
   gap: 60px;
   list-style-type: none;
   margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  .promo-item__info-list {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-item__info-list {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__info-list {
+    margin-top: 25px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__info-listitem {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__info-listitem:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .promo-item__info-listtitle {
@@ -5616,6 +5776,24 @@ main.main {
   text-fill-color: transparent;
 }
 
+@media (max-width: 1200px) {
+  .promo-item__info-listtitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__info-listtitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__info-listtitle {
+    font-size: clamp(20px, 7vw, 26px);
+  }
+}
+
 .promo-item__info-listitem_wrapper span {
   display: inline-block;
   font-family: "Neue Machina", sans-serif;
@@ -5627,6 +5805,18 @@ main.main {
   margin-left: 5px;
 }
 
+@media (max-width: 1200px) {
+  .promo-item__info-listitem_wrapper span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__info-listitem_wrapper span {
+    font-size: 17px;
+  }
+}
+
 .promo-item__info-listtext {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -5635,6 +5825,31 @@ main.main {
   line-height: 134.4%;
   color: #000000;
   max-width: 178px;
+}
+
+@media (max-width: 1200px) {
+  .promo-item__info-listtext {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .promo-item__info-listtext {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-item__info-listtext {
+    font-size: clamp(12px, 4vw, 17px);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .item-content {
+    padding-bottom: 60px;
+  }
 }
 
 .item-content__wrapper {
@@ -5650,6 +5865,29 @@ main.main {
   color: #000000;
   margin-top: 80px;
   margin-bottom: 60px;
+  max-width: 850px;
+}
+
+@media (max-width: 1200px) {
+  .item-content h3 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .item-content h3 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .item-content h3 {
+    font-size: clamp(20px, 6.5vw, 24px);
+  }
 }
 
 .item-content p {
@@ -5662,8 +5900,33 @@ main.main {
   margin-bottom: 25px;
 }
 
+@media (max-width: 1200px) {
+  .item-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .item-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .item-content p {
+    font-size: clamp(14px, 4.3vw, 17px);
+    margin-bottom: 20px;
+  }
+}
+
 .item-content p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .item-content p:last-child {
+    margin-bottom: 20px;
+  }
 }
 
 .item-content p span.link {
@@ -5682,10 +5945,24 @@ main.main {
 .item-content img {
   margin: 35px 0 0;
   width: 100%;
-  height: 497px;
+  height: auto;
+  min-height: 200px;
+  max-height: 497px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+}
+
+@media (max-width: 991px) {
+  .item-content img {
+    margin: 15px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .item-content img {
+    margin: 0;
+  }
 }
 
 .thanks-or-error {
