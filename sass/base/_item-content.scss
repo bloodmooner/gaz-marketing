@@ -1,4 +1,9 @@
 .item-content {
+
+    @include for-tablet-portrait {
+        padding-bottom: 60px;
+    }
+
     &__wrapper {
         max-width: 1211px;
     }
@@ -11,6 +16,22 @@
         color: #000000;
         margin-top: 80px;
         margin-bottom: 60px;
+        max-width: 850px;
+
+        @include for-tablet-landscape {
+            font-size: 32px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        @include for-tablet-portrait {
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        @include for-phone {
+            font-size: clamp(20px, 6.5vw, 24px);  
+            
+        }
     }
     p {
         font-family: $montserrat;
@@ -20,8 +41,23 @@
         line-height: 134.4%;
         color: #000000;
         margin-bottom: 25px;
+
+        @include for-tablet-landscape {
+            font-size: 20px;
+        }
+        @include for-tablet-portrait {
+            font-size: 18px;
+        }
+        @include for-phone {
+            font-size: clamp(14px, 4.3vw, 17px);  
+            margin-bottom: 20px;
+        }
+
         &:last-child {
             margin-bottom: 0;
+            @include for-phone {
+                margin-bottom: 20px;
+            }
         }
         span.link {
             background: linear-gradient(90deg, #3957ED 0%, #65F0F4 100%);
@@ -37,8 +73,17 @@
     img {
         margin: 35px 0 0;
         width: 100%;
-        height: 497px;
+        height: auto;
+        min-height: 200px;
+        max-height: 497px;
         object-fit: cover;
         border-radius: 30px;
+
+        @include for-tablet-portrait {
+            margin: 15px 0 0;
+        }
+        @include for-phone {
+            margin: 0;
+        }
     }
 }
