@@ -11,12 +11,20 @@
             font-size: 36px;
             line-height: 41px;
             color: #000000;
+            @include for-phone-portrait {
+                margin-top: 30px;
+                font-size: 18px;
+                line-height: 20px;
+            }
         }
         .promo__image {
             max-width: 529px;
             margin-right: 60px;
             @include for-desk {
                 margin-right: 30px;
+            }
+            @include for-tablet-portrait {
+                margin-right: 0;
             }
         }
         .promo__text {
@@ -51,28 +59,7 @@
                 line-height: 14px;
             }
         }
-        .promo__text {
-            margin-top: 55px;
-            font-size: 28px;
-            line-height: 38px;
-            @include for-desk {
-                max-width: 605px;
-            }
-            @include for-tablet-landscape {
-                margin-top: 40px;
-                font-size: 24px;
-                line-height: 32px;
-            }
-            @include for-tablet-portrait {
-                font-size: 20px;
-                line-height: 27px;
-            }
-            @include for-phone-portrait {
-                margin-top: 30px;
-                font-size: 16px;
-                line-height: 22px;
-            }
-        }
+        
         .promo__image {
             max-width: 561px;
             margin-right: 58px;
@@ -142,6 +129,23 @@
         font-size: 24px;
         line-height: 32px;
         color: #000000;
+        @include for-desk {
+            max-width: 605px;
+        }
+        @include for-tablet-landscape {
+            margin-top: 40px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        @include for-tablet-portrait {
+            font-size: 20px;
+            line-height: 27px;
+        }
+        @include for-phone-portrait {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 
     &__btn {
@@ -158,6 +162,11 @@
         font-size: 20px;
         line-height: 19px;
         color: #FFFFFF;
+        @include for-phone-portrait {
+            padding: 18px 45px;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__plan {
@@ -182,6 +191,9 @@
         max-width: 406px;
         width: 100%;
         margin-right: 121px;
+        @include for-tablet-landscape {
+            margin-right: 0;
+        }
     }
 
     &__btns {

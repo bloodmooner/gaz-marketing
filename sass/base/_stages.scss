@@ -5,15 +5,6 @@
             max-width: 590px;
             width: 100%;
         }
-        .stages__wrapper {
-            margin-bottom: 78px;
-            @include for-desk {
-                margin-bottom: 60px;
-            }
-            @include for-phone-portrait {
-                margin-bottom: 50px;
-            }
-        }
     }
 
     &_context {
@@ -28,6 +19,12 @@
 
     &__wrapper {
         margin-bottom: 60px;
+        @include for-desk {
+            margin-bottom: 60px;
+        }
+        @include for-phone-portrait {
+            margin-bottom: 50px;
+        }
     }
 
     &__title {
@@ -114,10 +111,24 @@
     }
 
     &__steps {
+        list-style-type: none;
     }
 
     &__step {
         margin-bottom: 4px;
+        position: relative;
+        padding-left: 23px;
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: 0;
+            top: 5px;
+            display: inline-block; 
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
+        }
         p {
             font-family: $montserrat;
             font-style: normal;

@@ -5,6 +5,14 @@
         @include for-desk {
             margin-top: 60px;
         }
+        @include for-tablet-portrait {
+            margin-bottom: 60px;
+            margin-bottom: 0;
+        }
+        @include for-phone-portrait {
+            margin-top: 50px;
+            
+        }
     }
 
     &__title {
@@ -21,6 +29,10 @@
         @include for-tablet-landscape {
             grid-template-columns: 1fr;
         }
+        @include for-phone-portrait {
+            gap: 50px;
+            margin-top: 40px;
+        }
     }
 
     &__trust {
@@ -34,6 +46,9 @@
         @include for-tablet-portrait {
             grid-template-columns: repeat(2, 1fr);
         }
+        @include for-phone-portrait {
+            gap: 20px;
+        }
     }
 
     &__trust-item {
@@ -46,22 +61,38 @@
         &:nth-child(1) {
             .about-us__trust-icon {
                 width: 20%;
+                @include for-phone-portrait {
+                    width: 32%; 
+                }
             }
         }
         &:nth-child(2) {
             .about-us__trust-icon {
                 width: 49%;
+                @include for-phone-portrait {
+                    width: 57%;
+                }
             }
         }
         &:nth-child(3) {
             .about-us__trust-icon {
                 width: 31%;
+                @include for-phone-portrait {
+                    width: 42%;
+                }
             }
         }
         &:nth-child(4) {
             .about-us__trust-icon {
                 width: 50%;
+                @include for-phone-portrait {
+                    width: 59%;
+                }
             }
+        }
+        @include for-phone-portrait {
+            box-shadow: 0px 8px 18px -5px rgba(101, 240, 244, 0.74);
+            border-radius: 10px;
         }
     }
 
@@ -74,6 +105,12 @@
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
+        @include for-phone-portrait {
+            box-shadow: none;
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+        }
     }
 
     &__subtitle {
@@ -92,6 +129,14 @@
         }
         @include for-tablet-portrait {
             grid-template-columns: repeat(3, 1fr);
+        }
+        @include for-phone-portrait {
+            grid-template-columns: repeat(3, 140px);
+            column-gap: 42px;
+            justify-content: space-between;
+        }
+        @include for-phone {
+            grid-template-columns: repeat(2, 110px);
         }
     }
 

@@ -7,71 +7,10 @@
         }
         .plans__title {
             max-width: 884px;
-        }
-        .plans__list {
-            margin-top: 50px;
-            @include for-desk {
-                margin-top: 30px;
-            }
-        }
-        .plans__name {
-            margin-bottom: 20px;
-        }
-        .plans__bottom {
-            margin-top: 29px;
-        }
-        .plans__btn {
-            padding: 19px 58px;
-            @include for-desk {
-                padding: 15px 25px;
-            }
-            @include for-tablet-portrait {
-                padding: 10px 15px;
-            }
-        }
-        .plans__item {
-            padding: 28px 41px 40px 31px;
-            @include for-tablet-portrait {
-                padding: 20px;
-            }
-            @include for-phone-portrait {
-                padding: 28px 19px 40px 19px;
-            }
-        }
+        }  
     }
 
-    &_context {
-        .plans__list {
-            margin-top: 50px;
-            @include for-desk {
-                margin-top: 30px;
-            }
-        }
-        .plans__name {
-            margin-bottom: 20px;
-        }
-        .plans__bottom {
-            margin-top: 37px;
-        }
-        .plans__btn {
-            padding: 19px 70px;
-            @include for-desk {
-                padding: 15px 25px;
-            }
-            @include for-tablet-portrait {
-                padding: 10px 15px;
-            }
-        }
-        .plans__item {
-            padding: 28px 41px 40px 31px;
-            @include for-tablet-portrait {
-                padding: 20px;
-            }
-            @include for-phone-portrait {
-                padding: 28px 19px 40px 19px;
-            }
-        }
-    }
+    
 
     &__wrapper {
     }
@@ -85,6 +24,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        @include for-desk {
+            margin-top: 30px;
+        }
         @include for-phone-portrait {
             grid-template-columns: 1fr;
         }
@@ -98,12 +40,24 @@
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
+        @include for-tablet-portrait {
+            padding: 20px;
+        }
+        @include for-phone-portrait {
+            padding: 28px 19px 40px 19px;
+        }
         &_additional {
             padding: 0;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            @include for-tablet-landscape {
+                padding: 0 20px;
+            }
+            @include for-phone-portrait {
+                display: none;
+            }
         }
         &_black {
             background: #000000;
@@ -129,6 +83,9 @@
                     background-clip: text;
                     text-fill-color: transparent;
                 }
+            }
+            .plans__additional {
+                color: #FFFFFF;
             }
         }
         
@@ -158,10 +115,24 @@
     &__services {
         max-width: 521px;
         width: 100%;
+        list-style-type: none;
     }
 
     &__service {
         margin-bottom: 5px;
+        position: relative;
+        padding-left: 23px;
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: 0;
+            top: 5px;
+            display: inline-block; 
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
+        }
         p {
             font-family: $montserrat;
             font-style: normal;
@@ -184,19 +155,21 @@
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include for-tablet-landscape {
-            align-items: center;
-        }
-        @include for-phone-portrait {
-            margin-top: 20px;
             flex-direction: column-reverse;
             align-items: flex-start;
             gap: 30px;
+            margin-top: 20px;
         }
     }
 
     &__btn {
-        padding: 18px 25px;
+        padding: 18px 58px;
+        height: 60px;
+        @include for-desk {
+            padding: 18px 33px;
+        }
         span {
             font-family: $neuemachina;
             font-style: normal;
@@ -216,6 +189,9 @@
     }
 
     &__price {
+        @include for-tablet-landscape {
+            min-height: 52px;
+        }
     }
 
     &__number {
@@ -272,6 +248,9 @@
         font-size: 12px;
         line-height: 16px;
         color: #000000;
+        @include for-tablet-landscape {
+            max-width: 100%;
+        }
     }
 
     
@@ -291,6 +270,10 @@
         line-height: 29px;
         text-align: center;
         color: #000000;
+        @include for-tablet-portrait {
+            font-size: 20px;
+            line-height: 20px;
+        }
     }
 
     &__outer-text {
@@ -302,6 +285,11 @@
         line-height: 22px;
         text-align: center;
         color: #000000;
+        @include for-tablet-portrait {
+            margin-top: 18px;
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 
     &__outer-btn {
@@ -328,6 +316,78 @@
         z-index: 10;
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    &__addone {
+        display: none;
+        @include for-phone-portrait {
+            margin-top: 20px;
+            display: block;
+            padding: 28px 18px 40px 18px;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+    }
+
+    &__addone-content {
+    }
+
+    &__addone-title {
+        margin-bottom: 20px;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    &__addone-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    &__addone-bt {
+        margin-top: 24px;
+        width: 221px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 19px 27px;
+        background: linear-gradient(90deg, #65F0F4 0%, #3957ED 78%);
+        border-radius: 30px;
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
     }
 }
 
+
+.gradient-box {
+    position: relative;
+    box-sizing: border-box;
+    $border: 2px;
+    color: #FFF;
+    background: #FAF8F8;
+    background-clip: padding-box; 
+    border: solid $border transparent; 
+    border-radius: 1em;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -$border; 
+      border-radius: inherit; 
+      background: linear-gradient(to right, #65F0F4, #3957ED);
+    }
+}
+  

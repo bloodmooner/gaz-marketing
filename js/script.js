@@ -36,6 +36,8 @@ $(document).ready(function(){
     swipe: false,
     nextArrow: $(document).find('.cases__controls-arrow_left'),
     prevArrow: $(document).find('.cases__controls-arrow_right'),
+    fade: true,
+    cssEase: 'linear'
     /* asNavFor: '.cases__info-items' */
    });
 

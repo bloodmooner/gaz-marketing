@@ -3,7 +3,7 @@
 }
 
 .video__wrapper {
-    margin: 74px 0 59px 0;
+    margin: 74px 0 0 0;
 }
 
 @media(min-width:900px)and (max-width:1199px) {
@@ -56,6 +56,9 @@
     iframe {
         border-radius: 30px;
     }
+    @include for-phone-portrait {
+        height: 220px;
+    }
 }
 
 @media(max-width:599px) {
@@ -81,6 +84,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .video__play-btn {
@@ -93,6 +97,10 @@
 }
 
 .video__play-icon {
+    @include for-phone-portrait {
+        width: 68px;
+        height: 68px;
+    }
 }
 
 .video__youtube {

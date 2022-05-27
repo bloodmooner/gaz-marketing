@@ -1,7 +1,5 @@
 .success {
-    @include for-desk {
-        display: none;
-    }
+    
     &__about-icon {
         cursor: pointer;
     }
@@ -15,6 +13,9 @@
         display: grid;
         grid-template-columns: 690px 750px;
         gap: 40px;
+        @include for-desk {
+            grid-template-columns: 535px 575px;
+        }
     }
 
     &__info {
@@ -60,10 +61,16 @@
 
     &__bottom {
         margin-top: 66px;
+        @include for-desk {
+            margin-top: 20px;
+        }
     }
 
     &__region {
         margin-bottom: 39px;
+        @include for-desk {
+            margin-bottom: 20px;
+        }
     }
 
     &__region-name {
@@ -81,6 +88,10 @@
         display: grid;
         grid-template-columns: 275px 1fr;
         gap: 35px;
+        @include for-desk {
+            grid-template-columns: 240px 1fr;
+            gap: 30px;
+        }
     }
 
     &__positions {

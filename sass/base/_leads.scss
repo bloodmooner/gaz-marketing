@@ -9,12 +9,21 @@
                 margin-top: 60px;
                 margin-bottom: 60px;
             }
+            @include for-phone-portrait {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
         }
     }
 
     &__wrapper {
-        margin-top: 80px;
         margin-bottom: 80px;
+        @include for-tablet-landscape {
+            margin-bottom: 30px;
+        }
+        @include for-phone-portrait {
+            margin-bottom: 40px;
+        }
     }
 
     &__title {
@@ -31,6 +40,9 @@
         @include for-tablet-landscape {
             grid-template-columns: 1fr;
         }
+        @include for-phone-portrait {
+            margin-top: 40px;
+        }
     }
 
     &__info {
@@ -44,6 +56,9 @@
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
+        @include for-phone-portrait {
+            padding: 28px 19px;
+        }
     }
 
     &__info-head {
@@ -52,6 +67,9 @@
         align-items: center;
         @include for-tablet-landscape {
             gap: 30px;
+        }
+        @include for-phone-portrait {
+            gap: 15px;
         }
     }
 
@@ -77,12 +95,18 @@
         font-size: 16px;
         line-height: 22px;
         color: #000000;
+        @include for-phone-portrait {
+            display: none;
+        }
     }
 
     &__info-icon {
         max-width: 66px;
         width: 100%;
         aspect-ratio: 1/1;
+        @include for-phone-portrait {
+            max-width: 45px;
+        }
     }
 
     &__order {
@@ -90,6 +114,9 @@
         background: #FFFFFF;
         box-shadow: 15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
+        @include for-phone-portrait {
+            padding: 28px 25px;
+        }
     }
 
     &__order-content {
@@ -118,5 +145,11 @@
         font-size: 20px;
         line-height: 19px;
         color: #FFFFFF;
+        @include for-phone-portrait {
+            padding: 19px 48px;
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 14px;
+        }
     }
 }
