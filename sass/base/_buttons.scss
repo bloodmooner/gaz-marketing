@@ -22,7 +22,19 @@ border-radius: 40px; */
             color: #000000;
         }
     }
+
+    &_mobile-menu {
+        width: 182px;
+        height: 44px;        
+        background: #FFFFFF;
+        border-radius: 30px; 
+
+        font-family: 'Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+    }
 }
-
-
-

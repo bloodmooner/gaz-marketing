@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  //Menu toggle
+  $('.header__burger-icon').on('click', function() {
+    $('.header-mobile').addClass('header-mobile_active');
+  });
+  $('.header-mobile__close-image').on('click', function() {
+    $('.header-mobile').removeClass('header-mobile_active');
+  });
+
   //Cases hover and add Class
   $(function () {
     $(".our-casses__list a, .portfolio__list a").hover(onIn, onOut);
