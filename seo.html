@@ -9,7 +9,7 @@
 
 
   <link rel="stylesheet" href="assets/libs/slick/slick.css">
-  <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css">
+  <link rel="stylesheet" href="assets/libs/fancy/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -221,7 +221,7 @@
                         <div class="order__inner">
                             <h2 class="title order__title">Не уверены в работе своего подрядчика по SEO?</h2>
                             <button class="btn order__btn">
-                                <span class="order__btn-text">Заказать разбор</span>
+                                <span class="order__btn-text js-open-modal-analysis">Заказать разбор</span>
                             </button>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                                     Успехи наших клиентов
                                 </h2>
 
-                                <div class="success__info-slider">
+                                <div class="success__info-slider slider">
                                     <div class="success__info-item">
 
                                         <div class="success__info-top">
@@ -293,7 +293,7 @@
                                                     <div class="success__positions-numbers-content">
                                                         <div class="success__positions-number">
                                                             <p class="success__positions-name">
-                                                                625
+                                                                425
                                                             </p>
                                                             <p class="success__positions-text">
                                                                 Трафик до нас
@@ -392,37 +392,92 @@
 
 
                         </div>
-                        <div class="success__about">
-                            <div class="success__about-container">
-                                <div class="success__about-slider">
-                                    <div class="success__about-item">
-                                        <img src="assets/img/seo/graph@1,5-min.png" alt="">
-                                        <a class="success__about-link" href="assets/img/seo/graph@1,5-min.png" data-fancybox="success" data-caption="BassZone1">
-                                            
-                                        </a>
+                        <div class="success__about-container">
+                            <div class="success__about">
+                                <div class="success__about-container">
+                                    <div class="success__about-slider slider">
+                                        <div class="success__about-item">
+                                            <img src="assets/img/seo/graph@1,5-min.png" alt="">
+                                            <a class="success__about-link" href="assets/img/seo/graph@1,5-min.png" data-fancybox="success" data-caption="BassZone1">
+                                                
+                                            </a>
+                                        </div>
+                                        <div class="success__about-item">
+                                            <img src="assets/img/seo/graph@1,5-min.png" alt="">
+                                            <a class="success__about-link" href="assets/img/seo/graph@1,5-min.png" data-fancybox="success" data-caption="BassZone2">
+                                                
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="success__about-item">
-                                        <img src="assets/img/seo/graph@1,5-min.png" alt="">
-                                        <a class="success__about-link" href="assets/img/seo/graph@1,5-min.png" data-fancybox="success" data-caption="BassZone2">
-                                            
-                                        </a>
+                                    <!-- <div class="success__about-btn">
+                                        <img class="success__about-icon" src="assets/svg/icons/lens.svg" alt="" >
+                                    </div> -->
+                                </div>
+                                <div class="success__about-controls">
+                                    <div class="success__about-btns">
+                                        <div class="success__about-arrow success__about-arrow_left">
+                                            <img src="assets/svg/icons/beforeslider-arrow-left.svg" alt="">
+                                        </div>
+                                        <div class="success__about-arrow success__about-arrow_right">
+                                            <img src="assets/svg/icons/beforeslider-arrow-right.svg" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- <div class="success__about-btn">
-                                    <img class="success__about-icon" src="assets/svg/icons/lens.svg" alt="" >
-                                </div> -->
                             </div>
-                            <div class="success__about-controls">
-                                <div class="success__about-btns">
-                                    <div class="success__about-arrow success__about-arrow_left">
-                                        <img src="assets/svg/icons/beforeslider-arrow-left.svg" alt="">
+
+
+                            <div class="success__positions-wrapper slider">
+                                <div class="success__positions-item">
+                                    <div class="success__positions-numbers">
+                                        <div class="success__positions-numbers-content">
+                                            <div class="success__positions-number">
+                                                <p class="success__positions-name">
+                                                    425
+                                                </p>
+                                                <p class="success__positions-text">
+                                                    Трафик до нас
+                                                </p>
+                                            </div>
+                                            <div class="success__positions-number">
+                                                <p class="success__positions-name">
+                                                    2165
+                                                </p>
+                                                <p class="success__positions-text">
+                                                    Трафик после нас
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="success__about-arrow success__about-arrow_right">
-                                        <img src="assets/svg/icons/beforeslider-arrow-right.svg" alt="">
+                                </div>
+                                <div class="success__positions-item">
+                                    <div class="success__positions-numbers">
+                                        <div class="success__positions-numbers-content">
+                                            <div class="success__positions-number">
+                                                <p class="success__positions-name">
+                                                    625
+                                                </p>
+                                                <p class="success__positions-text">
+                                                    Трафик до нас
+                                                </p>
+                                            </div>
+                                            <div class="success__positions-number">
+                                                <p class="success__positions-name">
+                                                    2165
+                                                </p>
+                                                <p class="success__positions-text">
+                                                    Трафик после нас
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            
+
+
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -630,6 +685,76 @@
                 </div>
             </div>
         </div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlays js-overlay-modal">
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите разбор</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
   
@@ -644,7 +769,7 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <script src="assets/libs/slick/slick.js"></script>
-  <script src="assets/libs/fancybox/fancybox.umd.js"></script>
+  <script src="assets/libs/fancy/jquery.fancybox.min.js"></script>
   <script src="assets/libs/maskedinput/jquery.maskedinput.min.js"></script>
   <script src="js/script.js"></script>
 </body>

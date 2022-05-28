@@ -40,7 +40,7 @@
                     </nav>
                     <div class="header__contacts">
                         <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
-                        <button class="btn header__btn">Оставить заявку</button>
+                        <button class="btn header__btn js-open-modal-order">Оставить заявку</button>
                     </div>
                     <div class="header__burger">
                         <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
@@ -84,7 +84,7 @@
                                 которые приносят пользу компаниям 
                                 и меняют их.
                             </div>
-                            <button class="btn btn_mobile-menu">Оставить заявку</button>
+                            <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
                             <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
                             <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                         </div>
@@ -114,7 +114,7 @@
                         </div>
                         <h1 class="title promo__title"><span>Продвижение</span> в VK/ Telegram/Яндекс.Дзен</h1>
                         <h2 class="title promo__subtitle">Таргетинг + SMM-продвижение</h2>
-                        <button class="btn btn_blue promo__btn">Оставить заявку</button>
+                        <button class="btn btn_blue promo__btn js-open-modal-order">Оставить заявку</button>
                     </div>
                     <div class="promo__additional">
                         <img class="promo__image" src="assets/img/smm/promo-bg@1,5-min.png" alt="" >
@@ -145,7 +145,7 @@
                         <div class="order__inner">
                             <h2 class="title order__title">Не уверены в работе своего SMM-продвижения?</h2>
                             <button class="btn order__btn">
-                                <span class="order__btn-text">Заказать разбор</span>
+                                <span class="order__btn-text js-open-modal-analysis">Заказать разбор</span>
                             </button>
                         </div>
                     </div>
@@ -459,7 +459,7 @@
                                     </ul>
                                 </div>
                                 <div class="plans__bottom">
-                                    <btn class="btn btn_dashed dashed-box-shadow plans__btn">Оставить заявку</btn>
+                                    <btn class="btn btn_dashed dashed-box-shadow plans__btn js-open-modal-order">Оставить заявку</btn>
                                     <div class="plans__price">
                                         <p class="plans__number"><span class="plans__number_mark">30000</span> рублей</p>
                                     </div>
@@ -493,7 +493,7 @@
                                     </ul>
                                 </div>
                                 <div class="plans__bottom">
-                                    <button class="btn btn_dashed plans__btn">Оставить заявку</button>
+                                    <button class="btn btn_dashed plans__btn js-open-modal-order">Оставить заявку</button>
                                     <div class="plans__price">
                                         <p class="plans__number"><span class="plans__number_mark">30000</span> рублей</p>
                                         <p class="plans__additional">+ Бюджет таргетированной рекламы</p>
@@ -525,7 +525,7 @@
                                     </ul>
                                 </div>
                                 <div class="plans__bottom">
-                                    <button class="btn btn_dashed plans__btn">
+                                    <button class="btn btn_dashed plans__btn js-open-modal-order">
                                         <span>Оставить заявку</span>
                                     </button>
                                     <div class="plans__price">
@@ -541,7 +541,7 @@
                                         <p class="plans__outer-text">
                                             Для это вы можете связаться с нами по телефону, указанному на сайте, или оставить заявку
                                         </p>
-                                        <button class="btn plans__outer-btn">
+                                        <button class="btn plans__outer-btn js-open-modal-order">
                                             <span>Оставить заявку</span>
                                         </button>
                                     </div>
@@ -558,7 +558,7 @@
                                 <p class="plans__addone-text">
                                     Для это вы можете связаться с нами по телефону, указанному на сайте, или оставить заявку
                                 </p>
-                                <button class="btn plans__addone-bt">Оставить заявку</button>
+                                <button class="btn plans__addone-bt js-open-modal-order">Оставить заявку</button>
                             </div>
                         </div>
                 </div>
@@ -638,6 +638,77 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlays js-overlay-modal">
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите разбор</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

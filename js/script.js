@@ -1,12 +1,17 @@
 $(document).ready(function(){
 
+
+  let menuIsOpen = false;
   //Menu toggle
   $('.header__burger-icon').on('click', function() {
     $('.header-mobile').addClass('header-mobile_active');
+    menuIsOpen = true;
   });
   $('.header-mobile__close-image').on('click', function() {
     $('.header-mobile').removeClass('header-mobile_active');
+    menuIsOpen = false;
   });
+
 
   //Cases hover and add Class
   $(function () {
@@ -30,14 +35,31 @@ $(document).ready(function(){
 
  
 
-  $('.js-open-modal').on('click', function(){
+  $('.js-open-modal-order').on('click', function(){
+    if($('.header-mobile').hasClass('header-mobile_active')) {
+      $('.header-mobile').removeClass('header-mobile_active');
+    }
     $('.overlays').addClass('overlays_active');
+    $('.modal_order').addClass('modal_order-active');
   });
  
-  $('.modal__close ').on('click', function(){
+  $('.modal__close').on('click', function(){
     $('.overlays').removeClass('overlays_active');
+    $('.modal_order').removeClass('modal_order-active');
   });
 
+  $('.js-open-modal-analysis').on('click', function(){
+    $('.overlays').addClass('overlays_active');
+    $('.modal_analysis').addClass('modal_analysis-active');
+  });
+ 
+  $('.modal__close').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+    $('.modal_analysis').removeClass('modal_analysis-active');
+  });
+
+
+  
 
   $('.cases__outer-items').slick({
     slidesToShow: 1,
@@ -75,7 +97,9 @@ $(document).ready(function(){
     /* swipe: false, */
     nextArrow: $(document).find('.success__about-arrow_right'),
     prevArrow: $(document).find('.success__about-arrow_left'),
-    asNavFor: '.success__info-slider'
+    fade: true,
+    cssEase: 'linear',
+    asNavFor: '.slider',
    });
 
    $('.success__info-slider').slick({
@@ -85,7 +109,20 @@ $(document).ready(function(){
     dots: false,
     arrows: false,
     /* swipe: false, */
-    asNavFor: '.success__about-slider'
+    asNavFor: '.slider',
+    fade: true,
+    cssEase: 'linear'
+   });
+
+   $('.success__positions-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: false,
+    asNavFor: '.slider',
+    fade: true,
+    cssEase: 'linear'
    });
 
 });
@@ -125,6 +162,7 @@ $(function() {
   });
   
   
+
 
 
 

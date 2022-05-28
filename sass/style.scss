@@ -127,3 +127,18 @@ body {
     display: block;
   }
 }
+
+
+
+slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+*{
+  min-height: 0;
+  min-width: 0;
+  }

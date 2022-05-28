@@ -40,7 +40,7 @@
                     </nav>
                     <div class="header__contacts">
                         <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
-                        <button class="btn header__btn js-open-modal">Оставить заявку</button>
+                        <button class="btn header__btn js-open-modal-order">Оставить заявку</button>
                     </div>
                     <div class="header__burger">
                         <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
@@ -84,7 +84,7 @@
                                 которые приносят пользу компаниям 
                                 и меняют их.
                             </div>
-                            <button class="btn btn_mobile-menu">Оставить заявку</button>
+                            <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
                             <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
                             <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                         </div>
@@ -117,7 +117,7 @@
                         <p class="promo__text">
                             Сконвертируем ваш бюджет в лиды <br> с тройной выгодой
                         </p>
-                        <button class="btn btn_blue promo__btn">Оставить заявку</button>
+                        <button class="btn btn_blue promo__btn js-open-modal-order">Оставить заявку</button>
                     </div>
                     <div class="promo__additional">
                         <img class="promo__image" src="assets/img/context/context_bg@1,5-min.png" alt="" >
@@ -216,7 +216,7 @@
                                         
                                     <div class="cases__slider">
                                         <h3 class="cases__slider-title">
-                                            Контекстная реклама для завода-производителя коммунальной техники «Кургандормаш»1
+                                            Контекстная реклама для «Кургандормаш»1
                                         </h3>
     
                                         <div class="cases__slider-item">
@@ -292,7 +292,7 @@
                                     <div class="cases__slider">
     
                                             <h3 class="cases__slider-title">
-                                                Контекстная реклама для завода-производителя коммунальной техники «Кургандормаш»2
+                                                Контекстная реклама для «Кургандормаш»2
                                             </h3>
     
                                             <div class="cases__slider-item">
@@ -322,7 +322,7 @@
                         <div class="order__inner">
                             <h2 class="title order__title">Не уверены в работе своей контекстной рекламы?</h2>
                             <button class="btn order__btn">
-                                <span class="order__btn-text">Заказать разбор</span>
+                                <span class="order__btn-text js-open-modal-analysis">Заказать разбор</span>
                             </button>
                         </div>
                     </div>
@@ -366,7 +366,7 @@
                         <div class="leads__order">
                             <div class="leads__order-content">
                                 <img class="leads__order-image" src="assets/img/context/bi@1,5-min.png" alt="" >
-                                <button class="btn leads__order-btn">Оставить заявку</button>
+                                <button class="btn leads__order-btn js-open-modal-order">Оставить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -460,7 +460,7 @@
                                 <p class="plans__outer-text">
                                     Сделаем подробный анализ ваших рекламных кампаний и предоставим бесплатный отчет
                                 </p>
-                                <button class="btn plans__outer-btn">Заказать аудит</button>
+                                <button class="btn plans__outer-btn js-open-modal-analysis">Заказать аудит</button>
                             </div>
                             <img class="plans__outer-image" src="assets/img/smm/plan@1,5-min.png" alt="" >
                         
@@ -501,7 +501,7 @@
                                     </ul>
                                 </div>
                                 <div class="plans__bottom">
-                                    <button class="btn btn_dashed plans__btn">Оставить заявку</button>
+                                    <button class="btn btn_dashed plans__btn js-open-modal-order">Оставить заявку</button>
                                     <div class="plans__price">
                                         <p class="plans__number"><span class="plans__number_mark">15000</span> рублей</p>
                                     </div>
@@ -532,7 +532,7 @@
                                     </ul>
                                 </div>
                                 <div class="plans__bottom">
-                                    <button class="btn btn_dashed plans__btn">Оставить заявку</button>
+                                    <button class="btn btn_dashed plans__btn js-open-modal-order">Оставить заявку</button>
                                     <div class="plans__price">
                                         <p class="plans__number"><span class="plans__number_mark">10000</span> рублей</p>
                                     </div>
@@ -547,7 +547,7 @@
                                 <p class="plans__addone-text">
                                     Сделаем подробный анализ ваших рекламных  кампаний и предоставим беспланый отчет. 
                                 </p>
-                                <button class="btn plans__addone-bt">Оставить заявку</button>
+                                <button class="btn plans__addone-bt js-open-modal-order">Оставить заявку</button>
                             </div>
                         </div>
                 </div>
@@ -710,31 +710,32 @@
 
         <!-- Подложка под модальным окном -->
         <div class="overlays js-overlay-modal">
-            <div class="modal">
-            <div class="modal__container">
-                <div class="modal__close">
-                    <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
-                </div>
-                <div class="application application_modal">
-                    <div class="container">
-                        <div class="application__wrapper">
-                            <div class="application__outer">
-                                <div class="application__name">
-                                    <h2 class="title application__title">
-                                        <span>Оставить заявку</span>
-                                    </h2>
-                                </div>
-                                <div class="application__inner">
-                                    <form action="#" class="application__form">
-                                        <input type="text" class="application__input" placeholder="Имя*">
-                                        <input type="text" class="application__input" placeholder="Телефон*">
-                                        <input type="text" class="application__input" placeholder="Почта">
-                                        <button class="btn application__btn">Оставить заявку</button>
-                                    </form>
-                                    <div class="application__polytics">
-                                        <p class="application__polytics-text">
-                                            Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
-                                        </p>
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -742,6 +743,38 @@
                     </div>
                 </div>
             </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите разбор</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn">Оставить заявку</button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

@@ -4,24 +4,34 @@
     &_context {
         padding: 20px 0 160px 0;
         @include for-tablet-portrait {
-            padding: 60px 0;
+            padding: 0 0 50px 0;
         }
         .leads__wrapper {
             
         }
     }
 
+    .container {
+        @include for-phone-portrait {
+            padding: 0 19px;
+        }
+    }
+
     &__wrapper {
-        margin-bottom: 80px;
+        /* margin-bottom: 80px;
         @include for-tablet-landscape {
             margin-bottom: 30px;
         }
         @include for-phone-portrait {
             margin-bottom: 40px;
-        }
+        } */
     }
 
     &__title {
+        @include for-phone-portrait {
+            max-width: 300px;
+            padding-left: 19px;
+        }
     }
 
     &__outer {

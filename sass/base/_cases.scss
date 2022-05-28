@@ -19,6 +19,9 @@
 
     &_context {
         padding: 65px 0 60px 0;
+        @include for-tablet-portrait {
+            padding: 65px 0 0 0;
+        }
         .cases__outer {
             margin-top: 20px;
         }
@@ -30,14 +33,14 @@
     }
 
     &_seo {
+        padding: 80px 0 0 0;
+        @include for-tablet-portrait {
+            padding: 50px 0 0 0;
+        }
         .container {
             @include for-tablet-portrait {
                 max-width: 100%;
-                padding: 0 36px;
-            }
-            @include for-phone {
-                max-width: 100%;
-                padding: 0 36px;
+                padding: 0 19px;
             }
         }
         .cases__outer {
@@ -393,7 +396,7 @@
         position: relative;
         @include for-desk {
             max-width: 1150px;
-            margin: 30px auto 0 auto;
+            margin: 40px auto 0 auto;
         }
         @include for-tablet-landscape {
             max-width: 100%;
@@ -403,6 +406,7 @@
             max-width: 100%;
             padding: 0 36px;
             grid-template-columns: 1fr;
+            gap: 10px;
         }
         @include for-phone {
             max-width: 100%;
