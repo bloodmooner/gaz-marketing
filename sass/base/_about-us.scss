@@ -1,18 +1,11 @@
 .about-us {
+    padding: 80px 0 0 0;
+    @include for-tablet-portrait {
+        padding: 60px 0 0 0;
+    }
 
     &__wrapper {
-        margin-top: 71px;
-        @include for-desk {
-            margin-top: 60px;
-        }
-        @include for-tablet-portrait {
-            margin-bottom: 60px;
-            margin-bottom: 0;
-        }
-        @include for-phone-portrait {
-            margin-top: 50px;
-            
-        }
+        
     }
 
     &__title {

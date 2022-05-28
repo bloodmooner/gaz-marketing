@@ -1,4 +1,6 @@
 .promo {
+    padding-bottom: 20px;
+
 
     &_context {
         .promo__subtitle {
@@ -118,6 +120,11 @@
         font-size: 28px;
         line-height: 38px;
         color: #000000;
+        @include for-tablet-portrait {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
     
     &__text {
@@ -191,8 +198,14 @@
         max-width: 406px;
         width: 100%;
         margin-right: 121px;
+        @include for-desk {
+            margin-right: 0;
+        }
         @include for-tablet-landscape {
             margin-right: 0;
+        }
+        @include for-tablet-portrait {
+            max-width: 100%;
         }
     }
 

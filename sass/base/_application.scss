@@ -1,5 +1,9 @@
 .application {
-
+    padding: 80px 0;
+    @include for-tablet-landscape {
+        padding: 60px 0;
+    }
+    
 
     @include for-tablet-portrait {
         order: 1;
@@ -7,6 +11,35 @@
         background: #000000;
         position: relative;
         top: 1px;
+    }
+
+    &_modal {
+        padding: 0;
+        .application__name {
+            background: #FFFFFF;
+        }
+        .application__title {
+            width: initial;
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+        .application__outer {
+            grid-template-columns: 760px 720px;
+            @include for-desk {
+                grid-template-columns: 435px 1fr;
+            }
+        }
+        .application__wrapper {
+            max-width: 100%;
+        }
+        .application__polytics-text {
+            text-align: left;
+        }
     }
 
     &_seo {
@@ -32,16 +65,7 @@
     &__wrapper {
         max-width: 1240px;
         width: 100%;
-        margin: 80px auto;
-        @include for-desk {
-            margin: 60px auto;
-        }
-        @include for-tablet-portrait {
-            margin: 60px auto 0 auto;
-        }
-        @include for-phone-portrait {
-            margin: 40px auto 0 auto;
-        }
+        margin: 0 auto;
     }
 
     &__outer {

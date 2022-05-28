@@ -2,17 +2,12 @@
 
 
     &_context {
+        padding: 20px 0 160px 0;
+        @include for-tablet-portrait {
+            padding: 60px 0;
+        }
         .leads__wrapper {
-            margin-top: 73px;
-            margin-bottom: 151px;
-            @include for-desk {
-                margin-top: 60px;
-                margin-bottom: 60px;
-            }
-            @include for-phone-portrait {
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
+            
         }
     }
 
@@ -110,7 +105,7 @@
     }
 
     &__order {
-        padding: 38px 36px 45px 36px;
+        padding: 28px 36px 28px 36px;
         background: #FFFFFF;
         box-shadow: 15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;

@@ -20,11 +20,15 @@ $(document).ready(function(){
   });
 
 
-  $('.stages__item').click(function(){
-    $(this).find('.stages__text').toggle(1000);
+ 
+
+  $('.js-open-modal').on('click', function(){
+    $('.overlays').addClass('overlays_active');
   });
-
-
+ 
+  $('.modal__close ').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+  });
 
 
   $('.cases__outer-items').slick({

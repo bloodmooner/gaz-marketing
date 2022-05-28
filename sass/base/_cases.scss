@@ -1,4 +1,10 @@
 .cases {
+    padding: 20px 0 80px 0;
+    @include for-tablet-landscape {
+        padding: 0 0 60px 0;
+    }
+
+
 
     @include for-desk {
         /* display: none; */
@@ -12,6 +18,7 @@
     }
 
     &_context {
+        padding: 65px 0 60px 0;
         .cases__outer {
             margin-top: 20px;
         }
@@ -123,16 +130,7 @@
     }
 
     &__wrapper {
-        margin-top: 71px;
-        margin-bottom: 80px;
-        @include for-desk {
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-        @include for-tablet-landscape {
-            margin-top: 60px;
-            margin-bottom: 0;
-        }
+        
     }
 
     &__subwrapper {
@@ -154,9 +152,10 @@
             max-width: 100%;
             padding: 0 36px;
         }
-        @include for-phone {
-            max-width: 100%;
-            padding: 0 36px;
+        @include for-phone-portrait {
+            margin: initial;
+            max-width: 299px;
+            padding: 0 37px;
         }
     }
 
@@ -176,6 +175,7 @@
             grid-template-columns: 1fr;
             padding-left: 0;
             padding-right: 0;
+            margin-top: 0;
         }
     }
 
@@ -201,7 +201,7 @@
         @include for-tablet-portrait {
             box-shadow: none;
             background: none;
-            padding: 28px 15px 40px 15px;
+            padding: 0px 18px 0px 18px;
         }
     }
 
@@ -224,8 +224,9 @@
             min-height: 42px;
         }
         @include for-phone-portrait {
-            font-size: 16px;
-            line-height: 18px;
+            min-height: auto;
+            font-size: 18px;
+            line-height: 25px;
         }
     }
 
@@ -259,6 +260,8 @@
         }
         @include for-phone-portrait {
             flex-direction: column;
+            margin-top: 23px;
+            gap: 13px;
         }
     }
 
@@ -283,6 +286,10 @@
         @include for-tablet-landscape {
             font-size: 22px;
             line-height: 24px;
+        }
+        @include for-phone-portrait {
+            font-size: 26px;
+            line-height: 35px;
         }
     }
 
@@ -313,7 +320,7 @@
         @include for-tablet-portrait {
             position: absolute;
             right: 0;
-            top: 15px;
+            top: 0;
         }
     }
 
@@ -321,6 +328,9 @@
         display: flex;
         justify-content: center;
         gap: 40px;
+        @include for-phone-portrait {
+            gap: 11px;
+        }
     }
 
     &__controls-arrow {
@@ -334,17 +344,33 @@
         border-radius: 100%;
         cursor: pointer;
         &_left {
+            .cases__controls-icon {
+                position: relative;
+                left: -2px;
+            }
         }
 
         &_right {
+            .cases__controls-icon {
+                position: relative;
+                right: -1px;
+            }
         }
         @include for-tablet-portrait {
             width: 45px;
             height: 45px;
         }
+        @include for-phone-portrait {
+            width: 36px;
+            height: 36px;
+        }
     }
 
     &__controls-icon {
+        @include for-phone-portrait {
+            width: 21px;
+            height: 21px;
+        }
     }
 
     &__image {
@@ -404,9 +430,9 @@
             max-width: 100%;
             padding: 0 36px;
         }
-        @include for-phone {
+        @include for-phone-portrait {
             max-width: 100%;
-            padding: 0 36px;
+            padding: 0 19px;
         }
     }
 
@@ -713,7 +739,7 @@
     &__slider-title {
        display: none;
        @include for-tablet-portrait {
-           padding: 0 15px;
+           padding: 0 19px;
            display: block;
            margin-bottom: 20px;
            margin-top: 30px;
@@ -722,6 +748,11 @@
            font-size: 23px;
            line-height: 26px;
        } 
+       @include for-phone-portrait {
+           margin-bottom: 30px;
+           font-size: 18px;
+           line-height: 20px;
+       }
     }
 
     &__slider-items {
@@ -735,10 +766,17 @@
         }
         img {
             width: 100%;
+            height: 688px;
+            object-fit: cover;
+            border-radius: 30px;
+            @include for-tablet-landscape {
+                height: 600px;
+            }
             @include for-tablet-portrait {
                 height: 400px;
-                object-fit: cover;
-                border-radius: 30px;
+            }
+            @include for-phone {
+                height: 323px;
             }
         }
     }

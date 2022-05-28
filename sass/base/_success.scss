@@ -16,6 +16,9 @@
         @include for-desk {
             grid-template-columns: 535px 575px;
         }
+        @include for-tablet-landscape {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__info {

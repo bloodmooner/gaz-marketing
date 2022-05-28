@@ -4,6 +4,13 @@
     &_dashed {
         border: 3px dashed #000000;
         border-radius: 36px;
+        /* width: 276px;
+        height: 62px; */
+        /* background-image: url('../../assets/img/dashed-btn.png');
+        background-size: cover;
+        background-repeat: no-repeat; */
+        /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='black' stroke-width='3' stroke-dasharray='51' stroke-dashoffset='79' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 40px; */
         @include for-phone-portrait {
             border: none;
             box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
@@ -16,3 +23,6 @@
         }
     }
 }
+
+
+
