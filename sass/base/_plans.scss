@@ -90,6 +90,15 @@
                     background-clip: text;
                     text-fill-color: transparent;
                 }
+                &:hover {
+                    span {
+                        background: linear-gradient(90deg, #000000 -17.82%, #000000 98.46%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
             }
             .plans__additional {
                 color: #FFFFFF;
@@ -163,7 +172,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include for-tablet-landscape {
+        @include for-desk {
             flex-direction: column-reverse;
             align-items: flex-start;
             gap: 30px;
@@ -172,20 +181,28 @@
     }
 
     &__btn {
-        padding: 18px 58px;
+        position: relative;
         height: 62px;
         text-align: center;
         border-radius: 30px;
-        @include for-desk {
-            padding: 18px 33px;
+        width: 276px;
+        @include for-phone {
+            width: 186px;
+            height: 44px;
         }
         span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 100%;
             font-family: $neuemachina;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 19px;
             color: #000000;
+            cursor: pointer;
             @include for-tablet-landscape {
                 font-size: 16px;
                 line-height: 16px;
@@ -226,8 +243,8 @@
                 line-height: 36px;
             }
             @include for-tablet-portrait {
-                font-size: 17px;
-                line-height: 19px;
+                font-size: 24px;
+                line-height: 24px;
             }
             @include for-phone-portrait {
                 font-size: 32px;
@@ -239,7 +256,7 @@
             line-height: 19px;
         }
         @include for-tablet-portrait {
-            font-size: 14px;
+            font-size: 17px;
             line-height: 17px;
         }
         @include for-phone-portrait {

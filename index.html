@@ -40,7 +40,9 @@
                     </nav>
                     <div class="header__contacts">
                         <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
-                        <button class="btn header__btn">Оставить заявку</button>
+                        <button class="btn header__btn btn_bbtn js-open-modal-order">
+                            <span>Оставить заявку</span>
+                        </button>
                     </div>
                     <div class="header__burger">
                         <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
@@ -84,7 +86,7 @@
                                 которые приносят пользу компаниям 
                                 и меняют их.
                             </div>
-                            <button class="btn btn_mobile-menu">Оставить заявку</button>
+                            <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
                             <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
                             <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                         </div>
@@ -156,7 +158,9 @@
                                 <input type="text" class="application__input" placeholder="Имя*">
                                 <input type="text" class="application__input" placeholder="Телефон*">
                                 <input type="text" class="application__input" placeholder="Почта">
-                                <button class="btn application__btn">Оставить заявку</button>
+                                <button class="btn application__btn btn_bwbtn">
+                                    <span>Оставить заявку</span>
+                                </button>
                             </form>
                             <div class="application__polytics">
                                 <p class="application__polytics-text">
@@ -192,30 +196,30 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__main">
-                    <a class="footer__logo" href="index.html" >
+                    <a class="footer__logo" href="#" >
                         <img src="assets/svg/logo.svg" alt="" class="footer__logo-icon">
                     </a>
                     <nav class="footer__menu">
                         <ul class="footer__menu-list">
                             <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="porfolio.html" >Портфолио</a>
+                                <a class="footer__menu-link" href="#" >Портфолио</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="seo.html" >SEO</a>
+                                <a class="footer__menu-link" href="#" >SEO</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="context.html" >Контекст</a>
+                                <a class="footer__menu-link" href="#" >Контекст</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="smm.html" >SMM</a>
+                                <a class="footer__menu-link" href="#" >SMM</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="footer__contacts">
                     <div class="footer__contacts-items">
-                        <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>
-                        
+                        <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com"><span>order@gaz-marketing.com</span></a>
+                        <a class="footer__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
                         <ul class="footer__contacts-social">
                             <li class="footer__contacts-social-item">
                                 <a class="footer__contacts-social-link" href="#" >
@@ -233,6 +237,80 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlays js-overlay-modal">
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите разбор</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="№" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

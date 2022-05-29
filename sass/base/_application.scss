@@ -77,10 +77,10 @@
         .application__outer {
             grid-template-columns: 760px 720px;
             @include for-desk {
-                grid-template-columns: 435px 1fr;
+                grid-template-columns: 435px 715px;
             }
             @include for-tablet-landscape {
-                grid-template-columns: 300px 1fr;
+                grid-template-columns: 435px 1fr;
             }
             @include for-tablet-portrait {
                 grid-template-columns: 1fr;
@@ -256,11 +256,18 @@
         padding: 20px 48px;
         background: #FFFFFF;
         border-radius: 30px;
-        font-family: $neuemachina;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 15px;
+        span {
+            font-family: $neuemachina;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+            background: linear-gradient(90deg, #000000 0%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
         @include for-phone-portrait {
             grid-column: 1/3;
             grid-row: 4/5;

@@ -4,6 +4,11 @@
         padding: 0 0 60px 0;
     }
 
+    .container {
+        @include for-tablet-portrait {
+            padding: 0 19px;
+        }
+    }
 
     &__about-icon {
         cursor: pointer;
@@ -41,11 +46,23 @@
     }
 
     &__info-top {
+        @include for-tablet-portrait {
+            padding-left: 19px;
+        }
+    }
+
+    &__positions-wrapper {
+        @include for-tablet-portrait {
+            padding-left: 19px;
+        }
     }
 
     &__info-title {
         max-width: 590px;
         width: 100%;
+        @include for-tablet-portrait {
+            padding-left: 19px;
+        }
     }
 
     &__info-text {
@@ -256,6 +273,10 @@
         right: 0;
         bottom: -6px;
         z-index: 100;
+        @include for-tablet-portrait {
+            width: 25px;
+            height: 28px;
+        }
     }
 
     &__about-btn {

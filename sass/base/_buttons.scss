@@ -2,6 +2,7 @@
     border: none;
     background-color: transparent;
     &_dashed {
+        height: 50px;
         border-radius: 36px;
         position: relative;
         @include for-phone-portrait {
@@ -40,6 +41,42 @@
         transition: $animate-fast;
         &:hover {
             color: #000000;
+        }
+    }
+
+    &_bwbtn {
+        &:hover {
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+
+    &_gdbtn {
+        &:hover {
+            span {
+                background: linear-gradient(90deg, #000000 0%, #000000 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+
+    &_bbtn {
+        &:hover {
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
         }
     }
 

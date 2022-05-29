@@ -14,7 +14,7 @@
             line-height: 41px;
             color: #000000;
             @include for-tablet-landscape {
-                font-size: 33px;
+                font-size: 32px;
                 line-height: 38px;
             }
             @include for-phone-portrait {
@@ -46,12 +46,13 @@
             padding: 23px 34px;
             @include for-desk {
                 width: 360px;
-                padding: 23px 17px;
+                padding: 23px 15px;
+                font-size: 18px;
             }
             @include for-tablet-landscape {
-                width: 315px;
-                padding: 10px 10px;
-                font-size: 17px;
+                width: 305px;
+                padding: 7px 8px;
+                font-size: 16px;
             }
             @include for-tablet-portrait {
                 width: 250px;
@@ -196,8 +197,11 @@
     }
 
     &__plan {
-        height: 66px;
+        height: 73px;
+        width: 276px;
         padding: 15px 25px;
+        position: relative;
+        color: #000000;
         @include for-tablet-landscape {
             height: 58px;
             padding: 10px 10px;
@@ -207,6 +211,15 @@
             height: 50px;
             font-size: 13px;
             line-height: 16px;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            width: 100%;
+            text-align: center;
         }
     }
 

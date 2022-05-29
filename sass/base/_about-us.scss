@@ -117,6 +117,9 @@
         grid-template-columns: repeat(3, 140px);
         column-gap: 92px;
         row-gap: 32px;
+        @include for-desk {
+            grid-template-columns: repeat(3, 1fr);
+        }
         @include for-tablet-landscape {
             grid-template-columns: repeat(4, 140px);
         }
