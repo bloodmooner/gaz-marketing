@@ -103,7 +103,11 @@ section, header, footer {
     padding: 0 36px;
   }
 }
-
+.thanks-or-error__container {
+  @include for-phone {
+      padding: 0 19px;
+  }
+}
 button:active, button:focus {
   outline: none;
 }

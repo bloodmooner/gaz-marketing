@@ -107,6 +107,12 @@
     &_context {
         
     }
+    &_politica {
+        display: none;
+        @include for-tablet-portrait {
+            display: block;
+        }
+    }
 
     &_mt {
         @include for-tablet-portrait {

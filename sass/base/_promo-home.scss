@@ -72,6 +72,22 @@ main.main {
 }
 .promo-home__btn_wrapper {
     display: flex;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        transition: all 0.3s;
+        @include for-tablet-landscape {
+           display: none;
+        }
+        &:hover {
+            path {
+                fill : url(#paint0_linear_646_2);
+            }
+        }
+    }
 }
 .promo-home__btn {
     position: relative;

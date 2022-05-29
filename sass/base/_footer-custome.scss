@@ -1,6 +1,10 @@
 .footer-custome {
     padding: 50px 0 40px;
     background: #000000;
+
+    @include for-phone-portrait {
+        padding: 40px 0;
+    }
 }
 
 .footer-custome__contacts-items {
@@ -8,6 +12,13 @@
     justify-content: space-between;
     max-width: 700px;
     margin: 0 auto;
+
+    @include for-phone-portrait {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
 }
 .footer-custome__contacts-mail {
     font-family: $montserrat;
@@ -16,6 +27,15 @@
     font-size: 20px;
     line-height: 124.4%;
     color: #FFFFFF;
+
+    @include for-phone-portrait {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    @include for-phone {
+        font-size: clamp(16px, 5.3vw, 20px);
+    }
 }
 .footer-custome__contacts-tel {
     font-family: 'Neue Machina';
@@ -25,6 +45,15 @@
     line-height: 124.4%;
     color: #FFFFFF;
     text-decoration: underline;
+
+    @include for-phone-portrait {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    @include for-phone {
+        font-size: clamp(16px, 5.3vw, 20px);
+    }
 }
 .footer-custome__contacts-social {
     list-style-type: none;
