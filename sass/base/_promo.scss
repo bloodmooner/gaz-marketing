@@ -111,8 +111,22 @@
     &__title {
         max-width: 759px;
         width: 100%;
+        @include for-desk {
+            font-size: 50px;
+            max-width: 554px;
+        }
+        @include for-tablet-portrait {
+            font-size: 38px;
+            max-width: 440px;
+        }
+        @include for-phone {
+            font-size: 7vw;
+            padding-right: 7%;       
+        }
         span {
             font-family: $neuemachina;
+            display: inline-block;
+            padding: 0 2px 2px;
             background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
         }
     }
