@@ -82,15 +82,15 @@
         display: none;
     }
 }
-.promo-item__additional-mobile {
-    display: none;
+// .promo-item__additional-mobile {
+//     display: none;
 
-    @include for-tablet-portrait {
-        display: block;
-        padding: 0;
-        width: 100%;
-    }
-}
+//     @include for-tablet-portrait {
+//         display: block;
+//         padding: 0;
+//         width: 100%;
+//     }
+// }
 
 .promo-item__image {
     max-width: 720px;
