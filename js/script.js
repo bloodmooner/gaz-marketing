@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+    $('.loader').delay(2000).fadeOut('slow');
+});
+  
 $(document).ready(function(){
 
 
@@ -11,6 +15,16 @@ $(document).ready(function(){
     $('.header-mobile').removeClass('header-mobile_active');
     menuIsOpen = false;
   });
+
+  //Scroll menu
+
+ $(window).scroll(function(){
+  var sticky = $('.header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll > 0) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
 
 
   //Cases hover and add Class
