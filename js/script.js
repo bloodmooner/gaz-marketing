@@ -162,11 +162,32 @@ $(function() {
   });
   
   
+  //Before After Image
+  $(".slider").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.foreground-img').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+  });
 
 
+  //Before After Slider
+  $('.cases__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinity: true,
+    dots: false,
+    arrows: true,
+    swipe: false,
+    nextArrow: $(document).find('.cases__image-arrow-left'),
+    prevArrow: $(document).find('.cases__image-arrow-right'),
+    // fade: true,
+    // cssEase: 'linear'
+    /* asNavFor: '.cases__info-items' */
+   });
 
-
-  
 
   
 });
+
