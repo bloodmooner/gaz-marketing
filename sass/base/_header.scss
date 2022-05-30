@@ -1,4 +1,15 @@
 .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms;
+    @include for-phone-portrait {
+        transition-duration: 0ms;
+        -webkit-transition-duration: 0ms;
+    }
     
     &__wrapper {
         margin-top: 30px;
@@ -7,11 +18,27 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        .fixed & {
+            margin-bottom: 30px;
+        }
     }
 
     &__logo {
         display: flex;
         justify-content: center;
+
+        .fixed & {
+            position: absolute;
+            top: 0;
+            left: 45%;
+
+            @include for-phone-portrait {                
+                position: static;
+                top: auto;
+                left: auto;
+            }
+        }
     }
 
     &__logo-link {
