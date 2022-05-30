@@ -188,6 +188,19 @@ $(function() {
    });
 
 
+   $('.cases__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    var CurrentSlideDom=$(slick.$slides.get(currentSlide));
+    var NextSlideDom=$(slick.$slides.get(nextSlide));
+  
+    $('.foreground-img').css({
+      'width': '50%'
+    });
+    $('.slider-button').css({
+      'left': 'calc(50% - 18px)'
+    });
+    $('input[type=range]').val(50);
+
+  });
   
 });
 
