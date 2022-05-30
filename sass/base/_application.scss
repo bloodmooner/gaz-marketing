@@ -34,9 +34,13 @@
                 padding: 40px;
                 justify-content: center;
             }
-            @include for-mobile-landscape {
+            @include for-mobile-modal {
+                padding: 30px;
+            }
+            @include for-mobile-modal-small {
                 padding: 15px;
             }
+            
         }
         .application__inner {
             
@@ -44,7 +48,7 @@
                 border-radius: 0px 0px 30px 30px;
                 padding: 40px 15px;
             }
-            @include for-mobile-landscape {
+            @include for-mobile-modal-small {
                 padding: 15px;
             }
         }
@@ -52,18 +56,18 @@
             @include for-phone-portrait {
                margin: 20px 23px 0 23px; 
             }
-            @include for-mobile-landscape {
+            @include for-mobile-modal {
                 margin-top: 5px;
                 padding: 13px 40px;
             }
         }
         .application__polytics {
-            @include for-mobile-landscape {
+            @include for-mobile-modal {
                 margin-top: 13px;
             }
         }
         .application__form {
-            @include for-mobile-landscape {
+            @include for-mobile-modal-small {
                 gap: 10px;
             }
         }
@@ -81,7 +85,7 @@
             @include for-phone-portrait {
                 padding: 14px 21px;
             }
-            @include for-mobile-landscape {
+            @include for-mobile-modal {
                 padding: 9px;
                 font-size: 14px;
                 line-height: 18px;
@@ -93,7 +97,7 @@
                 font-size: 28px;
                 line-height: 32px;
             }
-            @include for-mobile-landscape {
+            @include for-mobile-modal {
                 font-size: 30px;
                 line-height: 30px;
             }

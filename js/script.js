@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+  $("a.promo__plan").click(function() {
+    $("html, body").animate({
+       scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+       duration: 500,
+       easing: "swing"
+    });
+    return false;
+  });
+
+
+
 
   let menuIsOpen = false;
   //Menu toggle
@@ -94,12 +106,12 @@ $(document).ready(function(){
     infinity: true,
     dots: false,
     arrows: true,
-    /* swipe: false, */
+    swipe: false,
     nextArrow: $(document).find('.success__about-arrow_right'),
     prevArrow: $(document).find('.success__about-arrow_left'),
     fade: true,
     cssEase: 'linear',
-    asNavFor: '.slider',
+    asNavFor: '.success__info-slider,.success__positions-wrapper',
    });
 
    $('.success__info-slider').slick({
@@ -108,8 +120,8 @@ $(document).ready(function(){
     infinity: true,
     dots: false,
     arrows: false,
-    /* swipe: false, */
-    asNavFor: '.slider',
+    swipe: false,
+    asNavFor: '.success__about-slider',
     fade: true,
     cssEase: 'linear'
    });
@@ -120,7 +132,7 @@ $(document).ready(function(){
     infinity: true,
     dots: false,
     arrows: false,
-    asNavFor: '.slider',
+    swipe: false,
     fade: true,
     cssEase: 'linear'
    });
@@ -164,7 +176,8 @@ $(function() {
   
   //Before After Image
   $(".slider").on("input change", (e)=>{
-  const sliderPos = e.target.value;
+  const sliderPos = parseInt(e.target.value);
+
   // Update the width of the foreground image
   $('.foreground-img').css('width', `${sliderPos}%`)
   // Update the position of the slider button
@@ -173,7 +186,7 @@ $(function() {
 
 
   //Before After Slider
-  $('.cases__slider').slick({
+  $('.cases__slider-image').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinity: true,
@@ -182,23 +195,22 @@ $(function() {
     swipe: false,
     nextArrow: $(document).find('.cases__image-arrow-left'),
     prevArrow: $(document).find('.cases__image-arrow-right'),
-    // fade: true,
-    // cssEase: 'linear'
+    fade: true,
+    cssEase: 'linear'
     /* asNavFor: '.cases__info-items' */
    });
 
 
-   $('.cases__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    var CurrentSlideDom=$(slick.$slides.get(currentSlide));
-    var NextSlideDom=$(slick.$slides.get(nextSlide));
+   $('.cases__slider-image').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    
   
     $('.foreground-img').css({
-      'width': '50%'
+      'width': '51%'
     });
     $('.slider-button').css({
-      'left': 'calc(50% - 18px)'
+      'left': 'calc(51% - 18px)'
     });
-    $('input[type=range]').val(50);
+    $('input[type=range]').val(50.5);
 
   });
   

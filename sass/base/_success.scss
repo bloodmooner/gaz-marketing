@@ -240,6 +240,10 @@
 
     &__about {
         max-width: 750px;
+        height: 100%;
+        @include for-tablet-portrait {
+            height: auto;
+        }
         padding: 35px 40px 49px 40px;
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);

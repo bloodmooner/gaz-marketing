@@ -3,6 +3,16 @@
 
 
     &_context {
+        .promo__title {
+            @include for-desk {
+                max-width: min-content;
+            }
+            span {
+                @include for-desk {
+                    padding: 0 5px 0 0;
+                }
+            }
+        }
         .promo__subtitle {
             margin-top: 57px;
             max-width: 679px;
@@ -14,7 +24,7 @@
             line-height: 41px;
             color: #000000;
             @include for-tablet-landscape {
-                font-size: 32px;
+                font-size: 30px;
                 line-height: 38px;
             }
             @include for-phone-portrait {
@@ -51,9 +61,9 @@
             }
             @include for-tablet-landscape {
                 width: 280px;
-                max-height: 60px;
-                height: 100%;
-                padding: 7px 8px;
+                /* max-height: 56px;
+                height: 100%; */
+                padding: 0.9vw 8px;
                 font-size: 16px;
             }
             @include for-tablet-portrait {
@@ -115,7 +125,7 @@
         max-width: 759px;
         width: 100%;
         @include for-desk {
-            font-size: 50px;
+            font-size: 49px;
             max-width: 554px;
         }
         @include for-tablet-portrait {

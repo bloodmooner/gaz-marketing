@@ -34,7 +34,7 @@
         width: 100%;
         padding: 0;
     }
-    @include for-mobile-landscape {
+    @include for-mobile-modal {
       top: 56%;
     }
     &_order {
@@ -74,7 +74,7 @@
         width: 32px;
         height: 32px;
     }
-    @include for-mobile-landscape {
+    @include for-mobile-modal {
       width: 32px;
       height: 32px;
       top: -40px;
@@ -84,7 +84,7 @@
             width: 14px;
             height: 14px;
         }
-        @include for-mobile-landscape {
+        @include for-mobile-modal {
           width: 14px;
           height: 14px;
         }

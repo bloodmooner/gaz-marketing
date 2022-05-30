@@ -37,6 +37,11 @@
         @include for-tablet-portrait {
             padding: 50px 0 0 0;
         }
+
+        .container {
+            max-width: 1480px;
+        }
+
         .container {
             @include for-tablet-portrait {
                 max-width: 100%;
@@ -80,7 +85,7 @@
             width: 100%;
         }
         .cases__image-controls {
-            @include for-tablet-portrait {
+            @include for-tablet-landscape {
                 display: none;
             }
         }
@@ -685,7 +690,7 @@
     }
 
     &__image-comparison {
-        @include for-tablet-portrait {
+        @include for-tablet-landscape {
             display: none;
         }
     }
@@ -731,6 +736,24 @@
         }
         @include for-desk {
             padding-left: 0;
+        }
+        @include for-tablet-portrait {
+            max-width: 100%;
+        }
+    }
+
+    &__slider-image {
+        max-width: 740px;
+        position: relative;
+        .slick-slide img {
+            /* max-width: 730px; */
+            width: 100%;
+        }
+        @include for-desk {
+            padding-left: 0;
+        }
+        @include for-tablet-landscape {
+            display: none;
         }
         @include for-tablet-portrait {
             max-width: 100%;
@@ -809,10 +832,137 @@
     }
 
 
-    
+    &__comparison-head {
+        margin-top: 43px;
+        margin-bottom: 10px;
+        width: 100%;
+        @include for-tablet-landscape {
+            display: none;
+        }
+    }
+
+    &__comparison-head-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__comparison-head-title {
+        font-family: $neuemachina;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
 
     
 }
 
 
+
+
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .cases__image-comparison {
+    @include center; 
+  }
+  .containers {
+    position: relative;
+    width: 688px;
+    height: 381px;
+    border: 2px solid white;
+    @include for-desk {
+        width: 488px;
+        height: 320px;
+    }
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 688px 100%;
+      @include for-desk {
+        background-size: 488px 100%;
+      }
+    }
+    
+    .foreground-img {
+      width: 50%;
+    }
+    
+    .slider {
+      position: absolute;
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(#f2f2f2, 0);
+      outline: none;
+      margin: 0;
+      transition: all .2s;
+      @include center;
+      &:hover {
+        background: rgba(#f2f2f2, .1);
+      }
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 4px;
+        height: 377px;
+        background: linear-gradient(180deg, #65F0F4 0%, #3957ED 100%);
+        border-radius: 15px;
+        cursor: pointer;
+        @include for-desk {
+            height: 316px;
+        }
+      }
+      &::-moz-range-thumb {
+        width: 4px;
+        height: 377px;
+        background: linear-gradient(180deg, #65F0F4 0%, #3957ED 100%);
+        border-radius: 15px;
+        cursor: pointer;
+        @include for-desk {
+            height: 316px;
+        }
+      }
+    }
+    
+    .slider-button {
+        
+      $size: 30px;
+      pointer-events: none;
+      position: absolute;
+      width: $size;
+      height: $size;
+      border-radius: 50%;
+      background-color: white;
+      left: calc(51% - 18px);
+      top: calc(50% - 18px);
+      @include center;
+      
+      @mixin arrow-helper() {
+        content: '';
+        padding: 3px;
+        display: inline-block;
+        border: solid #5D5D5D;
+        border-width: 0 2px 2px 0;
+      }
+      &:after {
+        @include arrow-helper();
+        transform: rotate(-45deg);
+      }
+      &:before {
+        @include arrow-helper();
+        transform: rotate(135deg);
+      }
+    }
+  }
 

@@ -21,6 +21,23 @@
     }
 
     &__item {
+        /* position: relative;
+        &::before {
+            content: url('../../assets/svg/breadcrumb-arrow.svg');
+            position: absolute;
+            top: 50%;
+            left: -17%;
+            transform: translate3d(-50%, -50%, 0);
+            @include for-tablet-portrait {
+                content: url('../../assets/svg/breadcrumb-arrow-small.svg');
+                left: -17%;
+            }
+        }
+        &:first-child {
+            &::before {
+                display: none;
+            }
+        } */
     }
 
     &__link {
