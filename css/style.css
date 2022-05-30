@@ -858,6 +858,12 @@ template {
   }
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__name {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 991px) {
   .application_modal .application__inner {
     border-radius: 0px 0px 30px 30px;
@@ -865,9 +871,34 @@ template {
   }
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__inner {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 767px) {
   .application_modal .application__btn {
     margin: 20px 23px 0 23px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__btn {
+    margin-top: 5px;
+    padding: 13px 40px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__polytics {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__form {
+    gap: 10px;
   }
 }
 
@@ -889,6 +920,14 @@ template {
   }
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__input {
+    padding: 9px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 .application_modal .application__title {
   width: initial;
 }
@@ -897,6 +936,13 @@ template {
   .application_modal .application__title {
     font-size: 28px;
     line-height: 32px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .application_modal .application__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -1526,6 +1572,12 @@ template {
   }
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+  .modal {
+    top: 56%;
+  }
+}
+
 .modal_order-active {
   opacity: 1;
 }
@@ -1574,7 +1626,22 @@ template {
   }
 }
 
+@media (max-width: 991px) and (orientation: landscape) {
+  .modal__close {
+    width: 32px;
+    height: 32px;
+    top: -40px;
+  }
+}
+
 @media (max-width: 767px) {
+  .modal__close img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
   .modal__close img {
     width: 14px;
     height: 14px;
@@ -1732,7 +1799,9 @@ template {
 
 @media (max-width: 1200px) {
   .promo_seo .promo__btn {
-    width: 305px;
+    width: 280px;
+    max-height: 60px;
+    height: 100%;
     padding: 7px 8px;
     font-size: 16px;
   }
@@ -1740,7 +1809,7 @@ template {
 
 @media (max-width: 991px) {
   .promo_seo .promo__btn {
-    width: 250px;
+    width: 225px;
     padding: 9px 9px;
     font-size: 13px;
     line-height: 16px;
@@ -1964,6 +2033,7 @@ template {
 
 @media (max-width: 991px) {
   .promo__plan {
+    display: none;
     padding: 6px 10px;
     height: 50px;
     font-size: 13px;

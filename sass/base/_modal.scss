@@ -34,6 +34,9 @@
         width: 100%;
         padding: 0;
     }
+    @include for-mobile-landscape {
+      top: 56%;
+    }
     &_order {
         &-active {
             opacity: 1;
@@ -71,10 +74,19 @@
         width: 32px;
         height: 32px;
     }
+    @include for-mobile-landscape {
+      width: 32px;
+      height: 32px;
+      top: -40px;
+    }
     img {
         @include for-phone-portrait {
             width: 14px;
             height: 14px;
+        }
+        @include for-mobile-landscape {
+          width: 14px;
+          height: 14px;
         }
     }
   }

@@ -16,6 +16,7 @@
         top: 1px;
     }
 
+
     &_modal {
         padding: 0;
         @include for-tablet-portrait {
@@ -33,16 +34,37 @@
                 padding: 40px;
                 justify-content: center;
             }
+            @include for-mobile-landscape {
+                padding: 15px;
+            }
         }
         .application__inner {
+            
             @include for-tablet-portrait {
                 border-radius: 0px 0px 30px 30px;
                 padding: 40px 15px;
+            }
+            @include for-mobile-landscape {
+                padding: 15px;
             }
         }
         .application__btn {
             @include for-phone-portrait {
                margin: 20px 23px 0 23px; 
+            }
+            @include for-mobile-landscape {
+                margin-top: 5px;
+                padding: 13px 40px;
+            }
+        }
+        .application__polytics {
+            @include for-mobile-landscape {
+                margin-top: 13px;
+            }
+        }
+        .application__form {
+            @include for-mobile-landscape {
+                gap: 10px;
             }
         }
         .application__polytics {
@@ -59,12 +81,21 @@
             @include for-phone-portrait {
                 padding: 14px 21px;
             }
+            @include for-mobile-landscape {
+                padding: 9px;
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
         .application__title {
             width: initial;
             @include for-phone-portrait {
                 font-size: 28px;
                 line-height: 32px;
+            }
+            @include for-mobile-landscape {
+                font-size: 30px;
+                line-height: 30px;
             }
             span {
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
