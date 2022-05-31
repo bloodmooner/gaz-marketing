@@ -97,8 +97,11 @@
                 line-height: 54px;
                 padding-right: 52px;
             }
+            @include for-phone {
+                line-height: 40px;
+            }
             @include for-phone-small {
-                padding-right: 18px;
+                padding-right: 50px;
             }
         }
         @include for-desk {
@@ -119,8 +122,8 @@
             line-height: 18px;
         }
         @include for-phone {
-            font-size: 16px;
-            line-height: 16px;
+            font-size: 13px;
+            line-height: 13px;
         }
     }
 

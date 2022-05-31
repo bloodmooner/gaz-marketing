@@ -3230,9 +3230,15 @@ template {
   }
 }
 
+@media (max-width: 575px) {
+  .stages__name_number {
+    line-height: 40px;
+  }
+}
+
 @media (max-width: 420px) {
   .stages__name_number {
-    padding-right: 18px;
+    padding-right: 50px;
   }
 }
 
@@ -3267,8 +3273,8 @@ template {
 
 @media (max-width: 575px) {
   .stages__name {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 13px;
   }
 }
 
@@ -5751,7 +5757,7 @@ template {
 
 @media (max-width: 767px) {
   .success__about-link {
-    right: 9px;
+    right: 11px;
   }
 }
 
