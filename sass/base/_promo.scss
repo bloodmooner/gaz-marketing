@@ -1,11 +1,49 @@
 .promo {
     padding-bottom: 20px;
 
-
-    &_context {
+    &_smm {
+        .promo__subtitle {
+            margin-top: 57px;
+            @include for-tablet-portrait {
+                margin-top: 30px;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
         .promo__title {
             @include for-desk {
-                max-width: min-content;
+                padding-right: 50px;
+            }
+            
+        }
+        .promo__btn {
+            @include for-tablet-portrait {
+                margin-top: 30px;
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_context {
+        .promo__additional {
+            @include for-tablet-portrait {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .promo__title {
+            @include for-desk {
+                /* max-width: min-content; */
+                max-width: fit-content;
+                font-size: 46px;
+            }
+            @include for-tablet-landscape {
+                font-size: 4vw;
+            }
+            @include for-tablet-portrait {
+                font-size: clamp(27px, 3vw, 35px);
             }
             span {
                 @include for-desk {
@@ -27,6 +65,11 @@
                 font-size: 30px;
                 line-height: 38px;
             }
+            @include for-tablet-portrait {
+                margin-top: 30px;
+                font-size: 22px;
+                line-height: 26px;
+            }
             @include for-phone-portrait {
                 margin-top: 30px;
                 font-size: 18px;
@@ -37,7 +80,8 @@
             max-width: 529px;
             margin-right: 60px;
             @include for-desk {
-                margin-right: 30px;
+                margin-right: 0;
+                max-width: 630px;
             }
             @include for-tablet-portrait {
                 margin-right: 0;
@@ -46,10 +90,28 @@
         }
         .promo__text {
             margin-top: 18px;
+            @include for-tablet-portrait {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        .promo__btn {
+            @include for-tablet-portrait {
+                margin-top: 30px;
+                padding: 15px 30px;
+                font-size: 16px;
+            }
         }
     }
 
     &_seo {
+        .promo__title {
+            span {
+                @include for-phone {
+                    padding: 8px 2px 10px;
+                }
+            }
+        }
         .promo__btn {
             margin-top: 0;
             width: 393px;
@@ -67,10 +129,9 @@
                 font-size: 16px;
             }
             @include for-tablet-portrait {
-                width: 225px;
-                padding: 9px 9px;
-                font-size: 13px;
-                line-height: 16px;
+                padding: 10px 15px;
+                width: 230px;
+                font-size: 16px;
             }
             @include for-phone-portrait {
                 width: 266px;
@@ -84,12 +145,23 @@
             max-width: 561px;
             margin-right: 58px;
             @include for-desk {
+                max-width: 630px;
                 margin-right: 0;
             }
             @include for-tablet-portrait {
-                max-width: 100%;
+                max-width: 850px;
             }
         }
+        
+        .promo__text {
+            margin-top: 57px;
+            @include for-tablet-portrait {
+                margin-top: 30px;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        
     }
 
     &__wrapper {
@@ -124,13 +196,11 @@
     &__title {
         max-width: 759px;
         width: 100%;
-        @include for-desk {
-            font-size: 49px;
-            max-width: 554px;
+        @include for-tablet-landscape {
+            font-size: 4vw;
         }
         @include for-tablet-portrait {
-            font-size: 38px;
-            max-width: 440px;
+            font-size: clamp(27px, 3vw, 35px);
         }
         @include for-phone {
             font-size: 7vw;
@@ -152,10 +222,19 @@
         font-size: 28px;
         line-height: 38px;
         color: #000000;
+        @include for-tablet-landscape {
+            font-size: 30px;
+            line-height: 38px;
+        }
         @include for-tablet-portrait {
             margin-top: 30px;
-            font-size: 16px;
-            line-height: 22px;
+            font-size: 21px;
+            line-height: 27px;
+        }
+        @include for-phone-portrait {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 20px;
         }
     }
     
@@ -255,7 +334,7 @@
     }
 
     &__btns {
-        margin-top: 45px;
+        margin-top: 43px;
         display: flex;
         align-items: center;
         gap: 34px;

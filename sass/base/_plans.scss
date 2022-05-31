@@ -118,8 +118,11 @@
         font-size: 26px;
         line-height: 29px;
         color: #000000;
+        @include for-tablet-landscape {
+            font-size: 25px;
+        }
         @include for-tablet-portrait {
-            font-size: 22px;
+            font-size: 20px;
             line-height: 25px;
         }
         @include for-phone-portrait {
@@ -186,7 +189,7 @@
         text-align: center;
         border-radius: 30px;
         width: 276px;
-        @include for-phone {
+        @include for-phone-portrait {
             width: 186px;
             height: 44px;
         }
@@ -329,6 +332,8 @@
         border-radius: 30px;
         @include for-desk {
             padding: 18px 33px;
+            width: 276px;
+            height: 62px;
         }
         span {
             font-family: $neuemachina;
