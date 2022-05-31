@@ -523,7 +523,7 @@ template {
 @media (max-width: 767px) {
   .title {
     font-size: 26px;
-    line-height: 29px;
+    line-height: 110%;
   }
 }
 
@@ -1900,6 +1900,12 @@ template {
   }
 }
 
+@media (max-width: 575px) {
+  .promo_context .promo__title {
+    font-size: clamp(19px, 6.2vw, 35px);
+  }
+}
+
 @media (max-width: 1550px) {
   .promo_context .promo__title span {
     padding: 0 5px 0 0;
@@ -1981,7 +1987,7 @@ template {
 
 @media (max-width: 575px) {
   .promo_seo .promo__title span {
-    padding: 8px 2px 10px;
+    padding: 0 2px 2px;
   }
 }
 
@@ -2174,7 +2180,7 @@ template {
 
 .promo__text {
   margin-top: 20px;
-  max-width: 679px;
+  max-width: 650px;
   width: 100%;
   font-style: normal;
   font-weight: 400;
@@ -2325,6 +2331,48 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.promo_seo .title__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 134.4%;
+  color: #000000;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .promo_seo .title__subtitle {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
+
+.promo_seo .promo__text {
+  margin-top: 12px;
+}
+
+.promo_context .title__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 134.4%;
+  color: #000000;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .promo_context .title__subtitle {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
+
+.promo_context .promo__subtitle {
+  margin-top: 12px;
 }
 
 .video {
@@ -4082,6 +4130,12 @@ template {
 @media (max-width: 767px) {
   .cases__top-instrument:nth-child(2) {
     border-radius: 0px 30px 30px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cases__top-instrument {
+    padding: 20px;
   }
 }
 
@@ -8086,6 +8140,20 @@ main.main {
 .loader__img img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 767px) {
+  .loader__img {
+    max-width: 386px;
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .loader__img {
+    max-width: 222px;
+    height: auto;
+  }
 }
 
 @-webkit-keyframes load {
