@@ -160,6 +160,7 @@
             background: linear-gradient(90deg, #000000 0%, #000000 100%);
         }
         &:hover {
+            text-decoration: none;
             background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -247,6 +248,9 @@
         &:hover {
             -webkit-background-clip: text;
             -webkit-text-fill-color: #FFFFFF;
+            &::after {
+                background: #FFFFFF;
+            }
         }
     }
 }
