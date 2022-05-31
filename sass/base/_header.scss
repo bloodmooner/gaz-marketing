@@ -232,6 +232,12 @@
             }
         }
     }
+    .header__tel {
+        &:hover {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: #FFFFFF;
+        }
+    }
 }
 
 

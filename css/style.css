@@ -833,6 +833,11 @@ template {
   text-fill-color: transparent;
 }
 
+.fixed .header__tel:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FFFFFF;
+}
+
 .breadcrumb_context .breadcrumb__list {
   margin-top: 0;
 }
