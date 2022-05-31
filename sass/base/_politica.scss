@@ -119,6 +119,14 @@
             width: 100%;
             height: auto;
         }
+        @include for-phone-portrait {
+            max-width: 386px;
+            height: auto;
+        }
+        @include for-phone {
+            max-width: 222px;
+            height: auto;
+        }
     }
 }
 @keyframes load {
