@@ -1,12 +1,15 @@
 .promo-item {
 }
 .promo-item__wrapper {
-    margin-top: 57px;
+    margin-top: 177px;
     display: flex;
     justify-content: space-between;
 
     @include for-tablet-landscape {
-        margin-top: 40px;
+        margin-top: 170px;
+    }
+    @include for-phone-portrait {
+        margin-top: 90px;
     }
 }
 .promo-item__caption {

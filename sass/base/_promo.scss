@@ -165,21 +165,21 @@
     }
 
     &__wrapper {
-        margin-top: 82px;
+        margin-top: 212px;
         display: flex;
         justify-content: space-between;
         @include for-desk {
             gap: 20px;
         }
         @include for-tablet-portrait {
-            margin-top: 60px;
+            margin-top: 200px;
         }
         @include for-phone-portrait {
             flex-direction: column;
         }
         @include for-phone-portrait {
             gap: 30px;
-            margin-top: 30px;
+            margin-top: 90px;
         }
     }
 

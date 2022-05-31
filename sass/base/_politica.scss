@@ -1,14 +1,17 @@
 .politica {
-    padding: 80px 0;
+    padding: 210px 0;
 
     @include for-desk {
-        padding: 60px 0 70px;
+        padding: 190px 0 70px;
+    }
+    @include for-tablet-portrait {
+        padding: 180px 0 70px;
     }
     @include for-phone-portrait {
-        padding: 50px 0 60px;
+        padding: 100px 0 60px;
     }
     @include for-phone {
-        padding: 30px 0 50px;
+        padding: 90px 0 50px;
     }
 }
 .politica h2 {
@@ -186,89 +189,6 @@
         background: radial-gradient(98.33% 76.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
     }
 }
-// @keyframes load2 {
-//     0% {
-//         background: radial-gradient(80.73% 108.66% at 100% 0%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     10% {
-//         background: radial-gradient(82.33% 107.66% at 100% 10%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     20% {
-//         background: radial-gradient(84.33% 106.66% at 100% 20%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     30% {
-//         background: radial-gradient(86.33% 105.66% at 100% 30%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     40% {
-//         background: radial-gradient(88.33% 104.66% at 100% 40%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     50% {
-//         background: radial-gradient(90.33% 103.66% at 100% 50%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     60% {
-//         background: radial-gradient(92.33% 102.66% at 100% 60%, #65F0F4 0%, #6584F4 100%);
-//     }   
-//     70% {
-//         background: radial-gradient(94.33% 101.66% at 100% 70%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     80% {
-//         background: radial-gradient(96.33% 100.66% at 100% 80%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     90% {
-//         background: radial-gradient(98.33% 99.9% at 100% 90%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     100% {
-//         background: radial-gradient(100% 98.19% at 100% 98.19%, #65F0F4 0%, #6584F4 100%);
-//     }
-// }
-@keyframes load3 {
-    0% {
-        background: radial-gradient(100% 98.19% at 100% 98.19%, #65F0F4 0%, #6584F4 100%);
-    }
-    10% {
-        background: radial-gradient(99.83% 97.66% at 90% 95%, #65F0F4 0%, #6584F4 100%);
-    }
-    20% {
-        background: radial-gradient(99.33% 94.66% at 80% 90%, #65F0F4 0%, #6584F4 100%);
-    }
-    30% {
-        background: radial-gradient(98.93% 91.66% at 70% 85%, #65F0F4 0%, #6584F4 100%);
-    }
-    40% {
-        background: radial-gradient(98.83% 88.66% at 60% 80%, #65F0F4 0%, #6584F4 100%);
-    }
-    50% {
-        background: radial-gradient(98.73% 85.66% at 50% 75%, #65F0F4 0%, #6584F4 100%);
-    }
-    60% {
-        background: radial-gradient(99.53% 82.66% at 40% 70%, #65F0F4 0%, #6584F4 100%);
-    }   
-    70% {
-        background: radial-gradient(98.43% 79.66% at 30% 65%, #65F0F4 0%, #6584F4 100%);
-    }
-    80% {
-        background: radial-gradient(98.33% 76.66% at 20% 60%, #65F0F4 0%, #6584F4 100%);
-    }
-    90% {
-        background: radial-gradient(98.33% 73.9% at 10% 55%, #65F0F4 0%, #6584F4 100%);
-    }
-    100% {
-        background: radial-gradient(98.33% 70.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
-    }
-}
-// @keyframes load {
-//     0% {
-//         background: radial-gradient(98.33% 70.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     25% {
-//         background: radial-gradient(80.73% 108.66% at 100% 0%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     50% {
-//         background: radial-gradient(100% 98.19% at 100% 98.19%, #65F0F4 0%, #6584F4 100%);
-//     }
-//     100% {
-//         background: radial-gradient(98.33% 70.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
-//     }
-// }
+
 
 

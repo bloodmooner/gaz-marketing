@@ -581,8 +581,15 @@ template {
   left: 45%;
 }
 
+@media (max-width: 991px) {
+  .fixed .header__logo {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .fixed .header__logo {
+    display: block;
     position: static;
     top: auto;
     left: auto;
@@ -1598,7 +1605,7 @@ template {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 20;
+  z-index: 100;
   -webkit-transition: .3s all;
   transition: .3s all;
 }
@@ -2014,7 +2021,7 @@ template {
 }
 
 .promo__wrapper {
-  margin-top: 82px;
+  margin-top: 212px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2031,7 +2038,7 @@ template {
 
 @media (max-width: 991px) {
   .promo__wrapper {
-    margin-top: 60px;
+    margin-top: 200px;
   }
 }
 
@@ -2047,7 +2054,7 @@ template {
 @media (max-width: 767px) {
   .promo__wrapper {
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 90px;
   }
 }
 
@@ -6582,24 +6589,24 @@ main.main {
 }
 
 .portfolio {
-  padding: 25px 0 0;
+  padding: 200px 0 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1550px) {
   .portfolio {
-    padding: 50px 0 0;
+    padding: 180px 0 0;
   }
 }
 
 @media (max-width: 991px) {
   .portfolio {
-    padding: 40px 0 60px;
+    padding: 180px 0 60px;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .portfolio {
-    padding: 30px 0 20px;
+    padding: 90px 0 20px;
   }
 }
 
@@ -6975,7 +6982,7 @@ main.main {
 }
 
 .promo-item__wrapper {
-  margin-top: 57px;
+  margin-top: 177px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6986,7 +6993,13 @@ main.main {
 
 @media (max-width: 1200px) {
   .promo-item__wrapper {
-    margin-top: 40px;
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-item__wrapper {
+    margin-top: 90px;
   }
 }
 
@@ -7862,24 +7875,30 @@ main.main {
 }
 
 .politica {
-  padding: 80px 0;
+  padding: 210px 0;
 }
 
 @media (max-width: 1550px) {
   .politica {
-    padding: 60px 0 70px;
+    padding: 190px 0 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .politica {
+    padding: 180px 0 70px;
   }
 }
 
 @media (max-width: 767px) {
   .politica {
-    padding: 50px 0 60px;
+    padding: 100px 0 60px;
   }
 }
 
 @media (max-width: 575px) {
   .politica {
-    padding: 30px 0 50px;
+    padding: 90px 0 50px;
   }
 }
 
@@ -8171,78 +8190,6 @@ main.main {
   }
 }
 
-@-webkit-keyframes load3 {
-  0% {
-    background: radial-gradient(100% 98.19% at 100% 98.19%, #65F0F4 0%, #6584F4 100%);
-  }
-  10% {
-    background: radial-gradient(99.83% 97.66% at 90% 95%, #65F0F4 0%, #6584F4 100%);
-  }
-  20% {
-    background: radial-gradient(99.33% 94.66% at 80% 90%, #65F0F4 0%, #6584F4 100%);
-  }
-  30% {
-    background: radial-gradient(98.93% 91.66% at 70% 85%, #65F0F4 0%, #6584F4 100%);
-  }
-  40% {
-    background: radial-gradient(98.83% 88.66% at 60% 80%, #65F0F4 0%, #6584F4 100%);
-  }
-  50% {
-    background: radial-gradient(98.73% 85.66% at 50% 75%, #65F0F4 0%, #6584F4 100%);
-  }
-  60% {
-    background: radial-gradient(99.53% 82.66% at 40% 70%, #65F0F4 0%, #6584F4 100%);
-  }
-  70% {
-    background: radial-gradient(98.43% 79.66% at 30% 65%, #65F0F4 0%, #6584F4 100%);
-  }
-  80% {
-    background: radial-gradient(98.33% 76.66% at 20% 60%, #65F0F4 0%, #6584F4 100%);
-  }
-  90% {
-    background: radial-gradient(98.33% 73.9% at 10% 55%, #65F0F4 0%, #6584F4 100%);
-  }
-  100% {
-    background: radial-gradient(98.33% 70.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
-  }
-}
-
-@keyframes load3 {
-  0% {
-    background: radial-gradient(100% 98.19% at 100% 98.19%, #65F0F4 0%, #6584F4 100%);
-  }
-  10% {
-    background: radial-gradient(99.83% 97.66% at 90% 95%, #65F0F4 0%, #6584F4 100%);
-  }
-  20% {
-    background: radial-gradient(99.33% 94.66% at 80% 90%, #65F0F4 0%, #6584F4 100%);
-  }
-  30% {
-    background: radial-gradient(98.93% 91.66% at 70% 85%, #65F0F4 0%, #6584F4 100%);
-  }
-  40% {
-    background: radial-gradient(98.83% 88.66% at 60% 80%, #65F0F4 0%, #6584F4 100%);
-  }
-  50% {
-    background: radial-gradient(98.73% 85.66% at 50% 75%, #65F0F4 0%, #6584F4 100%);
-  }
-  60% {
-    background: radial-gradient(99.53% 82.66% at 40% 70%, #65F0F4 0%, #6584F4 100%);
-  }
-  70% {
-    background: radial-gradient(98.43% 79.66% at 30% 65%, #65F0F4 0%, #6584F4 100%);
-  }
-  80% {
-    background: radial-gradient(98.33% 76.66% at 20% 60%, #65F0F4 0%, #6584F4 100%);
-  }
-  90% {
-    background: radial-gradient(98.33% 73.9% at 10% 55%, #65F0F4 0%, #6584F4 100%);
-  }
-  100% {
-    background: radial-gradient(98.33% 70.9% at 0% 50%, #65F0F4 0%, #6584F4 100%);
-  }
-}
-
 /*
 
 Neue Machina: 400, 500, 700
@@ -8357,7 +8304,7 @@ header.fixed {
   left: 0;
   width: 100%;
   background: linear-gradient(89.92deg, #65F0F4 0.06%, #6584F4 196.79%);
-  z-index: 20;
+  z-index: 80;
 }
 
 @media (max-width: 767px) {
