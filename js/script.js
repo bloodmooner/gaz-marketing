@@ -4,6 +4,25 @@ $(window).on('load', function () {
   
 $(document).ready(function(){
 
+
+  let activeMenuItem = $('.header__menu-item_active');
+
+  $( ".header__menu-item" ).mouseover(function() {
+    $( ".header__menu-item" ).removeClass('header__menu-item_active');
+    $(this).addClass('header__menu-item_active');
+  });
+
+  $( ".header__menu" ).mouseleave(function() {
+    $('.header__menu-item').removeClass('header__menu-item_active');
+    activeMenuItem.addClass('header__menu-item_active');
+  });
+
+
+
+
+  
+
+
   $("a.promo__plan").click(function() {
     $("html, body").animate({
        scrollTop: $($(this).attr("href")).offset().top + "px"

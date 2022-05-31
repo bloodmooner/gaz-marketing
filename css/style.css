@@ -656,6 +656,15 @@ template {
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
 
+.header__menu-item_active span {
+  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .header__menu-link {
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
@@ -663,6 +672,10 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.header__menu-link:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -795,6 +808,29 @@ template {
   .header__burger {
     display: block;
   }
+}
+
+.fixed .header__menu-item_active {
+  position: relative;
+}
+
+.fixed .header__menu-item_active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+}
+
+.fixed .header__menu-item_active span {
+  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FFFFFF;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .breadcrumb_context .breadcrumb__list {

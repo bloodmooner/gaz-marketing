@@ -92,6 +92,13 @@
                 height: 3px;
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
             }
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
         }
     }
 
@@ -102,6 +109,9 @@
         font-size: 16px;
         line-height: 20px;
         color: #000000;
+        &:hover {
+            text-decoration: none;
+        }
         @include for-tablet-landscape {
             font-size: 15px;
             line-height: 18px;
@@ -199,5 +209,29 @@
     }
 }
 
+.fixed {
+    .header__menu-item {
+
+        &_active {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: #FFFFFF;
+            }
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #FFFFFF;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+}
 
 
