@@ -26,12 +26,6 @@
         }
     }
 
-    &__logo {
-    }
-
-    &__logo-icon {
-    }
-
     &__menu {
         @include for-phone-portrait {
             display: none;
@@ -47,8 +41,6 @@
         }
     }
 
-    &__menu-item {
-    }
 
     &__menu-link {
         font-family: $neuemachina;
@@ -57,19 +49,25 @@
         font-size: 24px;
         line-height: 30px;
         color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
         @include for-tablet-landscape {
             font-size: 22px;
             line-height: 26px;
         }
     }
 
-    &__contacts {
-    }
-
     &__contacts-items {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+        a:hover{
+            text-decoration: none;
+        }
+
         @include for-tablet-portrait {
             align-items: flex-start;
         }
@@ -112,6 +110,10 @@
         font-size: 20px;
         line-height: 25px;
         color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
         @include for-tablet-landscape {
             font-size: 18px;
             line-height: 22px;
@@ -131,12 +133,4 @@
         gap: 20px;
     }
 
-    &__contacts-social-item {
-    }
-
-    &__contacts-social-link {
-    }
-
-    &__contacts-social-icon {
-    }
 }
