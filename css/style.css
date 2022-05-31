@@ -2172,7 +2172,7 @@ template {
 .promo__title span {
   font-family: "Neue Machina", sans-serif;
   display: inline-block;
-  padding: 0 2px 2px;
+  /* padding: 0 2px 2px; */
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -3262,6 +3262,13 @@ template {
   .stages__name {
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .stages__name {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -5701,6 +5708,12 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .success__about {
+    padding: 25px 20px;
+  }
+}
+
 .success__about-item {
   position: relative;
 }
@@ -5733,6 +5746,12 @@ template {
   .success__about-link {
     width: 25px;
     height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .success__about-link {
+    right: 9px;
   }
 }
 
@@ -6058,7 +6077,7 @@ main.main {
 .promo-home__title span {
   font-family: "Neue Machina", sans-serif;
   display: inline-block;
-  padding: 0 2px 2px;
+  /* padding: 0 2px 2px; */
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -6765,7 +6784,7 @@ main.main {
 .portfolio__title span {
   font-family: "Neue Machina", sans-serif;
   display: inline-block;
-  padding: 0 2px 2px;
+  /* padding: 0 2px 2px; */
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -7177,7 +7196,7 @@ main.main {
 .promo-item__title span {
   display: inline-block;
   font-family: "Neue Machina", sans-serif;
-  padding: 0 2px 2px;
+  /* padding: 0 2px 2px; */
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }

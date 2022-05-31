@@ -259,6 +259,9 @@
         @include for-tablet-landscape {
             max-width: 100%;
         }
+        @include for-phone-portrait {
+            padding: 25px 20px;
+        }
     }
 
     &__about-container {
@@ -292,6 +295,9 @@
         @include for-tablet-portrait {
             width: 25px;
             height: 28px;
+        }
+        @include for-phone-portrait {
+            right: 9px;
         }
     }
 
