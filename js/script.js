@@ -14,13 +14,13 @@ $(document).ready(function(){
 
   $( ".header__menu" ).mouseleave(function() {
     $('.header__menu-item').removeClass('header__menu-item_active');
-    activeMenuItem.addClass('header__menu-item_active');
+    /* activeMenuItem.addClass('header__menu-item_active'); */
   });
 
 
 
 
-  
+
 
 
   $("a.promo__plan").click(function() {

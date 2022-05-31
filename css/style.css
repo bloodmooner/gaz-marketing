@@ -645,7 +645,20 @@ template {
   position: relative;
 }
 
-.header__menu-item_active::after {
+.header__menu-item_active span {
+  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.header__menu-item_current {
+  position: relative;
+}
+
+.header__menu-item_current::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -654,15 +667,6 @@ template {
   height: 3px;
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
-}
-
-.header__menu-item_active span {
-  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
-  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .header__menu-link {
@@ -810,18 +814,22 @@ template {
   }
 }
 
-.fixed .header__menu-item_active {
+.fixed .header__menu-item_current {
   position: relative;
 }
 
-.fixed .header__menu-item_active::after {
+.fixed .header__menu-item_current::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   width: 100%;
   height: 3px;
   background: #FFFFFF;
+}
+
+.fixed .header__menu-item_active {
+  position: relative;
 }
 
 .fixed .header__menu-item_active span {

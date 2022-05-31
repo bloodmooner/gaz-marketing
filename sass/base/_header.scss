@@ -83,6 +83,18 @@
 
         &_active {
             position: relative;
+            
+            span {
+                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+
+        &_current {
+            position: relative;
             &::after {
                 content: '';
                 position: absolute;
@@ -91,13 +103,6 @@
                 width: 100%;
                 height: 3px;
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
-            }
-            span {
-                background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
             }
         }
     }
@@ -212,17 +217,23 @@
 .fixed {
     .header__menu-item {
 
-        &_active {
+
+        &_current {
             position: relative;
             &::after {
                 content: '';
                 position: absolute;
-                bottom: 0;
+                bottom: -3px;
                 left: 0;
                 width: 100%;
                 height: 3px;
                 background: #FFFFFF;
             }
+        }
+
+        &_active {
+            position: relative;
+
             span {
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
                 -webkit-background-clip: text;
