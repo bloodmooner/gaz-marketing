@@ -21,7 +21,7 @@
   @media (max-width: 991px) and (max-height: 450px) { @content; }
 }
 @mixin for-mobile-modal {
-  @media (max-width: 991px) and (max-height: 700px) { @content; }
+  @media (max-width: 991px) and (max-height: 600px) { @content; }
 }
 @mixin for-tablet-landscape {
   @media (max-width: 1200px) { @content; }

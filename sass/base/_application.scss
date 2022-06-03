@@ -12,6 +12,7 @@
         order: 1;
         
         background: #000000;
+        border-radius: 10px 10px 0 0;
         position: relative;
         top: 1px;
     }
@@ -83,7 +84,7 @@
         }
         .application__input {
             @include for-phone-portrait {
-                padding: 14px 21px;
+                padding: 11px 21px;
             }
             @include for-mobile-modal {
                 padding: 9px;
@@ -253,8 +254,8 @@
             line-height: 22px;
             color: #FFFFFF;
         }
-        @include for-phone-portrait {
-            padding: 23px 21px;
+        @include for-tablet-portrait {
+            padding: 18px 21px;
         }
         &:nth-child(1) {
             grid-row: 1/2;

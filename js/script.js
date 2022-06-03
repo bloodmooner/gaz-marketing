@@ -14,6 +14,11 @@ $(window).on('load', function () {
 
     
 });
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  $('.plans_context').find('.plans__title').text('Варианты продвижений');
+}
   
 $(document).ready(function(){
 

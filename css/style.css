@@ -939,6 +939,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
     background: #000000;
+    border-radius: 10px 10px 0 0;
     position: relative;
     top: 1px;
   }
@@ -974,7 +975,7 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__name {
     padding: 30px;
   }
@@ -1005,14 +1006,14 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__btn {
     margin-top: 5px;
     padding: 13px 40px;
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__polytics {
     margin-top: 13px;
   }
@@ -1038,11 +1039,11 @@ template {
 
 @media (max-width: 767px) {
   .application_modal .application__input {
-    padding: 14px 21px;
+    padding: 11px 21px;
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__input {
     padding: 9px;
     font-size: 14px;
@@ -1061,7 +1062,7 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__title {
     font-size: 30px;
     line-height: 30px;
@@ -1312,9 +1313,9 @@ template {
   color: #FFFFFF;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .application__input {
-    padding: 23px 21px;
+    padding: 18px 21px;
   }
 }
 
@@ -1673,7 +1674,7 @@ template {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 100;
+  z-index: 600;
   -webkit-transition: .3s all;
   transition: .3s all;
 }
@@ -1708,7 +1709,7 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .modal {
     top: 56%;
   }
@@ -1762,7 +1763,7 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .modal__close {
     width: 32px;
     height: 32px;
@@ -1777,7 +1778,7 @@ template {
   }
 }
 
-@media (max-width: 991px) and (max-height: 700px) {
+@media (max-width: 991px) and (max-height: 600px) {
   .modal__close img {
     width: 14px;
     height: 14px;
@@ -1863,6 +1864,13 @@ template {
 @media (max-width: 767px) {
   .modal__btn {
     padding: 23px 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal_analysis .application__title {
+    font-size: 23px;
+    line-height: 30px;
   }
 }
 
@@ -2832,6 +2840,12 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .plans__price {
+    min-height: auto;
+  }
+}
+
 .plans__number {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -3608,6 +3622,8 @@ template {
 
 @media (max-width: 991px) {
   .cases__caption {
+    position: relative;
+    z-index: 100;
     padding: 20px;
     display: block;
     -webkit-box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -3619,6 +3635,8 @@ template {
 
 @media (max-width: 991px) {
   .cases__info-caption-main {
+    position: relative;
+    z-index: 150;
     padding: 20px;
     display: block;
     -webkit-box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -4297,6 +4315,19 @@ template {
 @media (max-width: 991px) {
   .cases__info-issue {
     padding: 20px;
+    position: relative;
+  }
+}
+
+@media (max-width: 991px) {
+  .cases__info-issue:nth-child(2) {
+    z-index: 300;
+  }
+}
+
+@media (max-width: 991px) {
+  .cases__info-issue:nth-child(3) {
+    z-index: 200;
   }
 }
 
@@ -4980,6 +5011,13 @@ template {
 @media (max-width: 767px) {
   .about-us__trust {
     gap: 20px;
+    grid-auto-rows: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-us__trust {
+    grid-auto-rows: 90px;
   }
 }
 
@@ -5750,14 +5788,14 @@ template {
 
 @media (max-width: 991px) {
   .success__about-link {
-    width: 25px;
+    width: 28px;
     height: 28px;
   }
 }
 
 @media (max-width: 767px) {
   .success__about-link {
-    right: 11px;
+    right: 7px;
   }
 }
 
@@ -8466,7 +8504,7 @@ header.fixed {
   left: 0;
   width: 100%;
   background: linear-gradient(89.92deg, #65F0F4 0.06%, #6584F4 196.79%);
-  z-index: 80;
+  z-index: 500;
 }
 
 @media (max-width: 767px) {

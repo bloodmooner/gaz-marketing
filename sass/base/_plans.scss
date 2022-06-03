@@ -221,6 +221,9 @@
         @include for-tablet-landscape {
             min-height: 52px;
         }
+        @include for-phone-portrait {
+            min-height: auto;
+        }
     }
 
     &__number {

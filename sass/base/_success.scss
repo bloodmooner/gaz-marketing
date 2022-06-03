@@ -293,11 +293,11 @@
         bottom: -6px;
         z-index: 100;
         @include for-tablet-portrait {
-            width: 25px;
+            width: 28px;
             height: 28px;
         }
         @include for-phone-portrait {
-            right: 11px;
+            right: 7px;
         }
     }
 

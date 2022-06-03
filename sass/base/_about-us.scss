@@ -41,6 +41,10 @@
         }
         @include for-phone-portrait {
             gap: 20px;
+            grid-auto-rows: 120px;
+        }
+        @include for-phone {
+            grid-auto-rows: 90px;
         }
     }
 
