@@ -1,18 +1,22 @@
-$(window).on('load', function () {
+// $(window).on('load', function () {
   
 
 
-  if(localStorage.getItem("iknowyou")) {
-    $('.page').fadeIn();
-  } else {
-    $('.loader').css('display', 'block');
-    $('.loader').delay(1800).fadeOut('slow');
-    $('.page').fadeIn();
-    localStorage.setItem("iknowyou", "true");
-  }
+//   if(localStorage.getItem("iknowyou")) {
+//     $('.page').fadeIn();
+//   } else {
+//     $('.loader').css('display', 'block');
+//     $('.loader').delay(1800).fadeOut('slow');
+//     $('.page').fadeIn();
+//     localStorage.setItem("iknowyou", "true");
+//   }
 
 
     
+// });
+
+$(window).on('load', function () {
+	$('.loader').delay(1800).fadeOut('slow');
 });
 
 
