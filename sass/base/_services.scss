@@ -4,6 +4,9 @@
     @include for-tablet-portrait {
         padding: 60px 0;
     }
+    @include for-tablet-portrait {
+        padding: 25px 0 50px;
+    }
 }
 .services__title {
     font-family: $neuemachina;
