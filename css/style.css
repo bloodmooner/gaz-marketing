@@ -1942,13 +1942,19 @@ template {
 
 @media (max-width: 575px) {
   .promo_context .promo__title {
-    font-size: clamp(19px, 6.2vw, 35px);
+    font-size: clamp(19px, 6.7vw, 35px);
   }
 }
 
 @media (max-width: 1550px) {
   .promo_context .promo__title span {
     padding: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo_context .promo__title span {
+    padding: 0 2px 2px;
   }
 }
 
@@ -2026,8 +2032,14 @@ template {
 }
 
 @media (max-width: 575px) {
+  .promo_context .promo__btn {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
   .promo_seo .promo__title span {
-    padding: 0 2px 2px;
+    padding: 0 2px;
   }
 }
 
@@ -2103,7 +2115,7 @@ template {
 }
 
 .promo__wrapper {
-  margin-top: 212px;
+  margin-top: 225px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2411,8 +2423,26 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .promo_context .title__subtitle {
+    font-size: 12px;
+  }
+}
+
 .promo_context .promo__subtitle {
   margin-top: 12px;
+}
+
+@media (max-width: 575px) {
+  .promo_context .promo__subtitle {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo_context .promo__title {
+    padding-right: 0;
+  }
 }
 
 .video {
@@ -6059,13 +6089,13 @@ main.main {
 
 @media (max-width: 767px) {
   .promo-home {
-    padding: 110px 0 30px;
+    padding: 120px 0 30px;
   }
 }
 
 @media (max-width: 575px) {
   .promo-home {
-    padding: 100px 0 25px;
+    padding: 110px 0 25px;
   }
 }
 
@@ -6121,7 +6151,7 @@ main.main {
 .promo-home__title span {
   font-family: "Neue Machina", sans-serif;
   display: inline-block;
-  /* padding: 0 2px 2px; */
+  padding: 0 2px;
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -6236,6 +6266,12 @@ main.main {
   }
 }
 
+@media (max-width: 575px) {
+  .promo-home__additional {
+    margin-top: 15px;
+  }
+}
+
 .promo-home__list {
   list-style-type: none;
   margin-left: 31%;
@@ -6255,8 +6291,16 @@ main.main {
   font-weight: 400;
   font-size: 58px;
   line-height: 49px;
-  color: #000000;
   margin-top: 30px;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#000000));
+  background: linear-gradient(90deg, #000000 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 @media (max-width: 1200px) {
@@ -6282,6 +6326,17 @@ main.main {
 
 .promo-home__list li a:hover {
   text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.promo-home__list li a:hover::after {
+  background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+  background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
 
 .promo-home__list li a::after {
@@ -6291,7 +6346,8 @@ main.main {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#000000));
+  background: linear-gradient(90deg, #000000 0%, #000000 100%);
 }
 
 .our-cases {
@@ -6636,6 +6692,12 @@ main.main {
   }
 }
 
+@media (max-width: 991px) {
+  .services {
+    padding: 25px 0 50px;
+  }
+}
+
 .services__title {
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
@@ -6828,7 +6890,7 @@ main.main {
 .portfolio__title span {
   font-family: "Neue Machina", sans-serif;
   display: inline-block;
-  /* padding: 0 2px 2px; */
+  padding: 0 2px;
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -7167,7 +7229,7 @@ main.main {
 }
 
 .promo-item__wrapper {
-  margin-top: 177px;
+  margin-top: 207px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7178,11 +7240,17 @@ main.main {
 
 @media (max-width: 1200px) {
   .promo-item__wrapper {
-    margin-top: 170px;
+    margin-top: 190px;
   }
 }
 
 @media (max-width: 767px) {
+  .promo-item__wrapper {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 575px) {
   .promo-item__wrapper {
     margin-top: 90px;
   }
@@ -7240,7 +7308,7 @@ main.main {
 .promo-item__title span {
   display: inline-block;
   font-family: "Neue Machina", sans-serif;
-  /* padding: 0 2px 2px; */
+  padding: 0 2px;
   background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
   background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
@@ -7655,6 +7723,12 @@ main.main {
   }
 }
 
+@media (max-width: 575px) {
+  .thanks-or-error__wrapper {
+    gap: 0px;
+  }
+}
+
 .thanks-or-error__item {
   width: 50%;
 }
@@ -7674,6 +7748,12 @@ main.main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+}
+
+@media (max-width: 575px) {
+  .thanks-or-error__item ul {
+    gap: 10px;
+  }
 }
 
 .thanks-or-error__item ul li {
@@ -7705,7 +7785,7 @@ main.main {
 
 @media (max-width: 575px) {
   .thanks-or-error__item ul li {
-    padding: 28px;
+    padding: 14px 28px;
   }
 }
 
@@ -7791,6 +7871,7 @@ main.main {
   .thanks-or-error__item_thanks {
     padding: 28px 33px 40px 20px;
     height: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -7919,7 +8000,8 @@ main.main {
 
 @media (max-width: 575px) {
   .thanks-or-error__item_return {
-    padding: 28px 0;
+    padding: 14px 0;
+    margin-top: 10px;
   }
 }
 

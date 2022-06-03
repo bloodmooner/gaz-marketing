@@ -1,14 +1,17 @@
 .promo-item {
 }
 .promo-item__wrapper {
-    margin-top: 177px;
+    margin-top: 207px;
     display: flex;
     justify-content: space-between;
 
     @include for-tablet-landscape {
-        margin-top: 170px;
+        margin-top: 190px;
     }
     @include for-phone-portrait {
+        margin-top: 100px;
+    }
+    @include for-phone {
         margin-top: 90px;
     }
 }
@@ -47,7 +50,7 @@
 .promo-item__title span {
     display: inline-block;
     font-family: $neuemachina;
-    /* padding: 0 2px 2px; */
+    padding: 0 2px;
     background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
 }
 

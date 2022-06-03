@@ -46,11 +46,14 @@
                 font-size: clamp(27px, 3vw, 35px);
             }
             @include for-phone {
-                font-size: clamp(19px, 6.2vw, 35px);
+                font-size: clamp(19px, 6.7vw, 35px);
             }
             span {
                 @include for-desk {
                     padding: 0 5px 0 0;
+                }
+                @include for-phone {
+                    padding: 0 2px 2px;
                 }
             }
         }
@@ -104,6 +107,9 @@
                 padding: 15px 30px;
                 font-size: 16px;
             }
+            @include for-phone {
+                margin-top: 40px;
+            }
         }
     }
 
@@ -111,7 +117,7 @@
         .promo__title {
             span {
                 @include for-phone {
-                    padding: 0 2px 2px;
+                    padding: 0 2px;
                 }
             }
         }
@@ -168,7 +174,7 @@
     }
 
     &__wrapper {
-        margin-top: 212px;
+        margin-top: 225px;
         display: flex;
         justify-content: space-between;
         @include for-desk {
@@ -378,7 +384,20 @@
         margin-top: 30px;
         font-size: 14px;
     }
+    @include for-phone-portrait {
+        font-size: 12px;
+    }
 }
 .promo_context .promo__subtitle {
     margin-top: 12px;
+
+    @include for-phone {
+        margin-top: 5px;
+    }
+}
+.promo_context .promo__title {
+
+    @include for-phone {
+        padding-right: 0;
+    }
 }
