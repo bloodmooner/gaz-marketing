@@ -39,7 +39,7 @@
         max-width: 691px;
         width: 100%;
         @include for-phone-portrait {
-            max-width: 300px;
+            max-width: 100%;
             padding-left: 19px;
         }
     }

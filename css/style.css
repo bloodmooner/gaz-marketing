@@ -3192,7 +3192,7 @@ template {
 
 @media (max-width: 767px) {
   .stages__title {
-    max-width: 300px;
+    max-width: 100%;
     padding-left: 19px;
   }
 }
