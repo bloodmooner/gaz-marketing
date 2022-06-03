@@ -1,9 +1,28 @@
 $(window).on('load', function () {
+  
+
+
+  if(localStorage.getItem("iknowyou")) {
+    $('.page').fadeIn();
+  } else {
+    $('.loader').css('display', 'block');
     $('.loader').delay(1800).fadeOut('slow');
+    $('.page').fadeIn();
+    localStorage.setItem("iknowyou", "true");
+  }
+
+
+    
 });
   
 $(document).ready(function(){
 
+
+ 
+
+  
+
+  
 
   let activeMenuItem = $('.header__menu-item_active');
 

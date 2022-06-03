@@ -8173,6 +8173,7 @@ main.main {
 }
 
 .loader {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -8474,6 +8475,10 @@ header.fixed {
     -webkit-box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
             box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
   }
+}
+
+.page {
+  display: none;
 }
 
 slick-track {
