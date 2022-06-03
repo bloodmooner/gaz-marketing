@@ -17,274 +17,311 @@
         <div class="loader__img"><img src="assets/svg/loader.svg" alt="loader"></div>
     </div>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="index.html">
-                        <img class="header__logo-icon" src="assets/svg/logo.svg" alt="logo" >
-                    </a>
-                </div>
-                <div class="header__bottom">
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item header__menu-item_current">
-                                <a class="header__menu-link" href="portfolio.html" >
-                                    <span>Портфолио</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="seo.html" >
-                                    <span>SEO</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="context.html" >
-                                    <span>Контекст</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="smm.html" >
-                                    <span>SMM</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__contacts">
-                        <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
-                        <button class="btn header__btn btn_bbtn js-open-modal-order">
-                            <span>Оставить заявку</span>
-                        </button>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="index.html">
+                            <img class="header__logo-icon" src="assets/svg/logo.svg" alt="logo" >
+                        </a>
                     </div>
-                    <div class="header__burger">
-                        <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
-                    </div>
-                </div>
-            </div>
-
-            <div class="header-mobile">
-                <div class="header-mobile__top">
-                    <div class="header-mobile__close">
-                        <a href="index.html"><img src="assets/svg/logo.svg" alt="logo"></a>
-                        <img class="header-mobile__close-image" alt="close" src="assets/svg/menu-close.svg" width="24" height="24">
-                    </div>
-                    <div class="header-mobile__wrapper">
-                        <nav class="header-mobile__nav">
-                            <div class="header-mobile__item_header">Услуги</div>
-                            <ul class="header-mobile__list">
-                                <li class="header-mobile__item">
-                                    <a href="seo.html" class="header-mobile__link">SEO</a>
+                    <div class="header__bottom">
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item header__menu-item_current">
+                                    <a class="header__menu-link" href="portfolio.html" >
+                                        <span>Портфолио</span>
+                                    </a>
                                 </li>
-                                <li class="header-mobile__item">
-                                    <a href="smm.html" class="header-mobile__link">SMM</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="seo.html" >
+                                        <span>SEO</span>
+                                    </a>
                                 </li>
-                                <li class="header-mobile__item">
-                                    <a href="context.html" class="header-mobile__link">Контекст</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="context.html" >
+                                        <span>Контекст</span>
+                                    </a>
                                 </li>
-                            </ul>
-                            <div class="header-mobile__item_header">Агентство</div>
-                            <ul class="header-mobile__list">
-                                <li class="header-mobile__item">
-                                    <a href="portfolio.html" class="header-mobile__link">Портфолио</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="smm.html" >
+                                        <span>SMM</span>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
-                        <div class="header-mobile__links">
-                            <div class="header-mobile__about">ГАЗ — digital-агентство. 
-                                Мы сочетаем стратегический подход 
-                                и сильное производство. 
-                                Объединяем с помощью стратегии отдельные работы и методологии 
-                                в комплексные проекты, 
-                                которые приносят пользу компаниям 
-                                и меняют их.
-                            </div>
-                            <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
-                            <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
-                            <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
+                        <div class="header__contacts">
+                            <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
+                            <button class="btn header__btn btn_bbtn js-open-modal-order">
+                                <span>Оставить заявку</span>
+                            </button>
+                        </div>
+                        <div class="header__burger">
+                            <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Start -->
-    <main class="main">
-
-        <section class="portfolio tabs">
-            <div class="container">
-                <div class="breadcrumb">
-                    <ul class="breadcrumb__list">
-                        <li class="breadcrumb__item">
-                            <a class="breadcrumb__link" href="#" >Главная</a>
-                        </li>
-                        <li class="breadcrumb__item">
-                            <span class="breadcrumb__link" href="#" >Портфолио</span>
-                        </li>
-                    </ul>
-                </div>
-                <h1 class="portfolio__title"><span>Наше портфолио</span></h1>
-                <div class="portfolio__tabs_wrap">
-					<ul class="portfolio__tabs_caption">
-						<li class="active"><span>Все кейсы</span></li>
-						<li><span>SMM</span></li>
-						<li><span>SEO</span></li>
-						<li><span>Контекст</span></li>
-
-					</ul>
-				</div>        
-            </div>
-            <div class="container mobile_fluid">
-                <div class="portfolio__tabs_content active">
-                    <ul class="portfolio__list">
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                    </ul>
-                </div>
-                <div class="portfolio__tabs_content">
-                    <ul class="portfolio__list">
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                    </ul>
-                </div>
-                <div class="portfolio__tabs_content">
-                    <ul class="portfolio__list">
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                    </ul>
-                </div>
-                <div class="portfolio__tabs_content">
-                    <ul class="portfolio__list">
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                        <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="application application_seo">
-            <div class="container">
-                <div class="application__wrapper">
-                    <div class="application__outer">
-                        <div class="application__name">
-                            <h2 class="title application__title">Оставьте заявку</h2>
+    
+                <div class="header-mobile">
+                    <div class="header-mobile__top">
+                        <div class="header-mobile__close">
+                            <a href="index.html"><img src="assets/svg/logo.svg" alt="logo"></a>
+                            <img class="header-mobile__close-image" alt="close" src="assets/svg/menu-close.svg" width="24" height="24">
                         </div>
-                        <div class="application__inner">
-                            <form action="#" class="application__form">
-                                <input type="text" class="application__input" placeholder="Имя*">
-                                <input type="text" class="application__input" placeholder="Телефон*">
-                                <input type="text" class="application__input" placeholder="Почта">
-                                <button class="btn application__btn btn_bwbtn">
-                                    <span>Оставить заявку</span>
-                                </button>
-                            </form>
-                            <div class="application__polytics">
-                                <p class="application__polytics-text">
-                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                </p>
+                        <div class="header-mobile__wrapper">
+                            <nav class="header-mobile__nav">
+                                <div class="header-mobile__item_header">Услуги</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="seo.html" class="header-mobile__link">SEO</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="smm.html" class="header-mobile__link">SMM</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="context.html" class="header-mobile__link">Контекст</a>
+                                    </li>
+                                </ul>
+                                <div class="header-mobile__item_header">Агентство</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="portfolio.html" class="header-mobile__link">Портфолио</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-mobile__links">
+                                <div class="header-mobile__about">ГАЗ — digital-агентство. 
+                                    Мы сочетаем стратегический подход 
+                                    и сильное производство. 
+                                    Объединяем с помощью стратегии отдельные работы и методологии 
+                                    в комплексные проекты, 
+                                    которые приносят пользу компаниям 
+                                    и меняют их.
+                                </div>
+                                <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
+                                <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
+                                <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-    </main>
-    <!-- Main End -->
-
-  
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__main">
-                    <a class="footer__logo" href="#" >
-                        <img src="assets/svg/logo.svg" alt="" class="footer__logo-icon">
-                    </a>
-                    <nav class="footer__menu">
-                        <ul class="footer__menu-list">
-                            <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="#" >Портфолио</a>
+        </header>
+    
+        <!-- Main Start -->
+        <main class="main">
+    
+            <section class="portfolio tabs">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="#" >Главная</a>
                             </li>
-                            <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="#" >SEO</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="#" >Контекст</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class="footer__menu-link" href="#" >SMM</a>
+                            <li class="breadcrumb__item">
+                                <span class="breadcrumb__link" href="#" >Портфолио</span>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
+                    <h1 class="portfolio__title"><span>Наше портфолио</span></h1>
+                    <div class="portfolio__tabs_wrap">
+                        <ul class="portfolio__tabs_caption">
+                            <li class="active"><span>Все кейсы</span></li>
+                            <li><span>SMM</span></li>
+                            <li><span>SEO</span></li>
+                            <li><span>Контекст</span></li>
+    
+                        </ul>
+                    </div>        
                 </div>
-                <div class="footer__contacts">
-                    <div class="footer__contacts-items">
-                        <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com"><span>order@gaz-marketing.com</span></a>
-                        <a class="footer__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
-                        <ul class="footer__contacts-social">
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/vk.svg" alt="" >
-                                </a>
-                            </li>
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/insta.svg" alt="" >
-                                </a>
-                            </li>
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/telegram.svg" alt="" >
-                                </a>
-                            </li>
+                <div class="container mobile_fluid">
+                    <div class="portfolio__tabs_content active">
+                        <ul class="portfolio__list">
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
                         </ul>
+                    </div>
+                    <div class="portfolio__tabs_content">
+                        <ul class="portfolio__list">
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__tabs_content">
+                        <ul class="portfolio__list">
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__tabs_content">
+                        <ul class="portfolio__list">
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                            <li><a href=""><img src="assets/img/case.png" alt="item"><h3>кейс</h3><h2>Название кейса</h2><div class="our-cases__block"><p>Текст, который описывает содержание кейса при наведении.  Текст, который описывает содержание кейса при наведении. Текст, который описывает содержание кейса при наведении.</p></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="application application_seo">
+                <div class="container">
+                    <div class="application__wrapper">
+                        <div class="application__outer">
+                            <div class="application__name">
+                                <h2 class="title application__title">Оставьте заявку</h2>
+                            </div>
+                            <div class="application__inner">
+                                <form action="#" class="application__form">
+                                    <input type="text" class="application__input" placeholder="Имя*">
+                                    <input type="text" class="application__input" placeholder="Телефон*">
+                                    <input type="text" class="application__input" placeholder="Почта">
+                                    <button class="btn application__btn btn_bwbtn">
+                                        <span>Оставить заявку</span>
+                                    </button>
+                                </form>
+                                <div class="application__polytics">
+                                    <p class="application__polytics-text">
+                                        Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </main>
+        <!-- Main End -->
+    
+      
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__main">
+                        <a class="footer__logo" href="#" >
+                            <img src="assets/svg/logo.svg" alt="" class="footer__logo-icon">
+                        </a>
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#" >Портфолио</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#" >SEO</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#" >Контекст</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="#" >SMM</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-items">
+                            <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com"><span>order@gaz-marketing.com</span></a>
+                            <a class="footer__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
+                            <ul class="footer__contacts-social">
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/vk.svg" alt="" >
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/insta.svg" alt="" >
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/telegram.svg" alt="" >
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Подложка под модальным окном -->
-        <div class="overlays js-overlay-modal">
-            <div class="modal modal_order">
-                <div class="modal__container">
-                    <div class="modal__close">
-                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
-                    </div>
-                    <div class="application application_modal">
-                        <div class="container">
-                            <div class="application__wrapper">
-                                <div class="application__outer">
-                                    <div class="application__name">
-                                        <h2 class="title application__title">
-                                            <span>Оставить заявку</span>
-                                        </h2>
-                                    </div>
-                                    <div class="application__inner">
-                                        <form action="#" class="application__form">
-                                            <input type="text" class="application__input" placeholder="Имя*">
-                                            <input type="text" class="application__input" placeholder="Телефон*">
-                                            <input type="text" class="application__input" placeholder="Почта">
-                                            <button class="btn application__btn btn_bwbtn">
+    
+            <!-- Подложка под модальным окном -->
+            <div class="overlays js-overlay-modal">
+                <div class="modal modal_order">
+                    <div class="modal__container">
+                        <div class="modal__close">
+                            <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                        </div>
+                        <div class="application application_modal">
+                            <div class="container">
+                                <div class="application__wrapper">
+                                    <div class="application__outer">
+                                        <div class="application__name">
+                                            <h2 class="title application__title">
                                                 <span>Оставить заявку</span>
-                                            </button>
-                                        </form>
-                                        <div class="application__polytics">
-                                            <p class="application__polytics-text">
-                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                            </p>
+                                            </h2>
+                                        </div>
+                                        <div class="application__inner">
+                                            <form action="#" class="application__form">
+                                                <input type="text" class="application__input" placeholder="Имя*">
+                                                <input type="text" class="application__input" placeholder="Телефон*">
+                                                <input type="text" class="application__input" placeholder="Почта">
+                                                <button class="btn application__btn btn_bwbtn">
+                                                    <span>Оставить заявку</span>
+                                                </button>
+                                            </form>
+                                            <div class="application__polytics">
+                                                <p class="application__polytics-text">
+                                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal modal_analysis">
+                    <div class="modal__container">
+                        <div class="modal__close">
+                            <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                        </div>
+                        <div class="application application_modal">
+                            <div class="container">
+                                <div class="application__wrapper">
+                                    <div class="application__outer">
+                                        <div class="application__name">
+                                            <h2 class="title application__title">
+                                                <span>Закажите разбор</span>
+                                            </h2>
+                                        </div>
+                                        <div class="application__inner">
+                                            <form action="#" class="application__form">
+                                                <input type="text" class="application__input" placeholder="Имя*">
+                                                <input type="text" class="application__input" placeholder="Телефон*">
+                                                <input type="text" class="application__input" placeholder="Почта">
+                                                <button class="btn application__btn btn_bwbtn">
+                                                    <span>Оставить заявку</span>
+                                                </button>
+                                            </form>
+                                            <div class="application__polytics">
+                                                <p class="application__polytics-text">
+                                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -293,43 +330,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal modal_analysis">
-                <div class="modal__container">
-                    <div class="modal__close">
-                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
-                    </div>
-                    <div class="application application_modal">
-                        <div class="container">
-                            <div class="application__wrapper">
-                                <div class="application__outer">
-                                    <div class="application__name">
-                                        <h2 class="title application__title">
-                                            <span>Закажите разбор</span>
-                                        </h2>
-                                    </div>
-                                    <div class="application__inner">
-                                        <form action="#" class="application__form">
-                                            <input type="text" class="application__input" placeholder="Имя*">
-                                            <input type="text" class="application__input" placeholder="Телефон*">
-                                            <input type="text" class="application__input" placeholder="Почта">
-                                            <button class="btn application__btn btn_bwbtn">
-                                                <span>Оставить заявку</span>
-                                            </button>
-                                        </form>
-                                        <div class="application__polytics">
-                                            <p class="application__polytics-text">
-                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+    
   
   
 

@@ -17,326 +17,371 @@
         <div class="loader__img"><img src="assets/svg/loader.svg" alt="loader"></div>
     </div>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="index.html">
-                        <img class="header__logo-icon" src="assets/svg/logo.svg" alt="logo" >
-                    </a>
-                </div>
-                <div class="header__bottom">
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="portfolio.html" >Портфолио</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="seo.html" >SEO</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="context.html" >Контекст</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="smm.html" >SMM</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__contacts">
-                        <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
-                        <button class="btn header__btn btn_bbtn js-open-modal-order">
-                            <span>Оставить заявку</span>
-                        </button>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="index.html">
+                            <img class="header__logo-icon" src="assets/svg/logo.svg" alt="logo" >
+                        </a>
                     </div>
-                    <div class="header__burger">
-                        <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
-                    </div>
-                </div>
-            </div>
-
-            <div class="header-mobile">
-                <div class="header-mobile__top">
-                    <div class="header-mobile__close">
-                        <a href="index.html"><img src="assets/svg/logo.svg" alt="logo"></a>
-                        <img class="header-mobile__close-image" alt="close" src="assets/svg/menu-close.svg" width="24" height="24">
-                    </div>
-                    <div class="header-mobile__wrapper">
-                        <nav class="header-mobile__nav">
-                            <div class="header-mobile__item_header">Услуги</div>
-                            <ul class="header-mobile__list">
-                                <li class="header-mobile__item">
-                                    <a href="seo.html" class="header-mobile__link">SEO</a>
+                    <div class="header__bottom">
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item header__menu-item_current">
+                                    <a class="header__menu-link" href="portfolio.html" >
+                                        <span>Портфолио</span>
+                                    </a>
                                 </li>
-                                <li class="header-mobile__item">
-                                    <a href="smm.html" class="header-mobile__link">SMM</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="seo.html" >
+                                        <span>SEO</span>
+                                    </a>
                                 </li>
-                                <li class="header-mobile__item">
-                                    <a href="context.html" class="header-mobile__link">Контекст</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="context.html" >
+                                        <span>Контекст</span>
+                                    </a>
                                 </li>
-                            </ul>
-                            <div class="header-mobile__item_header">Агентство</div>
-                            <ul class="header-mobile__list">
-                                <li class="header-mobile__item">
-                                    <a href="portfolio.html" class="header-mobile__link">Портфолио</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="smm.html" >
+                                        <span>SMM</span>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
-                        <div class="header-mobile__links">
-                            <div class="header-mobile__about">ГАЗ — digital-агентство. 
-                                Мы сочетаем стратегический подход 
-                                и сильное производство. 
-                                Объединяем с помощью стратегии отдельные работы и методологии 
-                                в комплексные проекты, 
-                                которые приносят пользу компаниям 
-                                и меняют их.
+                        <div class="header__contacts">
+                            <a class="header__tel" href="tel:+79160123456" >+7 916 012-34-56</a>
+                            <button class="btn header__btn btn_bbtn js-open-modal-order">
+                                <span>Оставить заявку</span>
+                            </button>
+                        </div>
+                        <div class="header__burger">
+                            <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="header-mobile">
+                    <div class="header-mobile__top">
+                        <div class="header-mobile__close">
+                            <a href="index.html"><img src="assets/svg/logo.svg" alt="logo"></a>
+                            <img class="header-mobile__close-image" alt="close" src="assets/svg/menu-close.svg" width="24" height="24">
+                        </div>
+                        <div class="header-mobile__wrapper">
+                            <nav class="header-mobile__nav">
+                                <div class="header-mobile__item_header">Услуги</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="seo.html" class="header-mobile__link">SEO</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="smm.html" class="header-mobile__link">SMM</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="context.html" class="header-mobile__link">Контекст</a>
+                                    </li>
+                                </ul>
+                                <div class="header-mobile__item_header">Агентство</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="portfolio.html" class="header-mobile__link">Портфолио</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-mobile__links">
+                                <div class="header-mobile__about">ГАЗ — digital-агентство. 
+                                    Мы сочетаем стратегический подход 
+                                    и сильное производство. 
+                                    Объединяем с помощью стратегии отдельные работы и методологии 
+                                    в комплексные проекты, 
+                                    которые приносят пользу компаниям 
+                                    и меняют их.
+                                </div>
+                                <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
+                                <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
+                                <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                             </div>
-                            <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
-                            <a class="header-mobile__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
-                            <a class="header-mobile__contacts-mail" href="mailto:order@gaz-marketing.com">order@gaz-marketing.com</a>                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <!-- Main Start -->
-    <main class="main">
-
-        <section class="promo-item">
+        </header>
+    
+        <!-- Main Start -->
+        <main class="main">
+    
+            <section class="promo-item">
+                <div class="container">
+                    <div class="promo-item__wrapper">
+                        <div class="promo-item__caption">
+                            <div class="breadcrumb">
+                                <ul class="breadcrumb__list">
+                                    <li class="breadcrumb__item">
+                                        <a class="breadcrumb__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="breadcrumb__item">
+                                        <a class="breadcrumb__link" href="#">Портфолио</a>
+                                    </li>
+                                    <li class="breadcrumb__item">
+                                        <span class="breadcrumb__link" href="#">Zumba Club MZK</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1 class="title promo-item__title"><span>SMM продвижение</span> <br>для Zumba Club MZK: кол-во подписчиков выросло в 6 раз</h1>
+                            <a href="#" target="_blank" class="btn promo-item__btn">Посетить сайт</a>
+                        </div>
+                        <div class="promo-item__additional">
+                            <img class="promo-item__image" src="assets/img/smm/video-bg.jpg" alt="bg">
+                        </div>
+                    </div>
+                    <h2 class="promo-item__title_result">Результаты продвижения за 1 месяц:</h2>
+                    <ul class="promo-item__info-list">
+                        <li class="promo-item__info-listitem">
+                            <div class="promo-item__info-listitem_wrapper">
+                                <h4 class="promo-item__info-listtitle">656</h4><span>х9</span>
+                            </div>
+                            <p class="promo-item__info-listtext">
+                                Подписчиков
+                            </p>
+                        </li>
+                        <li class="promo-item__info-listitem">
+                            <h4 class="promo-item__info-listtitle">
+                                >2
+                            </h4>
+                            <p class="promo-item__info-listtext">
+                                Новых групп
+                            </p>
+                        </li>
+                        <li class="promo-item__info-listitem">
+                            <h4 class="promo-item__info-listtitle">
+                                Max
+                            </h4>
+                            <p class="promo-item__info-listtext">
+                                Все группы забиты до отказа
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="item-content">
+                <div class="container">
+                    <div class="item-content__wrapper">
+                        <h3>Клиент и задача</h3>
+                        <p>Softline — ведущий поставщик IT-решенийи сервисов, <span class="link">входит в топ-5 крупнейших IT-компаний России.</span></p>
+                        <p>В интернет-магазине Softline представлено более 100 тысяч позиций лицензионного программного обеспечения, компьютеров, смартфонов, электроники 
+                            для дома и офиса.</p>
+                        <p>Softline пришли в Nimax с амбициозной задачей — придумать и провести масштабную рекламную кампанию, <span class="bold">которая увеличит уровень узнаваемости бренда Softline как поставщика лицензионного софта для B2B- и B2C-аудитории.</span></p>    
+                        <p>В результате работы нам удалось всего за месяц увеличить узнаваемость среди B2B-аудитории на 33% и выйти на первое место по знанию с подсказкой среди конкурентов. 
+                            А возможность будущей покупки ПОв Softline Store выросла с 32% до 58%.</p>
+                        <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
+                        <h3>Подготовка к рекламной кампании. Ситуация на рынке</h3>
+                        <p>Softline Store — это интернет-магазин лицензионного софта, подписок, электроники и IT-оборудования.
+                            Основная потребность покупателей — сам софт, который интернет-магазины не разрабатывают, а только продают.
+                            Поэтому может показаться, что покупатель выбирает интернет-магазин всего по двум критериям: наличие конкретного программного обеспечения и цена. Где дешевле — там и купил.
+                        </p>
+                        <p>Для того, чтобы выделиться среди конкурентов, мы стали искать дополнительную ценность для покупателя.</p>  
+                        <p>Если знать, как конкуренты подходят к рекламе, можно выбрать сообщения для отстройки от них. 
+                            Поэтому с помощью SPY-сервисов мы собрали актуальные рекламные баннеры конкурентов и выделили основные посылы.
+                        </p>  
+                        <p>Анализируя рекламные объявления, мы отметили, что конкуренты фокусируются на собственных преимуществах, а не на пользе для покупателей. 
+                            Отсюда и одинаковые посылы: про лидерство на рынке, широкий ассортимент, официальное партнёрство и т.д.
+                        </p>        
+                        <p>А нам было важно перевести фокус на покупателя — показать, какую пользу он получит, если выберет Softline Store.</p>
+                        <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
+                        <h3>Анализ аудитории рекламной кампании</h3>
+                        <p>Другая особенность будущей кампании — охват сразу двух сегментов аудитории: B2B и B2C. 
+                            Иногда разделять эти аудитории в имиджевой кампании нецелесообразно, так как настройки таргетинга не дадут точной сегментации. 
+                            Например, можно выбрать «интерес к ПО», но определить, кто именно этот интерес проявляет — бизнес или простой покупатель — не получится.
+                        </p>
+                        <p>В этом случае можно разделить аудиторию с помощью креативов: сделать для каждого сегмента свой вариант 
+                            с актуальной проблематикой.
+                        </p>    
+                        <p>
+                            Либо разработать общий посыл, который будет одинаково подходить разным сегментам. 
+                            Чтобы понять, какой из подходов выбрать, мы стали искать пересечения в опыте B2B- и B2C-аудитории.
+                        </p>
+                        <p>Что мы сделали:</p>
+                        <p>
+                            <span class="bold">01</span> Изучили отзывы, реакции и комментарии аудитории, которая покупала лицензионный софт в интернет-магазинах. 
+                            И обнаружили, что среди этих людей есть как физические лица, покупающие софт для себя, так и сотрудники компаний.
+                        </p>
+                        <p><span class="bold">02</span> Собрали список дополнительных преимуществ и недостатков, которые отмечают сами покупатели. Отсортировали наиболее часто повторяющиеся и проверили их на пересечения по сегментам аудитории.</p>    
+                        <p>
+                            У нас получилось выявить общие для B2C- и B2B-сегментов ожидания, которые можно разделить по направлениям: консультирование при выборе, скорость обработки запросов, послепродажная помощь и другое. 
+                            А главное — мы нашли неочевидные трудности, с которыми сталкиваются пользователи.
+                        </p>
+                        <p>
+                            Например, отсутствие поддержки на русском языке. 
+                            Выяснилось, что если у покупателя возникают трудности с установкой софта, то некоторые продавцы отказываются их решать и отправляют пользователя напрямую к вендору. 
+                            Вендор же оказывает поддержку только на английском. А это проблема для тех, кто плохо знает язык. 
+                            Softline же готов проконсультировать даже после продажи.
+                        </p>                    
+                        <p>В итоге мы собрали базу для разработки общего рекламного посыла: знали, как рекламируются конкуренты и какая проблематика объединяет B2B- и B2C-аудитории.</p>
+                        <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
+                    </div>
+                    <!-- <div class="promo-item__additional promo-item__additional-mobile">
+                        <img class="promo-item__image" src="assets/img/smm/video-bg.jpg" alt="bg">
+                    </div> -->
+                </div>
+            </section>
+    
+            <section class="application application_seo">
+                <div class="container">
+                    <div class="application__wrapper">
+                        <div class="application__outer">
+                            <div class="application__name">
+                                <h2 class="title application__title">Оставьте заявку</h2>
+                            </div>
+                            <div class="application__inner">
+                                <form action="#" class="application__form">
+                                    <input type="text" class="application__input" placeholder="Имя*">
+                                    <input type="text" class="application__input" placeholder="Телефон*">
+                                    <input type="text" class="application__input" placeholder="Почта">
+                                    <button class="btn application__btn btn_bwbtn">
+                                        <span>Оставить заявку</span>
+                                    </button>
+                                </form>
+                                <div class="application__polytics">
+                                    <p class="application__polytics-text">
+                                        Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </main>
+        <!-- Main End -->
+    
+      
+        <footer class="footer">
             <div class="container">
-                <div class="promo-item__wrapper">
-                    <div class="promo-item__caption">
-                        <div class="breadcrumb">
-                            <ul class="breadcrumb__list">
-                                <li class="breadcrumb__item">
-                                    <a class="breadcrumb__link" href="#">Главная</a>
+                <div class="footer__wrapper">
+                    <div class="footer__main">
+                        <a class="footer__logo" href="#" >
+                            <img src="assets/svg/logo.svg" alt="" class="footer__logo-icon">
+                        </a>
+                        <nav class="footer__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="portfolio.html" >
+                                        <span>Портфолио</span>
+                                    </a>
                                 </li>
-                                <li class="breadcrumb__item">
-                                    <a class="breadcrumb__link" href="#">Портфолио</a>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="seo.html" >
+                                        <span>SEO</span>
+                                    </a>
                                 </li>
-                                <li class="breadcrumb__item">
-                                    <span class="breadcrumb__link" href="#">Zumba Club MZK</span>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="context.html" >
+                                        <span>Контекст</span>
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="smm.html" >
+                                        <span>SMM</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-items">
+                            <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com"><span>order@gaz-marketing.com</span></a>
+                            <a class="footer__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
+                            <ul class="footer__contacts-social">
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/vk.svg" alt="" >
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/insta.svg" alt="" >
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-social-item">
+                                    <a class="footer__contacts-social-link" href="#" >
+                                        <img class="footer__contacts-social-icon" src="assets/svg/icons/telegram.svg" alt="" >
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <h1 class="title promo-item__title"><span>SMM продвижение</span> <br>для Zumba Club MZK: кол-во подписчиков выросло в 6 раз</h1>
-                        <a href="#" target="_blank" class="btn promo-item__btn">Посетить сайт</a>
-                    </div>
-                    <div class="promo-item__additional">
-                        <img class="promo-item__image" src="assets/img/smm/video-bg.jpg" alt="bg">
                     </div>
                 </div>
-                <h2 class="promo-item__title_result">Результаты продвижения за 1 месяц:</h2>
-                <ul class="promo-item__info-list">
-                    <li class="promo-item__info-listitem">
-                        <div class="promo-item__info-listitem_wrapper">
-                            <h4 class="promo-item__info-listtitle">656</h4><span>х9</span>
-                        </div>
-                        <p class="promo-item__info-listtext">
-                            Подписчиков
-                        </p>
-                    </li>
-                    <li class="promo-item__info-listitem">
-                        <h4 class="promo-item__info-listtitle">
-                            >2
-                        </h4>
-                        <p class="promo-item__info-listtext">
-                            Новых групп
-                        </p>
-                    </li>
-                    <li class="promo-item__info-listitem">
-                        <h4 class="promo-item__info-listtitle">
-                            Max
-                        </h4>
-                        <p class="promo-item__info-listtext">
-                            Все группы забиты до отказа
-                        </p>
-                    </li>
-                </ul>
             </div>
-        </section>
-
-        <section class="item-content">
-            <div class="container">
-                <div class="item-content__wrapper">
-                    <h3>Клиент и задача</h3>
-                    <p>Softline — ведущий поставщик IT-решенийи сервисов, <span class="link">входит в топ-5 крупнейших IT-компаний России.</span></p>
-                    <p>В интернет-магазине Softline представлено более 100 тысяч позиций лицензионного программного обеспечения, компьютеров, смартфонов, электроники 
-                        для дома и офиса.</p>
-                    <p>Softline пришли в Nimax с амбициозной задачей — придумать и провести масштабную рекламную кампанию, <span class="bold">которая увеличит уровень узнаваемости бренда Softline как поставщика лицензионного софта для B2B- и B2C-аудитории.</span></p>    
-                    <p>В результате работы нам удалось всего за месяц увеличить узнаваемость среди B2B-аудитории на 33% и выйти на первое место по знанию с подсказкой среди конкурентов. 
-                        А возможность будущей покупки ПОв Softline Store выросла с 32% до 58%.</p>
-                    <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
-                    <h3>Подготовка к рекламной кампании. Ситуация на рынке</h3>
-                    <p>Softline Store — это интернет-магазин лицензионного софта, подписок, электроники и IT-оборудования.
-                        Основная потребность покупателей — сам софт, который интернет-магазины не разрабатывают, а только продают.
-                        Поэтому может показаться, что покупатель выбирает интернет-магазин всего по двум критериям: наличие конкретного программного обеспечения и цена. Где дешевле — там и купил.
-                    </p>
-                    <p>Для того, чтобы выделиться среди конкурентов, мы стали искать дополнительную ценность для покупателя.</p>  
-                    <p>Если знать, как конкуренты подходят к рекламе, можно выбрать сообщения для отстройки от них. 
-                        Поэтому с помощью SPY-сервисов мы собрали актуальные рекламные баннеры конкурентов и выделили основные посылы.
-                    </p>  
-                    <p>Анализируя рекламные объявления, мы отметили, что конкуренты фокусируются на собственных преимуществах, а не на пользе для покупателей. 
-                        Отсюда и одинаковые посылы: про лидерство на рынке, широкий ассортимент, официальное партнёрство и т.д.
-                    </p>        
-                    <p>А нам было важно перевести фокус на покупателя — показать, какую пользу он получит, если выберет Softline Store.</p>
-                    <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
-                    <h3>Анализ аудитории рекламной кампании</h3>
-                    <p>Другая особенность будущей кампании — охват сразу двух сегментов аудитории: B2B и B2C. 
-                        Иногда разделять эти аудитории в имиджевой кампании нецелесообразно, так как настройки таргетинга не дадут точной сегментации. 
-                        Например, можно выбрать «интерес к ПО», но определить, кто именно этот интерес проявляет — бизнес или простой покупатель — не получится.
-                    </p>
-                    <p>В этом случае можно разделить аудиторию с помощью креативов: сделать для каждого сегмента свой вариант 
-                        с актуальной проблематикой.
-                    </p>    
-                    <p>
-                        Либо разработать общий посыл, который будет одинаково подходить разным сегментам. 
-                        Чтобы понять, какой из подходов выбрать, мы стали искать пересечения в опыте B2B- и B2C-аудитории.
-                    </p>
-                    <p>Что мы сделали:</p>
-                    <p>
-                        <span class="bold">01</span> Изучили отзывы, реакции и комментарии аудитории, которая покупала лицензионный софт в интернет-магазинах. 
-                        И обнаружили, что среди этих людей есть как физические лица, покупающие софт для себя, так и сотрудники компаний.
-                    </p>
-                    <p><span class="bold">02</span> Собрали список дополнительных преимуществ и недостатков, которые отмечают сами покупатели. Отсортировали наиболее часто повторяющиеся и проверили их на пересечения по сегментам аудитории.</p>    
-                    <p>
-                        У нас получилось выявить общие для B2C- и B2B-сегментов ожидания, которые можно разделить по направлениям: консультирование при выборе, скорость обработки запросов, послепродажная помощь и другое. 
-                        А главное — мы нашли неочевидные трудности, с которыми сталкиваются пользователи.
-                    </p>
-                    <p>
-                        Например, отсутствие поддержки на русском языке. 
-                        Выяснилось, что если у покупателя возникают трудности с установкой софта, то некоторые продавцы отказываются их решать и отправляют пользователя напрямую к вендору. 
-                        Вендор же оказывает поддержку только на английском. А это проблема для тех, кто плохо знает язык. 
-                        Softline же готов проконсультировать даже после продажи.
-                    </p>                    
-                    <p>В итоге мы собрали базу для разработки общего рекламного посыла: знали, как рекламируются конкуренты и какая проблематика объединяет B2B- и B2C-аудитории.</p>
-                    <img src="assets/img/smm/video-bg.jpg" alt="изображение для поста">
-                </div>
-                <!-- <div class="promo-item__additional promo-item__additional-mobile">
-                    <img class="promo-item__image" src="assets/img/smm/video-bg.jpg" alt="bg">
-                </div> -->
-            </div>
-        </section>
-
-        <section class="application application_seo">
-            <div class="container">
-                <div class="application__wrapper">
-                    <div class="application__outer">
-                        <div class="application__name">
-                            <h2 class="title application__title">Оставьте заявку</h2>
+    
+            <!-- Подложка под модальным окном -->
+            <div class="overlays js-overlay-modal">
+                <div class="modal modal_order">
+                    <div class="modal__container">
+                        <div class="modal__close">
+                            <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
                         </div>
-                        <div class="application__inner">
-                            <form action="#" class="application__form">
-                                <input type="text" class="application__input" placeholder="Имя*">
-                                <input type="text" class="application__input" placeholder="Телефон*">
-                                <input type="text" class="application__input" placeholder="Почта">
-                                <button class="btn application__btn btn_bwbtn">
-                                    <span>Оставить заявку</span>
-                                </button>
-                            </form>
-                            <div class="application__polytics">
-                                <p class="application__polytics-text">
-                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                </p>
+                        <div class="application application_modal">
+                            <div class="container">
+                                <div class="application__wrapper">
+                                    <div class="application__outer">
+                                        <div class="application__name">
+                                            <h2 class="title application__title">
+                                                <span>Оставить заявку</span>
+                                            </h2>
+                                        </div>
+                                        <div class="application__inner">
+                                            <form action="#" class="application__form">
+                                                <input type="text" class="application__input" placeholder="Имя*">
+                                                <input type="text" class="application__input" placeholder="Телефон*">
+                                                <input type="text" class="application__input" placeholder="Почта">
+                                                <button class="btn application__btn btn_bwbtn">
+                                                    <span>Оставить заявку</span>
+                                                </button>
+                                            </form>
+                                            <div class="application__polytics">
+                                                <p class="application__polytics-text">
+                                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-    </main>
-    <!-- Main End -->
-
-  
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__main">
-                    <a class="footer__logo" href="#" >
-                        <img src="assets/svg/logo.svg" alt="" class="footer__logo-icon">
-                    </a>
-                    <nav class="footer__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="portfolio.html" >
-                                    <span>Портфолио</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="seo.html" >
-                                    <span>SEO</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="context.html" >
-                                    <span>Контекст</span>
-                                </a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="smm.html" >
-                                    <span>SMM</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__contacts">
-                    <div class="footer__contacts-items">
-                        <a class="footer__contacts-mail" href="mailto:order@gaz-marketing.com"><span>order@gaz-marketing.com</span></a>
-                        <a class="footer__contacts-tel" href="tel:+79160123456">+7 916 012-34-56</a>
-                        <ul class="footer__contacts-social">
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/vk.svg" alt="" >
-                                </a>
-                            </li>
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/insta.svg" alt="" >
-                                </a>
-                            </li>
-                            <li class="footer__contacts-social-item">
-                                <a class="footer__contacts-social-link" href="#" >
-                                    <img class="footer__contacts-social-icon" src="assets/svg/icons/telegram.svg" alt="" >
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Подложка под модальным окном -->
-        <div class="overlays js-overlay-modal">
-            <div class="modal modal_order">
-                <div class="modal__container">
-                    <div class="modal__close">
-                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
-                    </div>
-                    <div class="application application_modal">
-                        <div class="container">
-                            <div class="application__wrapper">
-                                <div class="application__outer">
-                                    <div class="application__name">
-                                        <h2 class="title application__title">
-                                            <span>Оставить заявку</span>
-                                        </h2>
-                                    </div>
-                                    <div class="application__inner">
-                                        <form action="#" class="application__form">
-                                            <input type="text" class="application__input" placeholder="Имя*">
-                                            <input type="text" class="application__input" placeholder="Телефон*">
-                                            <input type="text" class="application__input" placeholder="Почта">
-                                            <button class="btn application__btn btn_bwbtn">
-                                                <span>Оставить заявку</span>
-                                            </button>
-                                        </form>
-                                        <div class="application__polytics">
-                                            <p class="application__polytics-text">
-                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                            </p>
+                <div class="modal modal_analysis">
+                    <div class="modal__container">
+                        <div class="modal__close">
+                            <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                        </div>
+                        <div class="application application_modal">
+                            <div class="container">
+                                <div class="application__wrapper">
+                                    <div class="application__outer">
+                                        <div class="application__name">
+                                            <h2 class="title application__title">
+                                                <span>Закажите разбор</span>
+                                            </h2>
+                                        </div>
+                                        <div class="application__inner">
+                                            <form action="#" class="application__form">
+                                                <input type="text" class="application__input" placeholder="Имя*">
+                                                <input type="text" class="application__input" placeholder="Телефон*">
+                                                <input type="text" class="application__input" placeholder="Почта">
+                                                <button class="btn application__btn btn_bwbtn">
+                                                    <span>Оставить заявку</span>
+                                                </button>
+                                            </form>
+                                            <div class="application__polytics">
+                                                <p class="application__polytics-text">
+                                                    Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -345,43 +390,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal modal_analysis">
-                <div class="modal__container">
-                    <div class="modal__close">
-                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
-                    </div>
-                    <div class="application application_modal">
-                        <div class="container">
-                            <div class="application__wrapper">
-                                <div class="application__outer">
-                                    <div class="application__name">
-                                        <h2 class="title application__title">
-                                            <span>Закажите разбор</span>
-                                        </h2>
-                                    </div>
-                                    <div class="application__inner">
-                                        <form action="#" class="application__form">
-                                            <input type="text" class="application__input" placeholder="Имя*">
-                                            <input type="text" class="application__input" placeholder="Телефон*">
-                                            <input type="text" class="application__input" placeholder="Почта">
-                                            <button class="btn application__btn btn_bwbtn">
-                                                <span>Оставить заявку</span>
-                                            </button>
-                                        </form>
-                                        <div class="application__polytics">
-                                            <p class="application__polytics-text">
-                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+    
   
   
 
