@@ -18,6 +18,10 @@
                 font-size: 35px; 
                 line-height: 100%;
             }
+            @include for-phone {
+                font-size: 7vw;
+                padding-right: 7%;
+            }
             
         }
         .promo__btn {
@@ -126,6 +130,10 @@
             @include for-phone-portrait {
                 font-size: 35px; 
                 line-height: 100%;
+            }
+            @include for-phone {
+                font-size: 7vw;
+                padding-right: 7%;
             }
             span {
                 @include for-phone {

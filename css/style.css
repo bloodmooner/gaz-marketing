@@ -1903,6 +1903,13 @@ template {
   }
 }
 
+@media (max-width: 575px) {
+  .promo_smm .promo__title {
+    font-size: 7vw;
+    padding-right: 7%;
+  }
+}
+
 @media (max-width: 991px) {
   .promo_smm .promo__btn {
     margin-top: 30px;
@@ -2055,6 +2062,13 @@ template {
   .promo_seo .promo__title {
     font-size: 35px;
     line-height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo_seo .promo__title {
+    font-size: 7vw;
+    padding-right: 7%;
   }
 }
 
