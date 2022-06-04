@@ -16,7 +16,7 @@
             }
             @include for-phone-portrait {
                 font-size: 35px; 
-                line-height: 100%;
+                line-height: 113%;
             }
             @include for-phone {
                 font-size: 7vw;
@@ -55,7 +55,7 @@
             }
             @include for-phone-portrait {
                 font-size: 35px; 
-                line-height: 100%;
+                line-height: 113%;
             }
             @include for-phone {
                 font-size: clamp(19px, 6.7vw, 35px);
@@ -65,7 +65,7 @@
                     padding: 0 5px 0 0;
                 }
                 @include for-phone {
-                    padding: 0 2px 2px;
+                    padding: 0 2px;
                 }
             }
         }
@@ -129,7 +129,7 @@
         .promo__title {
             @include for-phone-portrait {
                 font-size: 35px; 
-                line-height: 100%;
+                line-height: 113%;
             }
             @include for-phone {
                 font-size: 7vw;
@@ -238,7 +238,7 @@
         span {
             font-family: $neuemachina;
             display: inline-block;
-            /* padding: 0 2px 2px; */
+            padding: 0 2px;
             background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
         }
     }
@@ -344,8 +344,6 @@
         }
     }
 
-    &__additional {
-    }
 
     &__image {
         max-width: 406px;
@@ -388,9 +386,16 @@
         margin-top: 30px;
         font-size: 14px;
     }
+    @include for-phone {
+        font-size: 12px;
+    }
 }
 .promo_seo .promo__text {
     margin-top: 12px;
+
+    @include for-phone {
+        margin-top: 5px;
+    }
 }
 .promo_context .title__subtitle {
     font-family: $montserrat;
@@ -404,7 +409,7 @@
         margin-top: 30px;
         font-size: 14px;
     }
-    @include for-phone-portrait {
+    @include for-phone {
         font-size: 12px;
     }
 }
