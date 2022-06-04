@@ -100,7 +100,7 @@
             }
             @include for-mobile-modal {
                 font-size: 30px;
-                line-height: 30px;
+                line-height: 100%;
             }
             span {
                 background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
@@ -195,7 +195,7 @@
 
     &__title {
         font-size: 64px;
-        line-height: 64px;
+        line-height: 100%;
         color: #FFFFFF;
         width: min-content;
         @include for-desk {
@@ -297,7 +297,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 15px;
+            line-height: 100%;
             background: linear-gradient(90deg, #000000 0%, #000000 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -308,7 +308,7 @@
             grid-column: 1/3;
             grid-row: 4/5;
             font-size: 14px;
-            line-height: 14px;
+            line-height: 100%;
             padding: 13px;
         }
     }

@@ -14,6 +14,10 @@
             @include for-desk {
                 padding-right: 50px;
             }
+            @include for-phone-portrait {
+                font-size: 35px; 
+                line-height: 100%;
+            }
             
         }
         .promo__btn {
@@ -44,6 +48,10 @@
             }
             @include for-tablet-portrait {
                 font-size: clamp(27px, 3vw, 35px);
+            }
+            @include for-phone-portrait {
+                font-size: 35px; 
+                line-height: 100%;
             }
             @include for-phone {
                 font-size: clamp(19px, 6.7vw, 35px);
@@ -115,6 +123,10 @@
 
     &_seo {
         .promo__title {
+            @include for-phone-portrait {
+                font-size: 35px; 
+                line-height: 100%;
+            }
             span {
                 @include for-phone {
                     padding: 0 2px;
@@ -146,7 +158,7 @@
                 width: 266px;
                 padding: 19px;
                 font-size: 14px;
-                line-height: 14px;
+                line-height: 100%;
             }
         }
         

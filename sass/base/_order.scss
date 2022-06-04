@@ -95,7 +95,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 19px;
+        line-height: 100%;
         background: linear-gradient(90deg, #65F0F4 -27.45%, #3957ED 118.63%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -103,11 +103,9 @@
         text-fill-color: transparent;
         @include for-tablet-landscape {
             font-size: 17px;
-            line-height: 17px;
         }
         @include for-phone-portrait {
             font-size: 14px;
-            line-height: 14px;
         }
     }
 }

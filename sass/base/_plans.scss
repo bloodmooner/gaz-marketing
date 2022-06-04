@@ -203,16 +203,14 @@
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
-            line-height: 19px;
+            line-height: 100%;
             color: #000000;
             cursor: pointer;
             @include for-tablet-landscape {
                 font-size: 16px;
-                line-height: 16px;
             }
             @include for-tablet-portrait {
                 font-size: 14px;
-                line-height: 14px;
             }
         }
     }
@@ -250,7 +248,7 @@
             }
             @include for-tablet-portrait {
                 font-size: 24px;
-                line-height: 24px;
+                line-height: 100%;
             }
             @include for-phone-portrait {
                 font-size: 32px;
@@ -263,7 +261,7 @@
         }
         @include for-tablet-portrait {
             font-size: 17px;
-            line-height: 17px;
+            line-height: 100%;
         }
         @include for-phone-portrait {
             font-size: 16px;
@@ -304,7 +302,7 @@
         color: #000000;
         @include for-tablet-portrait {
             font-size: 20px;
-            line-height: 20px;
+            line-height: 100%;
         }
     }
 
@@ -343,15 +341,15 @@
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
-            line-height: 19px;
+            line-height: 100%;
             color: #000000;
             @include for-tablet-landscape {
                 font-size: 16px;
-                line-height: 16px;
+                line-height: 100%;
             }
             @include for-tablet-portrait {
                 font-size: 14px;
-                line-height: 14px;
+                line-height: 100%;
             }
         }
     }
@@ -412,7 +410,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 100%;
         color: #FFFFFF;
     }
 }

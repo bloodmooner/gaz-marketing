@@ -493,7 +493,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   text-align: center;
   color: #000000;
 }
@@ -790,7 +790,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, to(#FFFFFF));
   background: linear-gradient(180deg, #FFFFFF 100%);
   -webkit-background-clip: text;
@@ -1065,7 +1065,7 @@ template {
 @media (max-width: 991px) and (max-height: 600px) {
   .application_modal .application__title {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 100%;
   }
 }
 
@@ -1199,7 +1199,7 @@ template {
 
 .application__title {
   font-size: 64px;
-  line-height: 64px;
+  line-height: 100%;
   color: #FFFFFF;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -1403,7 +1403,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#000000));
   background: linear-gradient(90deg, #000000 0%, #000000 100%);
   -webkit-background-clip: text;
@@ -1421,7 +1421,7 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 100%;
     padding: 13px;
   }
 }
@@ -1896,6 +1896,13 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .promo_smm .promo__title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   .promo_smm .promo__btn {
     margin-top: 30px;
@@ -1937,6 +1944,13 @@ template {
 @media (max-width: 991px) {
   .promo_context .promo__title {
     font-size: clamp(27px, 3vw, 35px);
+  }
+}
+
+@media (max-width: 767px) {
+  .promo_context .promo__title {
+    font-size: 35px;
+    line-height: 100%;
   }
 }
 
@@ -2037,6 +2051,13 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .promo_seo .promo__title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}
+
 @media (max-width: 575px) {
   .promo_seo .promo__title span {
     padding: 0 2px;
@@ -2080,7 +2101,7 @@ template {
     width: 266px;
     padding: 19px;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 100%;
   }
 }
 
@@ -2845,7 +2866,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 100%;
   color: #000000;
   cursor: pointer;
 }
@@ -2853,14 +2874,12 @@ template {
 @media (max-width: 1200px) {
   .plans__btn span {
     font-size: 16px;
-    line-height: 16px;
   }
 }
 
 @media (max-width: 991px) {
   .plans__btn span {
     font-size: 14px;
-    line-height: 14px;
   }
 }
 
@@ -2908,7 +2927,7 @@ template {
 @media (max-width: 991px) {
   .plans__number_mark {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 100%;
   }
 }
 
@@ -2929,7 +2948,7 @@ template {
 @media (max-width: 991px) {
   .plans__number {
     font-size: 17px;
-    line-height: 17px;
+    line-height: 100%;
   }
 }
 
@@ -2984,7 +3003,7 @@ template {
 @media (max-width: 991px) {
   .plans__outer-title {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 100%;
   }
 }
 
@@ -3038,21 +3057,21 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 100%;
   color: #000000;
 }
 
 @media (max-width: 1200px) {
   .plans__outer-btn span {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 100%;
   }
 }
 
 @media (max-width: 991px) {
   .plans__outer-btn span {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 100%;
   }
 }
 
@@ -3120,7 +3139,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #FFFFFF;
 }
 
@@ -3230,12 +3249,14 @@ template {
 }
 
 .stages__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44px 1fr;
+      grid-template-columns: 44px 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 22px;
   margin-bottom: 20px;
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
@@ -3246,7 +3267,7 @@ template {
 }
 
 .stages__name_number {
-  padding-right: 22px;
+  /* padding-right: 22px; */
   font-family: "Neue Machina", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -3270,7 +3291,7 @@ template {
   .stages__name_number {
     font-size: 48px;
     line-height: 54px;
-    padding-right: 52px;
+    /* padding-right: 52px; */
   }
 }
 
@@ -3282,7 +3303,7 @@ template {
 
 @media (max-width: 420px) {
   .stages__name_number {
-    padding-right: 50px;
+    /* padding-right: 50px; */
   }
 }
 
@@ -3305,20 +3326,27 @@ template {
     font-size: clamp(18px, 2vw, 35px);
     line-height: 105%;
     margin-bottom: 0;
+    gap: 35px;
   }
 }
 
 @media (max-width: 767px) {
   .stages__name {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 113%;
   }
 }
 
 @media (max-width: 575px) {
   .stages__name {
     font-size: 13px;
-    line-height: 13px;
+    gap: 52px;
+  }
+}
+
+@media (max-width: 420px) {
+  .stages__name {
+    gap: 20px;
   }
 }
 
@@ -3452,7 +3480,7 @@ template {
 @media (max-width: 991px) {
   .stages__file {
     font-size: 19px;
-    line-height: 19px;
+    line-height: 100%;
   }
 }
 
@@ -3816,8 +3844,8 @@ template {
 @media (max-width: 767px) {
   .cases__info-subtitle {
     min-height: auto;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 113%;
   }
 }
 
@@ -4290,7 +4318,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(-17.82%, #65F0F4), color-stop(98.46%, #3957ED));
   background: linear-gradient(90deg, #65F0F4 -17.82%, #3957ED 98.46%);
   -webkit-background-clip: text;
@@ -4302,7 +4330,7 @@ template {
 @media (max-width: 991px) {
   .cases__info-example span {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 100%;
   }
 }
 
@@ -4446,7 +4474,7 @@ template {
   .cases__image-subtitle {
     margin-bottom: 0;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 113%;
   }
 }
 
@@ -4953,7 +4981,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(-27.45%, #65F0F4), color-stop(118.63%, #3957ED));
   background: linear-gradient(90deg, #65F0F4 -27.45%, #3957ED 118.63%);
   -webkit-background-clip: text;
@@ -4965,14 +4993,12 @@ template {
 @media (max-width: 1200px) {
   .order__btn-text {
     font-size: 17px;
-    line-height: 17px;
   }
 }
 
 @media (max-width: 767px) {
   .order__btn-text {
     font-size: 14px;
-    line-height: 14px;
   }
 }
 
@@ -5324,6 +5350,18 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .leads__info-item:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .leads__info-item:nth-child(3) {
+    display: none;
+  }
+}
+
 .leads__info-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5444,7 +5482,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 100%;
   color: #FFFFFF;
 }
 
@@ -5453,7 +5491,6 @@ template {
     padding: 19px 48px;
     margin-top: 25px;
     font-size: 14px;
-    line-height: 14px;
   }
 }
 
@@ -5668,7 +5705,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -6228,7 +6265,7 @@ main.main {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 100%;
   color: #FFFFFF;
 }
 
@@ -6290,7 +6327,7 @@ main.main {
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
-  line-height: 49px;
+  line-height: 100%;
   margin-top: 30px;
   color: #000000;
   -webkit-transition: all 0.3s;
@@ -7804,7 +7841,7 @@ main.main {
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
-  line-height: 49px;
+  line-height: 100%;
   color: #000000;
 }
 
@@ -8011,7 +8048,7 @@ main.main {
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
-  line-height: 49px;
+  line-height: 100%;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #FFFFFF;

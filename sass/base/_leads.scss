@@ -64,6 +64,16 @@
         @include for-phone-portrait {
             padding: 28px 19px;
         }
+        &:nth-child(2) {
+            @include for-phone-portrait {
+                display: none;
+            }
+        }
+        &:nth-child(3) {
+            @include for-phone-portrait {
+               display: none; 
+            }
+        }
     }
 
     &__info-head {
@@ -148,13 +158,12 @@
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 19px;
+        line-height: 100%;
         color: #FFFFFF;
         @include for-phone-portrait {
             padding: 19px 48px;
             margin-top: 25px;
             font-size: 14px;
-            line-height: 14px;
         }
     }
 }
