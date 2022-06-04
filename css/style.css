@@ -3278,6 +3278,13 @@ template {
   font-size: 26px;
   line-height: 29px;
   color: #000000;
+  /* &-text {
+            @include for-phone {
+                height: 48px;
+                display: flex;
+                align-items: center;
+            }
+        } */
 }
 
 .stages__name_number {
@@ -3311,7 +3318,13 @@ template {
 
 @media (max-width: 575px) {
   .stages__name_number {
-    line-height: 40px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -3355,6 +3368,8 @@ template {
   .stages__name {
     font-size: 13px;
     gap: 52px;
+    -ms-grid-rows: 36px;
+        grid-template-rows: 36px;
   }
 }
 

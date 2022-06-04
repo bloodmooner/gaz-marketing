@@ -78,6 +78,13 @@
         font-size: 26px;
         line-height: 29px;
         color: #000000;
+        /* &-text {
+            @include for-phone {
+                height: 48px;
+                display: flex;
+                align-items: center;
+            }
+        } */
         &_number {
             /* padding-right: 22px; */
             font-family: $neuemachina;
@@ -100,12 +107,16 @@
                 /* padding-right: 52px; */
             }
             @include for-phone {
-                line-height: 40px;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+
             }
             @include for-phone-small {
                 /* padding-right: 50px; */
             }
         }
+        
         @include for-desk {
             font-size: 25px;
             line-height: 27px;
@@ -127,6 +138,8 @@
         @include for-phone {
             font-size: 13px;
             gap: 52px;
+            grid-template-rows: 36px;
+            
         }
         @include for-phone-small {
             gap: 20px;
