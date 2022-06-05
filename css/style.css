@@ -3816,13 +3816,14 @@ template {
 }
 
 .cases__info {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 27px;
+  /* gap: 27px; */
   position: relative;
   /* left: -40px; */
 }
@@ -3832,7 +3833,7 @@ template {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    gap: 10px;
+    /* gap: 10px; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -3903,10 +3904,14 @@ template {
 
 .cases__info-list {
   margin-top: 30px;
+  margin-left: 51px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
   list-style-type: none;
 }
 
@@ -3919,12 +3924,16 @@ template {
 @media (max-width: 1200px) {
   .cases__info-list {
     gap: 15px;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 991px) {
   .cases__info-list {
     gap: 30px;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
   }
 }
 
@@ -4004,7 +4013,7 @@ template {
 
 @media (max-width: 1200px) {
   .cases__controls {
-    margin-top: 5px;
+    margin-top: 20px;
   }
 }
 
@@ -4405,6 +4414,7 @@ template {
 }
 
 .cases__info-issue {
+  margin-top: 27px;
   padding: 17px 31px 28px 31px;
   background: #FFFFFF;
   -webkit-box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -4416,6 +4426,7 @@ template {
   .cases__info-issue {
     padding: 20px;
     position: relative;
+    margin-top: 10px;
   }
 }
 
@@ -4427,6 +4438,7 @@ template {
 
 @media (max-width: 991px) {
   .cases__info-issue:nth-child(3) {
+    margin-top: 0;
     z-index: 200;
   }
 }

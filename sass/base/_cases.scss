@@ -199,14 +199,14 @@
     }
 
     &__info {
-        display: grid;
+        display: flex;
         flex-direction: column;
-        gap: 27px;
+        /* gap: 27px; */
         position: relative;
         /* left: -40px; */
         @include for-tablet-portrait {
             grid-row: 2/3;
-            gap: 10px;
+            /* gap: 10px; */
             flex-direction: column-reverse;
         }
         
@@ -266,17 +266,21 @@
 
     &__info-list {
         margin-top: 30px;
+        margin-left: 51px;
         display: flex;
-        gap: 60px;
+        justify-content: space-between;
+        gap: 50px;
         list-style-type: none;
         @include for-desk {
             gap: 40px;
         }
         @include for-tablet-landscape {
             gap: 15px;
+            margin-left: 0;
         }
         @include for-tablet-portrait {
             gap: 30px;
+            justify-content: initial;
         }
         @include for-phone-portrait {
             flex-direction: column;
@@ -335,7 +339,7 @@
     &__controls {
         margin-top: 33px;
         @include for-tablet-landscape {
-            margin-top: 5px;
+            margin-top: 20px;
         }
         @include for-tablet-portrait {
             position: absolute;
@@ -619,6 +623,7 @@
     }
 
     &__info-issue {
+        margin-top: 27px;
         padding: 17px 31px 28px 31px;
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -626,6 +631,7 @@
         @include for-tablet-portrait {
             padding: 20px;
             position: relative;
+            margin-top: 10px;
         }
         &:nth-child(2) {
             @include for-tablet-portrait {
@@ -635,7 +641,7 @@
         }
         &:nth-child(3) {
             @include for-tablet-portrait {
-                
+                margin-top: 0;
                 z-index: 200;
             }
         }
