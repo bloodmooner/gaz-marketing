@@ -199,7 +199,7 @@
     }
 
     &__info {
-        display: flex;
+        display: grid;
         flex-direction: column;
         gap: 27px;
         position: relative;
@@ -216,7 +216,7 @@
     &__info-main, &__info-total {
         padding: 28px 31px 40px 31px;
         background: #FFFFFF;
-        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        box-shadow: -5px 15px 35px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
         @include for-tablet-portrait {
             box-shadow: none;
@@ -434,7 +434,7 @@
     &__top-about {
         padding: 17px 31px 28px 31px;
         background: #FFFFFF;
-        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        box-shadow: -5px 15px 35px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
         @include for-phone-portrait {
             padding: 24px 19px;

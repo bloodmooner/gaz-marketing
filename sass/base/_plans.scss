@@ -59,6 +59,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            /* border: 1px solid rgba(204, 243, 255, 0.2); */
+            box-shadow: none;
+            background: transparent;
+            border-radius: 34px;
             @include for-tablet-landscape {
                 padding: 0 20px;
             }
@@ -363,6 +368,8 @@
         height: 100%;
         object-fit: cover;
         border-radius: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__addone {
