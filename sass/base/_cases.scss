@@ -225,6 +225,19 @@
         }
     }
 
+    &__info-total {
+        padding: 28px 31px 110px 31px;
+        @include for-desk {
+            padding: 28px 31px 80px 31px;
+        }
+        @include for-tablet-landscape {
+            padding: 28px 31px 50px 31px;
+        }
+        @include for-tablet-portrait {
+            padding: 0px 18px 0px 18px;
+        }
+    }
+
     &__info-main {
         @include for-tablet-portrait {
             display: none;

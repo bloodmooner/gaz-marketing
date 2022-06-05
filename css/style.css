@@ -3864,6 +3864,28 @@ template {
   }
 }
 
+.cases__info-total {
+  padding: 28px 31px 110px 31px;
+}
+
+@media (max-width: 1550px) {
+  .cases__info-total {
+    padding: 28px 31px 80px 31px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cases__info-total {
+    padding: 28px 31px 50px 31px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cases__info-total {
+    padding: 0px 18px 0px 18px;
+  }
+}
+
 @media (max-width: 991px) {
   .cases__info-main {
     display: none;
