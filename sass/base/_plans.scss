@@ -183,7 +183,7 @@
         @include for-desk {
             flex-direction: column-reverse;
             align-items: flex-start;
-            gap: 30px;
+            /* gap: 30px; */
             margin-top: 20px;
         }
     }
@@ -194,6 +194,9 @@
         text-align: center;
         border-radius: 30px;
         width: 276px;
+        @include for-desk {
+            margin-top: 30px;
+        }
         @include for-phone-portrait {
             width: 186px;
             height: 44px;
