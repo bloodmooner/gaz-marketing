@@ -7165,7 +7165,7 @@ main.main {
 
 @media (max-width: 575px) {
   .thanks-or-error__item ul li {
-    padding: 24px 28px;
+    padding: 14px 28px;
   }
 }
 
@@ -7357,7 +7357,7 @@ main.main {
 
 @media (max-width: 575px) {
   .thanks-or-error__item_return {
-    padding: 26px 0;
+    padding: 14px 0;
     margin-top: 10px;
   }
 }
