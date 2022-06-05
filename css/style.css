@@ -2708,7 +2708,7 @@ template {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: transparent;
-  border-radius: 34px;
+  border-radius: 30px;
 }
 
 @media (max-width: 1200px) {
