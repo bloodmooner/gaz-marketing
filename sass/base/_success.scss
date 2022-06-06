@@ -173,7 +173,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 100%;
+        line-height: 134%;
         background: linear-gradient(89.97deg, #65F0F4 -17.79%, #3957ED 147.99%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -260,7 +260,7 @@
             max-width: 100%;
         }
         @include for-phone-portrait {
-            padding: 25px 20px;
+            padding: 28px 20px 36px 20px;
         }
     }
 

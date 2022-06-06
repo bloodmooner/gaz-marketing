@@ -45,6 +45,9 @@
         @include for-tablet-landscape {
             grid-template-columns: 1fr;
         }
+        @include for-tablet-portrait {
+            gap: 10px;
+        }
         @include for-phone-portrait {
             margin-top: 40px;
         }
@@ -54,6 +57,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        
     }
 
     &__info-item {
@@ -61,9 +65,25 @@
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
-        @include for-phone-portrait {
-            padding: 28px 19px;
+        &:nth-child(1) {
+            padding: 28px 30px;
+            @include for-phone-portrait {
+                padding: 28px 19px;
+            }
         }
+        &:nth-child(2) {
+            padding: 17px 31px 28px 31px;
+            @include for-phone-portrait {
+                padding: 28px 19px;
+            }
+        }
+        &:nth-child(3) {
+            padding: 17px 31px 28px 31px;
+            @include for-phone-portrait {
+                padding: 28px 19px;
+            }
+        }
+        
         &:nth-child(2) {
             @include for-phone-portrait {
                 display: none;
@@ -98,6 +118,7 @@
         line-height: 29px;
         color: #000000;
         @include for-tablet-landscape {
+            max-width: 100%;
             font-size: 18px;
             line-height: 21px;
         }
@@ -125,12 +146,12 @@
     }
 
     &__order {
-        padding: 28px 36px 28px 36px;
+        padding: 38px 36px 28px 36px;
         background: #FFFFFF;
         box-shadow: 15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 30px;
         @include for-phone-portrait {
-            padding: 28px 25px;
+            padding: 28px 18px 40px 18px;
         }
     }
 
