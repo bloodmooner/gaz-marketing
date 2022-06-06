@@ -492,6 +492,16 @@
         @include for-phone-portrait {
             margin-right: 36px;
             max-width: 44px;
+            display: none;
+        }
+        &_mob {
+            display: none;
+            @include for-phone-portrait {
+                display: block;
+                margin-right: 36px;
+                max-width: 44px;
+                width: 100%;
+            }
         }
     }
 

@@ -4238,6 +4238,20 @@ template {
   .cases__top-icon {
     margin-right: 36px;
     max-width: 44px;
+    display: none;
+  }
+}
+
+.cases__top-icon_mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .cases__top-icon_mob {
+    display: block;
+    margin-right: 36px;
+    max-width: 44px;
+    width: 100%;
   }
 }
 
